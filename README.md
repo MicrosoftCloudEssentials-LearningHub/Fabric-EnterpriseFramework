@@ -136,9 +136,9 @@ Last updated: 2025-04-15
 
 ## Monitoring and Observability
 
-- **Microsoft Fabric Capacity Metrics app**: Used for monitoring and managing capacity metrics.
-- **Admin Monitoring**: Configure and use the Admin Monitoring Workspace for custom reporting on system performance and usage.
-- **Monitor Hub**: Access and utilize the Monitor Hub for centralized log and metric monitoring, and extend activity history of the data platform.
+- **Microsoft [Fabric Capacity Metrics](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/monitoring-obs/Monitoring-Observability.md#microsoft-fabric-capacity-metrics-app) app**: Used for monitoring and managing capacity metrics.
+- **Admin Monitoring**: Configure and use the [Admin Monitoring Workspace](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/monitoring-obs/Monitoring-Observability.md#admin-monitoring) for custom reporting on system performance and usage.
+- **Monitor Hub**: Access and utilize the [Monitor Hub](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/monitoring-obs/Monitoring-Observability.md#monitor-hub) for centralized log and metric monitoring, and extend activity history of the data platform.
 - **Event Hub Integration**: Use Event Hub to capture and analyze events for real-time monitoring. 
 - **Alerting**: Configure alerts for critical events and thresholds to ensure timely responses to issues.
 
