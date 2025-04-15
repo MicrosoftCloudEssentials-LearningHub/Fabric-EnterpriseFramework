@@ -134,6 +134,14 @@ Last updated: 2025-04-15
 | **Load Balancing**          | Implement load balancing to distribute network traffic across multiple resources. Load balancers enhance performance and reliability by ensuring that no single resource is overwhelmed with traffic. |
 | **Monitoring and Alerts**   | Set up monitoring and alerting mechanisms to track network performance and detect potential issues. Use Azure Monitor and Network Watcher to gain insights into network health and troubleshoot problems. |
 
+## Monitoring and Observability
+
+- **Microsoft Fabric Capacity Metrics app**: Used for monitoring and managing capacity metrics.
+- **Admin Monitoring**: Configure and use the Admin Monitoring Workspace for custom reporting on system performance and usage.
+- **Monitor Hub**: Access and utilize the Monitor Hub for centralized log and metric monitoring, and extend activity history of the data platform.
+- **Event Hub Integration**: Use Event Hub to capture and analyze events for real-time monitoring. 
+- **Alerting**: Configure alerts for critical events and thresholds to ensure timely responses to issues.
+
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
