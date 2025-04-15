@@ -101,6 +101,10 @@ Last updated: 2025-04-15
   <img src="https://github.com/user-attachments/assets/16640052-7f57-443a-9efd-30855de5e231" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
+## Source Control Integration
+
+- **Fabric Workspace Integration**: Integrate your Fabric workspace with [GitHub](./GitHub-Integration.md) or Azure DevOps to manage code related to data objects and workflows.
+- **Continuous Integration/Continuous Deployment (CI/CD)**: Implement CI/CD pipelines to [automate the deployment](./Deployment-Pipelines/) of changes to your data platform.
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
