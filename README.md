@@ -56,7 +56,7 @@ Last updated: 2025-04-15
 </details>
 
 <details>
-<summary>3. Flexibility and Options</summary>
+<summary>3. Flexibility and IaC tools Options</summary>
 
 
 > Microsoft provides several IaC tools, including Terraform, Bicep, and ARM templates. Each tool offers different features and benefits, allowing you to choose the one that best fits your needs.
@@ -105,6 +105,34 @@ Last updated: 2025-04-15
 
 - **Fabric Workspace Integration**: Integrate your Fabric workspace with [GitHub](./GitHub-Integration.md) or Azure DevOps to manage code related to data objects and workflows.
 - **Continuous Integration/Continuous Deployment (CI/CD)**: Implement CI/CD pipelines to [automate the deployment](./Deployment-Pipelines/) of changes to your data platform.
+
+## Security 
+
+> Implementing robust security measures ensures that sensitive data is protected, access is controlled, and compliance requirements are met.
+
+| **Category** | **Description** |
+|--------------|-----------------|
+| **Identity & Access Management (IAM)** | -  **RBAC:** Assign permissions based on user roles for simplified management. <br/> -  **ABAC:** Implement dynamic, context-aware access based on attributes. <br/> -  **RLS & CLS:** Apply row- and column-level security using dynamic filters and selective visibility. <br/> -  **MFA, SSO & MSI:** Enhance authentication with multi-factor methods, streamline access via single sign-on, and utilize managed service identities to avoid hard-coded credentials. |
+| **Data Protection & Encryption** | -  **Data Masking:** Hide sensitive information from unauthorized users. <br/> -  **Audit Logs:** Keep detailed records to monitor user activities and detect anomalies. <br/> -  **Encryption at Rest:** Use Azure Storage Service Encryption and Transparent Data Encryption (TDE) to protect stored data. <br/> -  **Encryption in Transit:** Secure communications with TLS/SSL protocols and VPNs. |
+| **Networking & Granular Controls** | -  **Granular Security Controls:** Implement layered security measures to comprehensively protect sensitive data. <br/> -  **Networking:** Leverage Fabric’s unified platform to simplify secure network configurations. For more details, see [Networking](#networking) |
+
+## Networking 
+
+> Networking is a critical component of any enterprise-level data platform. In Microsoft Fabric, networking configurations are simplified and secured through its `unified platform.`:
+> - **Simplified Configuration**: Microsoft Fabric provides a unified platform that integrates different networking components, making it easier to configure and manage network settings. This unified approach reduces complexity and ensures that all networking elements work seamlessly together. <br/> 
+> - **Centralized Management**: With a unified platform, you can manage all networking configurations from a single interface. This centralization streamlines operations and enhances visibility into network performance and security.
+
+| **Category**                | **Description**|
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Virtual Networks (VNets)**| Implementing virtual networks allows you to isolate and segment different parts of your data platform. VNets provide a secure and scalable way to manage network traffic and ensure that sensitive data is protected. |
+| **Subnets**                 | Within VNets, subnets can be used to further segment the network. Subnets help organize and secure resources by grouping them into smaller, manageable sections. This segmentation enhances security by limiting the scope of network access. |
+| **Network Security Groups (NSGs)** | NSGs are used to control inbound and outbound traffic to network resources. By defining security rules, NSGs help protect your data platform from unauthorized access and potential threats. |
+| **Private Endpoints**       | Use private endpoints to securely connect to Azure services without exposing them to the public internet. Private endpoints ensure that traffic between your data platform and Azure services remains within the Azure backbone network, enhancing security and reducing latency. |
+| **Firewall Rules**          | Configure firewall rules to restrict access to your data platform. Firewalls provide an additional layer of security by blocking unauthorized traffic and allowing only trusted connections. |
+| **VPN and ExpressRoute**    | For secure and reliable connectivity between on-premises environments and Azure, consider using VPN or ExpressRoute. These options provide encrypted connections and dedicated bandwidth, ensuring secure and high-performance communication. |
+| **DNS Configuration**       | Proper DNS configuration ensures that resources within your data platform can be easily located and accessed. Use Azure DNS to manage domain names and resolve network addresses efficiently. |
+| **Load Balancing**          | Implement load balancing to distribute network traffic across multiple resources. Load balancers enhance performance and reliability by ensuring that no single resource is overwhelmed with traffic. |
+| **Monitoring and Alerts**   | Set up monitoring and alerting mechanisms to track network performance and detect potential issues. Use Azure Monitor and Network Watcher to gain insights into network health and troubleshoot problems. |
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
