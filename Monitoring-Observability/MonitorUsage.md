@@ -1,4 +1,4 @@
-# Microsoft Fabric Monitoring \& Observability - Overview
+# Microsoft Fabric Monitoring Usage - Overview
 
 Costa Rica
 
