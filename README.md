@@ -16,14 +16,23 @@ Last updated: 2025-04-15
 
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
-  
+
+- [Microsoft Fabric adoption roadmap maturity levels](https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-maturity-levels?context=%2Ffabric%2Fcontext%2Fcontext)
+- [What is workspace monitoring (preview)?](https://learn.microsoft.com/en-us/fabric/fundamentals/workspace-monitoring-overview)
+- [Azure Well-Architected Framework for data workloads](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/well-architected-framework)
 
 </details>
 
 
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
-  
+
+- [Prerequisites](#prerequisites)
+- [Infrastructure as Code IaC](#infrastructure-as-code-iac)
+- [Source Control Integration](#source-control-integration)
+- [Security](#security)
+- [Networking](#networking)
+- [Monitoring and Observability](#monitoring-and-observability)
 
 </details>
 
@@ -136,11 +145,11 @@ Last updated: 2025-04-15
 
 ## Monitoring and Observability
 
-- **Microsoft [Fabric Capacity Metrics](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability.md#microsoft-fabric-capacity-metrics-app) app**: Used for monitoring and managing capacity metrics.
-- **Admin Monitoring**: Configure and use the [Admin Monitoring Workspace](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability.md#admin-monitoring) for custom reporting on system performance and usage.
-- **Monitor Hub**: Access and utilize the [Monitor Hub](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability.md#monitor-hub) for centralized log and metric monitoring, and extend activity history of the data platform.
-- **Event Hub Integration**: Use Event Hub to capture and analyze events for real-time monitoring. For example, leverage it for [automating pipeline execution with Activator]()
-- **Alerting**: Configure alerts for critical events and thresholds to ensure timely responses to issues. For example, [Steps to Configure Capacity Alerts]()
+- **Microsoft [Fabric Capacity Metrics](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability/README.md#microsoft-fabric-capacity-metrics-app) app**: Powerful tool for administrators to `monitor and manage their capacity usage`. It provides detailed insights into `capacity utilization, throttling, and system events, helping to optimize performance and resource allocation`. By tracking these metrics, admins can make informed decisions to ensure efficient use of resources.
+- **Admin Monitoring**: Configure and use the [Admin Monitoring Workspace](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability/README.md#admin-monitoring) it's a centralized hub for `tracking and analyzing usage metrics across the organization`. It includes `pre-built reports and semantic models that provide insights into feature adoption, performance, and compliance`. This workspace helps administrators maintain the health and efficiency of their Fabric environment by offering a comprehensive `view of usage patterns and system events`.
+- **Monitor Hub**: Access and utilize the [Monitor Hub](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability/README.md#monitor-hub). Allows users to `view and track the status of activities across all workspaces they have permissions for`. It provides a detailed overview of operations, `including dataset refreshes, Spark job runs, and other activities`. With features like historical views, customizable displays, and filtering options, the Monitor Hub helps ensure smooth operations and timely interventions when needed.
+- **Event Hub Integration**: Use Event Hub to capture and analyze events for real-time monitoring. For example, leverage it for [Automating pipeline execution with Activator](./Monitoring-Observability/FabricActivatorRulePipeline/)
+- **Alerting**: Configure alerts for critical events and thresholds to ensure timely responses to issues. For example, [Steps to Configure Capacity Alerts](./Monitoring-Observability/StepsCapacityAlert.md)
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
