@@ -34,6 +34,7 @@ Last updated: 2025-03-13
 
 - [Overview](#overview)
 - [Finding admin_principal_id Using Azure CLI](#finding-admin_principal_id-using-azure-cli)
+- [Configure Remote Storage for a Terraform deployment](#configure-remote-storage-for-a-terraform-deployment)
 - [How to execute it](#how-to-execute-it)
 
 </details>
@@ -77,6 +78,16 @@ Here is an example value for `admin_principal_id` which is Object ID you retriev
 ```hcl
 admin_principal_id = "12345678-1234-1234-1234-1234567890ab"
 ```
+
+## Configure Remote Storage for a Terraform deployment
+
+> To configure remote storage for a Terraform deployment, you need to set up a backend configuration in your Terraform files. This backend configuration specifies where Terraform should store the state file, which keeps track of the resources it manages.
+
+> 1. Create an Azure Storage Account: <br/>
+>     - Go to the Azure portal and create a new storage account (if you don't have one already). <br/>
+>     - Note down the storage account name and the access key. <br/>
+> 2. Create a Storage Container: Within the storage account, create a new container to store the Terraform state file.
+> 3. Configure Terraform Backend: In your Terraform configuration file (e.g., [remote-storage.tf](./src/remote-storage.tf), add the backend configuration for Azure Blob Storage.
 
 ## How to execute it 
 
