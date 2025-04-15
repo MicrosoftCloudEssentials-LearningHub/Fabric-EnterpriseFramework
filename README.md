@@ -103,7 +103,7 @@ Last updated: 2025-04-15
 
 ## Source Control Integration
 
-- **Fabric Workspace Integration**: Integrate your Fabric workspace with GitHub or Azure DevOps to manage code related to data objects and workflows.
+- **Fabric Workspace Integration**: Integrate your Fabric workspace with [GitHub](./GitHub-Integration.md) or Azure DevOps to manage code related to data objects and workflows.
 - **Continuous Integration/Continuous Deployment (CI/CD)**: Implement CI/CD pipelines to [automate the deployment](./Deployment-Pipelines/) of changes to your data platform.
 
 <div align="center">
