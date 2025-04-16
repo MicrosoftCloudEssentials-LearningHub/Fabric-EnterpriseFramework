@@ -26,6 +26,9 @@ Last updated: 2025-04-16
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
+- [How to Tenant configuration](#how-to-tenant-configuration)
+- [How to Configure Workspaces](#how-to-configure-workspaces)
+- [How to Using Copilot in Power BI](#how-to-using-copilot-in-power-bi)
 
 </details>
 
