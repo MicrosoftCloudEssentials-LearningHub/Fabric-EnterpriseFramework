@@ -140,7 +140,7 @@ Granting app audience permissions enables the assigned identity to:
 - Interact with the app, such as filtering and highlighting data.
 - Access different content based on the audience group they belong to.
 
-Click here for [Microsoft Fabric: Power Bi Workspace App - Overview](https://github.com/MicrosoftCloudEssentials-LearningHub/Demos-ScenariosHub/blob/main/0_Azure/2_AzureAnalytics/0_Fabric/demos/14_PbiManageAccess/0_PBi-wsApp.md)
+Click here for [Demostration: How to Configure Workspace App](./ConfigureWorkspaceApp.md)
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
