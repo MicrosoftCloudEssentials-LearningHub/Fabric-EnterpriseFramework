@@ -25,8 +25,6 @@ Last updated: 2025-04-15
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Connect a workspace to a Git repo](#connect-a-workspace-to-a-git-repo)
 - [Connecting to a workspace Already linked to GitHub](#connecting-to-a-workspace-already-linked-to-github)
 - [Commit changes to git](#commit-changes-to-git)
