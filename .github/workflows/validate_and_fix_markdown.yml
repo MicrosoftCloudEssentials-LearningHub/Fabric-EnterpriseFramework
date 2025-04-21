@@ -30,7 +30,7 @@ jobs:
         run: npm install -g markdownlint-cli
 
       - name: Lint and Fix Markdown files
-        run: markdownlint '**/*.md' --fix --config .markdownlint.json
+        run: markdownlint '**/*.md' --fix --config ../.markdownlint.json
 
       - name: Configure Git
         run: |
