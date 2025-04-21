@@ -1,0 +1,57 @@
+name: Validate and Fix Notebook
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  validate-and-fix-notebook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Jupyter and nbformat
+        run: |
+          pip install jupyter nbformat
+
+      - name: Validate and Fix Notebook
+        run: |
+          python -c "
+          import nbformat
+          import glob
+          for file in glob.glob('**/*.ypyb', recursive=True):
+              with open(file, 'r') as f:
+                  nb = nbformat.read(f, as_version=4)
+              nbformat.validate(nb)
+              if 'application/vnd.beylor-adapt+notebook' not in nb.metadata:
+                  nb.metadata['application/vnd.beylor-adapt+notebook'] = {'version': '1.0'}
+              with open(file, 'w') as f:
+                  nbformat.write(nb, f)
+          "
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Commit changes
+        run: |
+          git add -A
+          git commit -m "Fix notebook format issues" || echo "No changes to commit"
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}

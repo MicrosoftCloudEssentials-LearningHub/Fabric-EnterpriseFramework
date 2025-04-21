@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-15
+Last updated: 2025-04-21
 
 ----------
 
@@ -27,22 +27,22 @@ Last updated: 2025-04-15
 
 </details>
 
-## Content 
+## Content
 
 - [Microsoft Fabric Capacity Metrics app](#microsoft-fabric-capacity-metrics-app)
-    - [Installation Steps](#installation-steps)
-    - [Configuration Steps](#configuration-steps)
-    - [Troubleshooting](#troubleshooting)
+  - [Installation Steps](#installation-steps)
+  - [Configuration Steps](#configuration-steps)
+  - [Troubleshooting](#troubleshooting)
 - [Admin monitoring](#admin-monitoring)
-    - [Configure the Admin Monitoring Workspace](#configure-the-admin-monitoring-workspace)
-    - [How to Use Data from Admin Monitoring Workspace Custom Reports](#how-to-use-data-from-admin-monitoring-workspace-custom-reports)
+  - [Configure the Admin Monitoring Workspace](#configure-the-admin-monitoring-workspace)
+  - [How to Use Data from Admin Monitoring Workspace Custom Reports](#how-to-use-data-from-admin-monitoring-workspace-custom-reports)
 - [Monitor Hub](#monitor-hub)
-    - [How to Access and Use the Monitor Hub](#how-to-access-and-use-the-monitor-hub)
-    - [Extending Activity History](#extending-activity-history)
+  - [How to Access and Use the Monitor Hub](#how-to-access-and-use-the-monitor-hub)
+  - [Extending Activity History](#extending-activity-history)
 
-## Microsoft Fabric Capacity Metrics app 
+## Microsoft Fabric Capacity Metrics app
 
-> The `Microsoft Fabric Capacity Metrics app` is designed to provide comprehensive monitoring capabilities for Microsoft Fabric capacities. It helps administrators track capacity consumption, identify performance bottlenecks, and make informed decisions about scaling and resource allocation. The app provides detailed insights into capacity utilization, throttling, and system events, enabling proactive management of resources to ensure optimal performance. <br/> <br/> 
+> The `Microsoft Fabric Capacity Metrics app` is designed to provide comprehensive monitoring capabilities for Microsoft Fabric capacities. It helps administrators track capacity consumption, identify performance bottlenecks, and make informed decisions about scaling and resource allocation. The app provides detailed insights into capacity utilization, throttling, and system events, enabling proactive management of resources to ensure optimal performance. <br/> <br/>
 > This app is essential for maintaining the health and efficiency of your Microsoft Fabric capacities
 
 | **Feature**                  | **Description**                                                                 |
@@ -58,7 +58,7 @@ Last updated: 2025-04-15
     - Navigate to [Microsoft Fabric](https://app.fabric.microsoft.com/). In the left panel, locate the `Apps` icon and click on `Get apps`.
 
         <img width="550" alt="image" src="https://github.com/user-attachments/assets/931eb614-bb29-4e03-9637-4a9ef0cc3e7a">
-        
+
      - Search for `Microsoft Fabric Capacity Metrics`:
 
           <img width="550" alt="image" src="https://github.com/user-attachments/assets/a743d770-f1ea-474b-8d2c-c363e2a40e13">
@@ -72,6 +72,7 @@ Last updated: 2025-04-15
           <img width="550" alt="image" src="https://github.com/user-attachments/assets/49aa432b-a3fd-4a2d-a504-ce08841b681e">
 
 ### Configuration Steps
+
 1. **Run the App for the First Time**:
    - In Microsoft Fabric, go to **Apps** and select the Microsoft Fabric Capacity Metrics app.
    - When prompted with `You have to connect to your own data to view this report`, select **Connect**.
@@ -85,7 +86,7 @@ Last updated: 2025-04-15
              - Go to the Power BI service and sign in with your admin account.
              - Click on the `Settings` gear icon in the top right corner.
              - Select `Admin Portal` from the dropdown menu.
-     
+
                  <img width="550" alt="image" src="https://github.com/user-attachments/assets/5b3a8f2a-8062-4a2f-b121-96522088c2d7">
 
           2. Access Capacity Settings:
@@ -101,7 +102,7 @@ Last updated: 2025-04-15
 
                  <img width="550" alt="image" src="https://github.com/user-attachments/assets/8b028365-bf3d-4dfd-a40e-95f355c27ff4">
 
-     - **UTC_offset**: Enter your organization's standard time in UTC (e.g., for Central Standard Time, enter `-6`). 
+     - **UTC_offset**: Enter your organization's standard time in UTC (e.g., for Central Standard Time, enter `-6`).
 
          <img width="550" alt="image" src="https://github.com/user-attachments/assets/b2f5e435-d3a0-4e2b-ae80-0376caa2e00b">
 
@@ -128,7 +129,7 @@ Last updated: 2025-04-15
 - If the app doesn't show data or can't refresh, try deleting the old app and reinstalling the latest version.
 - Update the semantic model credentials if needed.
 
-## Admin monitoring 
+## Admin monitoring
 
 > `Admin monitoring workspace` in Microsoft Fabric is a powerful tool for administrators to track and analyze usage metrics across their organization. This workspace provides detailed insights into how different features and services are being utilized, helping admins make informed decisions to optimize performance and resource allocation.
 
@@ -148,11 +149,11 @@ Benefits of Using Admin Monitoring Workspace:
 3. **Optimize Resources**: Make data-driven decisions about scaling and resource allocation to ensure optimal performance.
 4. **Ensure Compliance**: Use the Purview Hub to monitor data governance and compliance, ensuring that your organization adheres to relevant regulations and standards.
 
-
 ### Configure the Admin Monitoring Workspace
 
 > [!IMPORTANT]
-> - **Permissions**: `Only users with direct admin roles can set up the Admin Monitoring workspace`. If the admin role `is assigned through a group, data refreshes may fail`. <br/> 
+>
+> - **Permissions**: `Only users with direct admin roles can set up the Admin Monitoring workspace`. If the admin role `is assigned through a group, data refreshes may fail`. <br/>
 > - **Read-Only Workspace**: The `Admin Monitoring workspace is read-only`. Users, including admins, cannot edit or view properties of items such as semantic models and reports within the workspace. `Admins can share reports and semantic models within the workspace with other users by assigning them a workspace viewer role or providing direct access links.`
 > - **Reinitializing the Workspace**: If needed, `you can reinitialize the workspace by executing an API call to delete the semantic model and then reinstalling the workspace`.
 
@@ -202,7 +203,7 @@ Benefits of Using Admin Monitoring Workspace:
         <img width="550" alt="image" src="https://github.com/user-attachments/assets/827780f4-193a-4c04-82ae-0edaa7c0312b">
 
 2. **Create Custom Reports**: You can utilize copilot capabilities to automatically create your report and edit it. Request additional pages with your content or even ask questions about your data.
-     
+
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/12368a38-cd80-4bdb-b249-efb2b9225260">
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/c928cae7-4bb3-48b9-8bf9-7f05f2f0b7e2">
@@ -213,7 +214,7 @@ Benefits of Using Admin Monitoring Workspace:
 
 | Semantic model access | Workspace access |
 | --- | --- |
-| <img width="550" alt="image" src="https://github.com/user-attachments/assets/a35a7168-a84c-43c1-9aa9-8e81c93b92fc"> | <img width="550" alt="image" src="https://github.com/user-attachments/assets/b4e3eb6a-be98-4194-8800-7702d72b27a9"> | 
+| <img width="550" alt="image" src="https://github.com/user-attachments/assets/a35a7168-a84c-43c1-9aa9-8e81c93b92fc"> | <img width="550" alt="image" src="https://github.com/user-attachments/assets/b4e3eb6a-be98-4194-8800-7702d72b27a9"> |
 
 ## Monitor Hub
 
@@ -239,16 +240,15 @@ Benefits of Using Admin Monitoring Workspace:
 
 > For example:
 
-https://github.com/user-attachments/assets/0f7fecfb-0b04-422b-abca-fcbe8827e2a2
+<https://github.com/user-attachments/assets/0f7fecfb-0b04-422b-abca-fcbe8827e2a2>
 
 3. **Search and Filter**:
    - Use the keyword search box to find specific activities.
    - Apply filters to narrow down the results based on status, time period, item type, owner, and workspace location.
-        
-        | Column Options | Filter Options | 
-        | --- | --- | 
-        | <img width="550" alt="image" src="https://github.com/user-attachments/assets/67c12153-1ddc-40e3-8c82-1514f3afc6a8"> | <img width="550" alt="image" src="https://github.com/user-attachments/assets/3dfcdc57-fd54-42f2-8e3c-9694fa7dca88"> | 
 
+        | Column Options | Filter Options |
+        | --- | --- |
+        | <img width="550" alt="image" src="https://github.com/user-attachments/assets/67c12153-1ddc-40e3-8c82-1514f3afc6a8"> | <img width="550" alt="image" src="https://github.com/user-attachments/assets/3dfcdc57-fd54-42f2-8e3c-9694fa7dca88"> |
 
 5. **Take Actions**: If you have the necessary permissions, you can perform actions on activities by selecting the More options (...) next to the activity name.
 
@@ -262,11 +262,12 @@ https://github.com/user-attachments/assets/0f7fecfb-0b04-422b-abca-fcbe8827e2a2
 
 ### Extending Activity History
 
-> To extend your activity tracking beyond 30 day, you can use `Microsoft Purview`: <br/> 
+> To extend your activity tracking beyond 30 day, you can use `Microsoft Purview`: <br/>
+>
 > - Provides extended audit log retention up to 1 year with appropriate licensing. <br>
 > - Use the Purview portal to view and export detailed activity logs. <br>
 > - Utilize the Purview REST API to access scan history beyond 30 days.
-      
+
 Steps to  Access Microsoft Purview via Audit Logs:
 
 1. **Navigate to the Admin Portal**:

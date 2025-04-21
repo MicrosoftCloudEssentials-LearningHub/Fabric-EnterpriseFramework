@@ -1,11 +1,11 @@
-# Power Bi: Incremental Refresh for Reporting - Overview 
+# Power Bi: Incremental Refresh for Reporting - Overview
 
 Costa Rica
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-15
+Last updated: 2025-04-21
 
 ----------
 
@@ -28,16 +28,15 @@ Last updated: 2025-04-15
 - [Overview](#overview)
 - [How the VertiPaq Engine Works](#how-the-vertipaq-engine-works)
 - [How to create a unique key](#how-to-create-a-unique-key)
-    - [Best Practices for Creating Unique Keys in Power BI](#best-practices-for-creating-unique-keys-in-power-bi)
-    - [Strategies to Avoid High Cardinality in Power BI](#strategies-to-avoid-high-cardinality-in-power-bi)
+  - [Best Practices for Creating Unique Keys in Power BI](#best-practices-for-creating-unique-keys-in-power-bi)
+  - [Strategies to Avoid High Cardinality in Power BI](#strategies-to-avoid-high-cardinality-in-power-bi)
 - [Steps to Change a Column Type to Date in Power BI](#steps-to-change-a-column-type-to-date-in-power-bi)
 
 </details>
 
+## Overview
 
-## Overview 
-
-> Allows Power BI to refresh only the data that has changed or is new since the last refresh, rather than refreshing the entire dataset. Particularly useful for large datasets, reducing processing and transfer times. 
+> Allows Power BI to refresh only the data that has changed or is new since the last refresh, rather than refreshing the entire dataset. Particularly useful for large datasets, reducing processing and transfer times.
 
 | **Aspect**                      | **Details**                                                                                                                                                                                                 |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -113,7 +112,7 @@ Last updated: 2025-04-15
 - **Optimize Data Model**: Ensure your data model is well-structured, preferably using a star schema, to improve performance and make troubleshooting easier.
 - **Monitor Performance**: Keep an eye on performance metrics to identify any bottlenecks or issues related to data transformations and loading. Regular monitoring can help you catch and address issues before they impact your reports and dashboards.
   
-##  How to create a unique key
+## How to create a unique key
 
 > By concatenating multiple columns using DAX (Data Analysis Expressions) in Power BI
 
@@ -125,11 +124,12 @@ Last updated: 2025-04-15
    UniqueKey = [column1] & "_" & [column2] & "_" & [column3]
    ```
 
-  For example: 
+  For example:
 
    ```DAX
    UniqueKey = [DateTimeColumn] & "_" & [CallerID] & "_" & [CallID]
    ```
+
 - **Apply the Changes**: After entering the formula, press Enter to create the new column. In this DAX formula example, it concatenates the `DateTimeColumn`, `CallerID`, and `CallID` columns with underscores to create a unique key for each record.
 
 ### Best Practices for Creating Unique Keys in Power BI

@@ -1,12 +1,12 @@
-# Integrating GitHub with Microsoft Fabric - Overview 
+# Integrating GitHub with Microsoft Fabric - Overview
 
 Costa Rica
 
-[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) 
+[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-15
+Last updated: 2025-04-21
 
 ----------
 
@@ -34,7 +34,7 @@ Last updated: 2025-04-15
 
 </details>
 
-https://github.com/user-attachments/assets/64f099a1-b749-47a6-b723-fa1cb5c575a3
+<https://github.com/user-attachments/assets/64f099a1-b749-47a6-b723-fa1cb5c575a3>
 
 ## Connect a workspace to a Git repo
 

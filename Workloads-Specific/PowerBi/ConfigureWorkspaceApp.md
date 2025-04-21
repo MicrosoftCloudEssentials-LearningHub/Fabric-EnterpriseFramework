@@ -1,11 +1,11 @@
-# Demostration: How to Configure Workspace App 
+# Demostration: How to Configure Workspace App
 
 Costa Rica
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-16
+Last updated: 2025-04-21
 
 ------------------------------------------
 
@@ -18,7 +18,7 @@ Last updated: 2025-04-16
 2. Go to [Fabric](https://app.fabric.microsoft.com/), and assign the capacity created to the workspace desired.
 
     <img width="248" alt="image" src="https://github.com/user-attachments/assets/f9847839-9827-4ba4-8ca8-0f71a6229acc"> <br/>
-    
+
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/a93b9b06-e887-45f2-a621-29ebab58f845"> <br/>
 
     > Select the `large semantic model only if your model exceeds 10 GB`. If not, use the small model. The large setup is for models up to 10 GB.
@@ -48,22 +48,22 @@ Last updated: 2025-04-16
 
   <img width="550" alt="image" src="https://github.com/user-attachments/assets/aa306dcc-0bbd-4fdb-bb5f-04ef79e9dfc8">
 
-  - You will see something like this:
-    
+- You will see something like this:
+
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/c3101f92-d6cf-4df0-aabd-c0e0951994eb">
 
     <img width="955" alt="image" src="https://github.com/user-attachments/assets/99ec33b0-33c8-4fbc-93fb-8c8285ba5fae">
 
-  - You can leverage copilot to modify your report:
+- You can leverage copilot to modify your report:
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/1d46a462-252a-44bc-9d6b-420816878546">
 
-  - Once you are ready, save your report:
+- Once you are ready, save your report:
   
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/0d663e5a-2a8f-4e74-83d9-21e6bc4801ad">
 
-  - At this point you will have your `lakehouse`, with your `SQL analytics endpoint`, the `semantic model` and `the report`.
-    
+- At this point you will have your `lakehouse`, with your `SQL analytics endpoint`, the `semantic model` and `the report`.
+
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/180304fa-2bd5-4de4-9ef1-b4e290ce2929">
 
 8. A paginated report, can also be created:
@@ -89,18 +89,16 @@ Last updated: 2025-04-16
 
    <img width="550" alt="image" src="https://github.com/user-attachments/assets/05fac487-647a-48c2-b2b9-d9f1f0b172ea">
 
-   - Let's say you want only `viewer` permissions:
+- Let's say you want only `viewer` permissions:
 
      1. Need to give access to the lakehouse/sql analytics endpoint:
-        
+
         <img width="436" alt="image" src="https://github.com/user-attachments/assets/814f831f-19b8-4939-a3e2-618385c4827b">
 
         > `Read All SQL Endpoint Data` permission allows users to access and read data from SQL endpoints within the Fabric environment. This permission is typically required for users who need to: <br/>
         > - Query Data: Execute SQL `queries against the data stored in the Fabric environment`. <br/>
         > - Access Reports: `View and interact with reports and dashboards that rely on SQL data sources`. <br/>
         > - Data Analysis: `Perform data analysis and generate insights` using SQL-based data.
-
-
 
         <img width="550" alt="image" src="https://github.com/user-attachments/assets/b87137f1-b464-43df-a04d-593a41b3131a">
 

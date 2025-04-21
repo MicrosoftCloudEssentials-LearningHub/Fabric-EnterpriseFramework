@@ -5,12 +5,11 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-15
+Last updated: 2025-04-21
 
 ------------------------------------------
 
-> Lakehouse Schema and Deployment Pipelines 
-
+> Lakehouse Schema and Deployment Pipelines
 
 <details>
 <summary><b> List of References </b> (Click to expand)</summary>
@@ -33,14 +32,13 @@ Last updated: 2025-04-15
 
 - [Overview](#overview)
 - [Demo](#demo)
-    - [Create a Workspace](#create-a-workspace)
-    - [Create a Lakehouse](#create-a-lakehouse)
-    - [Create a New Semantic Model](#create-a-new-semantic-model)
-    - [Auto-Generate Report with Copilot](#auto-generate-report-with-copilot)
-    - [Create a Deployment Pipeline](#create-a-deployment-pipeline)
-    - [Deploy to Production](#deploy-to-production)
+  - [Create a Workspace](#create-a-workspace)
+  - [Create a Lakehouse](#create-a-lakehouse)
+  - [Create a New Semantic Model](#create-a-new-semantic-model)
+  - [Auto-Generate Report with Copilot](#auto-generate-report-with-copilot)
+  - [Create a Deployment Pipeline](#create-a-deployment-pipeline)
+  - [Deploy to Production](#deploy-to-production)
 - [How to refresh the data](#how-to-refresh-the-data)
-
 
 </details>
 
@@ -61,12 +59,12 @@ Process Overview:
 > `Specifics for Lakehouse:` For lakehouses, the deployment process typically `includes the structure and metadata but not the actual data tables`. This is why you might see the structure and semantic models deployed, but the tables themselves need to be manually refreshed or reloaded in the target environment.<br/> <br/>
 > `Deployment Rules:` You can set deployment rules to manage different stages and change content settings during deployment. For example, you can specify default lakehouses for notebooks to avoid manual changes post-deployment.
 
-## Demo 
+## Demo
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/46045fa8-34e8-4fff-a343-d49f36eece89" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 2px; padding: 2px; width: 500px; height: auto;"/>
 </div>
-    
+
 ### Create a Workspace
 
 1. Navigate to the Microsoft Fabric portal.
@@ -122,10 +120,9 @@ Process Overview:
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/25bda38f-41fa-45f9-aa01-e647d9f4bd84" />
 
-4. At this point, you should see something similar like following: 
+4. At this point, you should see something similar like following:
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/e1f88782-ddc6-4fb8-947a-af23b92a8415" />
-
 
 ### Auto-Generate Report with Copilot
 
@@ -193,6 +190,7 @@ Process Overview:
 | **Incremental Refresh**   | Refreshes only the data that has changed since the last refresh, improving efficiency. Click [here to understand more about incremental refresh](../Workloads-Specific/PowerBi/IncrementalRefresh.md)| - **Evaluate Changes**: Checks for changes in the data source based on a DateTime column.<br>- **Retrieve Data**: Only changed data is retrieved and loaded.<br>- **Replace Data**: Updated data is processed and replaced.       |
 
 Steps to Set Up Incremental Refresh:
+
 1. **Create or Open a Dataflow**: Start by creating a new Dataflow Gen2 or opening an existing one.
 2. **Configure the Query**: Ensure your query includes a DateTime column that can be used to filter the data.
 3. **Enable Incremental Refresh**: Right-click the query and select Incremental Refresh. Configure the settings, such as the DateTime column and the time range for data extraction.

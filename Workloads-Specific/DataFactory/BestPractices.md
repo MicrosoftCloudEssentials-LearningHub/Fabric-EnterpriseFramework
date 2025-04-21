@@ -1,12 +1,12 @@
-# Azure Data Factory (ADF) Best Practices - Overview 
+# Azure Data Factory (ADF) Best Practices - Overview
 
 Costa Rica
 
-[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) 
+[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-16
+Last updated: 2025-04-21
 
 ----------
 
@@ -28,36 +28,36 @@ Last updated: 2025-04-16
 
 - [Architecture examples](#architecture-examples)
 - [Best Practices for ADF Pipelines](#best-practices-for-adf-pipelines)
-    - [Clear Pipeline Structure](#clear-pipeline-structure)
-        - [Example Pipeline Structure](#example-pipeline-structure)
-    - [Parameterization](#parameterization)
-    - [Incremental Loading](#incremental-loading)
-        - [Use Timestamps](#use-timestamps)
-        - [Change Data Capture CDC](#change-data-capture-cdc)
-        - [Delta Loads](#delta-loads)
-        - [Partitioning](#partitioning)
-    - [Error Handling and Monitoring](#error-handling-and-monitoring)
-        - [a. Use If Condition Activity](#a-use-if-condition-activity)
-        - [b. Configure Activity Fault Tolerance](#b-configure-activity-fault-tolerance)
-        - [c. Custom Error Handling: Use Web Activity for error handling](#c-custom-error-handling-use-web-activity-for-error-handling)
-        - [d. Pipeline Monitoring: Monitor activity runs.](#d-pipeline-monitoring-monitor-activity-runs)
-    - [Security Measures](#security-measures)
-    - [Use Azure Key Vault](#use-azure-key-vault)
-        - [Store Secrets](#store-secrets)
-        - [Access Policies](#access-policies)
-        - [Secure Access](#secure-access)
-        - [Rotate Secrets](#rotate-secrets)
-    - [Source Control](#source-control)
-    - [Resource Management](#resource-management)
-    - [Testing and Validation](#testing-and-validation)
-    - [Documentation](#documentation)
-    - [Regular Updates](#regular-updates)
-    - [Performance Tuning](#performance-tuning)
+  - [Clear Pipeline Structure](#clear-pipeline-structure)
+    - [Example Pipeline Structure](#example-pipeline-structure)
+  - [Parameterization](#parameterization)
+  - [Incremental Loading](#incremental-loading)
+    - [Use Timestamps](#use-timestamps)
+    - [Change Data Capture CDC](#change-data-capture-cdc)
+    - [Delta Loads](#delta-loads)
+    - [Partitioning](#partitioning)
+  - [Error Handling and Monitoring](#error-handling-and-monitoring)
+    - [a. Use If Condition Activity](#a-use-if-condition-activity)
+    - [b. Configure Activity Fault Tolerance](#b-configure-activity-fault-tolerance)
+    - [c. Custom Error Handling: Use Web Activity for error handling](#c-custom-error-handling-use-web-activity-for-error-handling)
+    - [d. Pipeline Monitoring: Monitor activity runs.](#d-pipeline-monitoring-monitor-activity-runs)
+  - [Security Measures](#security-measures)
+  - [Use Azure Key Vault](#use-azure-key-vault)
+    - [Store Secrets](#store-secrets)
+    - [Access Policies](#access-policies)
+    - [Secure Access](#secure-access)
+    - [Rotate Secrets](#rotate-secrets)
+  - [Source Control](#source-control)
+  - [Resource Management](#resource-management)
+  - [Testing and Validation](#testing-and-validation)
+  - [Documentation](#documentation)
+  - [Regular Updates](#regular-updates)
+  - [Performance Tuning](#performance-tuning)
 - [Recommended Training Modules on Microsoft Learn](#recommended-training-modules-on-microsoft-learn)
 
 </details>
 
-## Architecture examples 
+## Architecture examples
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/42bbf7f5-eb6d-455b-886d-d8f665f0dfa0">
 
@@ -77,7 +77,6 @@ Last updated: 2025-04-16
 | **Parameterization**          | Use parameters to make your pipelines more flexible and easier to manage.       | - Define parameters for source and destination paths, allowing the same pipeline for different datasets. <br/> - Use parameters for file names, dates, and other dynamic values. |
 | **Organized Layout**          | Arrange activities in a logical sequence and avoid overlapping lines.           | - Place activities in a left-to-right or top-to-bottom flow to visually represent the data flow. <br/> - Group related activities together and use containers for better organization. |
 | **Error Handling and Logging**| Include error handling and logging activities to capture and manage errors.     | - Add a Web Activity to log errors to a monitoring system. <br/> - Use Try-Catch blocks to handle errors gracefully and ensure the pipeline continues running. |
-
 
 #### Example Pipeline Structure
 
@@ -107,9 +106,9 @@ graph TD
    - If needed, add parameters:
 
        <img width="550" alt="image" src="https://github.com/user-attachments/assets/25dd5c13-f1ed-4af1-954f-377044672741" />
-      
+
        <img width="550" alt="image" src="https://github.com/user-attachments/assets/9844e3f7-f2a9-4440-8328-0a8415ccfaea" />
- 
+
        <img width="550" alt="image" src="https://github.com/user-attachments/assets/ac56189f-124b-4bd8-a304-b5add3c19ef0" />
 
    - **Activities Inside ForEach**:
@@ -124,7 +123,6 @@ graph TD
 
            <img width="550" alt="image" src="https://github.com/user-attachments/assets/70a62c11-3e14-46f0-b2a6-6b15e64355f8" />
 
-
      - **Set Variable Activity**: Log the status of the copy operation.
        - **Name**: `LogStatus`
        - **Annotation**: `Log the status of the copy operation`
@@ -138,6 +136,7 @@ graph TD
          <img width="550" alt="image" src="https://github.com/user-attachments/assets/63b0db12-8a4e-4dae-ac5a-cdf74ab6f7bf" />
 
 ### Parameterization
+>
 > Use parameters to make your pipelines more flexible and easier to manage.
 
 | **Best Practice**             | **Description**                                                                 | **Example**                                                                                     |
@@ -148,6 +147,7 @@ graph TD
 | **Parameterize Datasets**     | Parameterize datasets to handle different data sources or destinations.         | - Create a dataset with a parameterized file path to handle different file names dynamically. <br/> - Use parameters in datasets to switch between different databases or tables. <br/> - Define parameters for connection strings to dynamically connect to different data sources. |
 
 ### Incremental Loading
+>
 > Implement incremental data loading to improve efficiency.
 
 | **Best Practice**             | **Description**                                                                 | **Example**                                                                                     |
@@ -176,6 +176,7 @@ graph TD
    - Use a Stored Procedure activity to update the `LastLoadedTimestamp` in the watermark table.
 
 #### Change Data Capture (CDC)
+>
 > Utilize CDC to capture and load only the changes made to the source data.
 
 1. **Enable CDC on Source Table**:
@@ -189,6 +190,7 @@ graph TD
    - Inside the ForEach activity, use Copy Data activities to apply the changes to the destination.
 
 #### Delta Loads
+>
 > Perform delta loads to update only the changed data instead of full loads.
 
 1. **Track Changes**:
@@ -202,6 +204,7 @@ graph TD
    - After loading, reset the `ChangeFlag` to 0.
 
 #### Partitioning
+>
 > Partition large datasets to improve performance and manageability.
 
 1. **Partition Your Data**:
@@ -215,6 +218,7 @@ graph TD
    - Inside the ForEach activity, use a Copy Data activity to load data for each partition.
 
 ### Error Handling and Monitoring
+>
 > Set up robust error handling and monitoring to quickly identify and resolve issues.
 
 | **Best Practice**             | **Description**                                                                 | **Example**                                                                                     |
@@ -225,6 +229,7 @@ graph TD
 | **Custom Logging**            | Implement custom logging to capture detailed error information.                 | - Use a Web Activity to log errors to an external logging service or database. <br/> - Implement an Azure Function to log detailed error information and call it from the pipeline. <br/> - Use a Set Variable activity to capture error details and write them to a log file in Azure Blob Storage. |
 
 #### a. **Use If Condition Activity**
+
 1. **Create a Pipeline**:
    - Open Microsoft Fabric and navigate to Azure Data Factory.
 
@@ -251,6 +256,7 @@ graph TD
      <img width="550" alt="image" src="https://github.com/user-attachments/assets/4d4f447e-0924-4f8c-8cb0-3dddc72ef85b" />
 
 #### b. **Configure Activity Fault Tolerance**
+
 1. **Set Retry Policy**:
    - Select an activity within your pipeline.
    - In the activity settings, configure the retry policy by specifying the number of retries and the interval between retries.
@@ -271,17 +277,18 @@ graph TD
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/a16b6487-45c5-40b5-8cd8-82146eb5456d" />
 
-#### d. **Pipeline Monitoring**: Monitor activity runs.
+#### d. **Pipeline Monitoring**: Monitor activity runs
 
 - In the ADF monitoring interface, navigate to the `Monitor` section, if you don't see it click on `...`.
 - Check the status of individual activities within your pipelines for success, failure, and skipped activities. Or search for any specific pipeline.
 - Click on the activity to see the `Details`, and click on the `Pipeline Run ID`:
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/72aa9b30-ec4c-4c6d-9f19-86f5c476cb65" />
-    
+
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/bd52e6c5-c530-4df9-bbaf-8640ebbde336" />
 
 ### Security Measures
+>
 > Apply security best practices to protect your data.
 
 | **Best Practice**             | **Description**                                                                 | **Example**                                                                                     |
@@ -292,6 +299,7 @@ graph TD
 | **Audit Logs**                | Enable auditing to track access and changes to ADF resources.                   | - Use Azure Monitor to collect and analyze audit logs for ADF activities. <br/> - Enable diagnostic settings to send logs to Azure Log Analytics, Event Hubs, or a storage account. <br/> - Regularly review audit logs to detect and respond to unauthorized access or changes. |
 
 ### Use Azure Key Vault
+>
 > Store sensitive information such as connection strings, passwords, and API keys in Azure Key Vault to enhance security and manage secrets efficiently.
 
 | **Best Practice**             | **Description**                                                                 | **Example**                                                                                     |
@@ -325,8 +333,8 @@ graph TD
   
        <img width="550" alt="image" src="https://github.com/user-attachments/assets/92787052-7512-4e1a-b5d9-50d05ec8219c" />
 
-
 #### Access Policies
+>
 > Configure access policies to control who can access secrets.
 
 1. **Set Up Access Policies in Key Vault**:
@@ -343,10 +351,12 @@ graph TD
 > Use managed identities to securely access Key Vault secrets.
 
 **Grant Key Vault Access to Managed Identity**:
-   - In the Key Vault, add an access policy to grant the Data Factory managed identity access to the required secrets.
-   - Example: Grant `Get` and `List` permissions to the managed identity.
+
+- In the Key Vault, add an access policy to grant the Data Factory managed identity access to the required secrets.
+- Example: Grant `Get` and `List` permissions to the managed identity.
 
 #### Rotate Secrets
+>
 > Regularly rotate secrets to enhance security.
 
 1. **Update Secrets in Key Vault**:
@@ -359,10 +369,10 @@ graph TD
    - Ensure that relevant teams are notified when secrets are rotated.
    - Example: Use Logic Apps to send email notifications when secrets are updated.
 
-
-### Source Control 
+### Source Control
 
 > Benefits of Git Integration: <br/>
+>
 > - **Version Control**: Track and audit changes, and revert to previous versions if needed.  <br/>
 > - **Collaboration**: Multiple team members can work on the same project simultaneously.  <br/>
 > - **Incremental Saves**: Save partial changes without publishing them live.  <br/>
@@ -397,6 +407,7 @@ graph TD
    - Collaborate with team members through code reviews and comments.
 
 ### Resource Management
+>
 > Optimize resource usage to improve performance and reduce costs.
 
 | **Best Practice**             | **Description**                                                                 | **Example**                                                                                     |
@@ -407,6 +418,7 @@ graph TD
 | **Resource Tagging**          | Tag resources for better organization and cost tracking.                        | - Apply tags to ADF resources to categorize and track costs by project or department. <br/> - Use tags to identify and manage resources associated with specific business units. <br/> - Implement tagging policies to ensure consistent resource tagging across the organization. |
 
 ### Testing and Validation
+>
 > Regularly test and validate your pipelines to ensure they work as expected.
 
 | **Best Practice**             | **Description**                                                                 | **Example**                                                                                     |
@@ -417,6 +429,7 @@ graph TD
 | **Automated Testing**         | Automate testing processes to ensure consistency and reliability.               | - Use Azure DevOps pipelines to automate the testing of ADF pipelines. <br/> - Schedule automated tests to run after each deployment or code change. <br/> - Integrate automated testing with CI/CD pipelines to ensure continuous validation. |
 
 ### Documentation
+>
 > Maintain comprehensive documentation for your pipelines.
 
 | **Best Practice**             | **Description**                                                                 | **Example**                                                                                     |
@@ -427,6 +440,7 @@ graph TD
 | **Knowledge Sharing**         | Share documentation with the team to ensure everyone is informed.               | - Use a shared platform like SharePoint or Confluence to store and share documentation. <br/> - Conduct regular training sessions to keep the team updated on best practices. <br/> - Encourage team members to contribute to and update the documentation. |
 
 ### Regular Updates
+>
 > Keep your pipelines and ADF environment up to date.
 
 | **Best Practice**             | **Description**                                                                 | **Example**                                                                                     |
@@ -437,6 +451,7 @@ graph TD
 | **Security Patches**          | Apply security patches promptly to protect against vulnerabilities.             | - Monitor security advisories and apply patches to ADF and related services. <br/> - Implement a patch management process to ensure timely updates. <br/> - Conduct regular security assessments to identify and address vulnerabilities. |
 
 ### Performance Tuning
+>
 > Continuously monitor and tune performance.
 
 | **Best Practice**             | **Description**                                                                 | **Example**                                                                                     |
@@ -447,6 +462,7 @@ graph TD
 | **Resource Allocation**       | Allocate resources efficiently to balance performance and cost.                 | - Adjust the number of Data Integration Units (DIUs) based on workload requirements. <br/> - Use resource groups to manage and allocate resources effectively. <br/> - Monitor resource usage and adjust allocations to optimize performance. |
 
 ## Recommended Training Modules on Microsoft Learn
+
 - [Introductory training modules for Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-learn-modules)
   - [Quickstart: Get started with Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-get-started)
   - [Introduction to Azure Data Factory](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-data-factory/): This module covers the basics of ADF and how it can help integrate your data sources

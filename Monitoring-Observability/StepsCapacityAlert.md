@@ -1,4 +1,4 @@
-# Steps to Configure Capacity Alerts - Overview 
+# Steps to Configure Capacity Alerts - Overview
 
 Costa Rica
 
@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-15
+Last updated: 2025-04-21
 
 ----------
 
@@ -17,7 +17,6 @@ Last updated: 2025-04-15
   |--------------------------|-----------|
   | **Threshold**            | 80%       |
   | **Recipients**           | Capacity admins, Specific contacts |
-
 
 1. Go to the [Microsoft Fabric service](https://app.fabric.microsoft.com/) and sign in with your admin credentials.
 2. **Access the Admin Portal**:

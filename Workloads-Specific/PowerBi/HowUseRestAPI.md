@@ -1,16 +1,15 @@
-# Demostration: How to Use Power BI REST API 
+# Demostration: How to Use Power BI REST API
 
 Costa Rica
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-16
+Last updated: 2025-04-21
 
 ----------
 
 > The Power BI REST API provides programmatic access to several Power BI resources, enabling automation and embedding of analytics.
-
 
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
@@ -27,19 +26,17 @@ Last updated: 2025-04-16
 
 </details>
 
-
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
 - [Overview](#overview)
 - [How to work around the rate limits](#how-to-work-around-the-rate-limits)
-    - [Batch Request](#batch-request)
-        - [Example Implementation in Python](#example-implementation-in-python)
+  - [Batch Request](#batch-request)
+    - [Example Implementation in Python](#example-implementation-in-python)
 
 </details>
 
-## Overview 
-
+## Overview
 
 > [!IMPORTANT]
 > There are rate limits for Power BI REST API endpoints.
@@ -71,7 +68,7 @@ Last updated: 2025-04-16
 
 > Example of this works:
 
-```mermaid 
+```mermaid
 graph TD
     A[Client Application] -->|Batch Request| B[Power BI REST API]
     B -->|Response| A
@@ -136,8 +133,6 @@ requests = [
 response = batch_request(access_token, requests)
 print(response)
 ```
-
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>

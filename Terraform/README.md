@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-15
+Last updated: 2025-04-21
 
 ------------------------------------------
 
@@ -72,7 +72,6 @@ az ad user list --query "[].{Name:displayName, ObjectId:id, Email:userPrincipalN
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/c3f57b8c-025b-4784-9de6-d943311d9b04" />
 
-
 Here is an example value for `admin_principal_id` which is Object ID you retrieved.
 
 ```hcl
@@ -89,9 +88,9 @@ admin_principal_id = "12345678-1234-1234-1234-1234567890ab"
 > 2. Create a Storage Container: Within the storage account, create a new container to store the Terraform state file.
 > 3. Configure Terraform Backend: In your Terraform configuration file (e.g., [remote-storage.tf](./src/remote-storage.tf), add the backend configuration for Azure Blob Storage.
 
-## How to execute it 
+## How to execute it
 
-```mermaid 
+```mermaid
 graph TD;
     A[az login] --> B(terraform init)
     B --> C{Terraform provisioning stage}
@@ -99,17 +98,18 @@ graph TD;
     C -->|Order Now| E[terraform apply]
     C -->|Delete Resource if needed| F[terraform destroy]
 ```
+
 > [!IMPORTANT]
 > Please modify `terraform.tfvars` with your information, then run the following flow. If you need more visual guidance, please check the video that illustrates the provisioning steps. Be aware that the template uses an F64 Fabric capacity as SKU. Once deployed and activated, you can pause your capacity after you finish or delete the whole resource group after the workshop is completed.
 
-https://github.com/user-attachments/assets/668be278-fae7-466e-8452-860f27771073
+<https://github.com/user-attachments/assets/668be278-fae7-466e-8452-860f27771073>
 
 1. **Login to Azure**: This command logs you into your Azure account. It opens a browser window where you can enter your Azure credentials. Once logged in, you can manage your Azure resources from the command line.
 
     ```sh
     cd ./Terraform/src/
     ```
-    
+
     ```sh
     az login
     ```
@@ -126,7 +126,7 @@ https://github.com/user-attachments/assets/668be278-fae7-466e-8452-860f27771073
 
    <img width="550" alt="img" src="https://github.com/user-attachments/assets/a7a32891-ad72-423a-a1fe-bdb50925b546" />
 
-3. **Terraform Provisioning Stage**: 
+3. **Terraform Provisioning Stage**:
 
    - **Review**: Creates an execution plan, showing what actions Terraform will take to achieve the desired state defined in your configuration files. It uses the variable values specified in `terraform.tfvars`.
 
@@ -145,9 +145,9 @@ https://github.com/user-attachments/assets/668be278-fae7-466e-8452-860f27771073
         <img width="550" alt="image" src="https://github.com/user-attachments/assets/942ce4a8-fce1-473d-a334-a4224c6a8952">
 
         <img width="550" alt="image" src="https://github.com/user-attachments/assets/7df28bd7-4ea4-49cf-bce1-7373ef6319aa">
-     
+
    - **Remove**: Destroys the infrastructure managed by Terraform. It prompts for confirmation before deleting any resources. It also uses the variable values specified in `terraform.tfvars`.
-    
+
         ```sh
         terraform destroy -var-file terraform.tfvars
         ```
