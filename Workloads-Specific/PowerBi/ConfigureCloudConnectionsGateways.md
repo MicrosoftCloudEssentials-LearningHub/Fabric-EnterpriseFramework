@@ -30,17 +30,15 @@ Last updated: 2025-04-16
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
   
-- [Power Bi: Cloud Connections & Gateways](#power-bi-cloud-connections--gateways)
-    - [Wiki](#wiki)
-    - [Content](#content)
-    - [How to Manage Cloud connections](#how-to-manage-cloud-connections)
-        - [Creating Shareable Connections](#creating-shareable-connections)
-        - [Managing Connections](#managing-connections)
-    - [Admin Monitoring Workspace](#admin-monitoring-workspace)
-    - [Identify Access per report](#identify-access-per-report)
-    - [Restrict Access from new gateway connections](#restrict-access-from-new-gateway-connections)
-        - [On-premises Data Gateways](#on-premises-data-gateways)
-        - [Virtual Network VNet Data Gateways](#virtual-network-vnet-data-gateways)
+
+- [How to Manage Cloud connections](#how-to-manage-cloud-connections)
+    - [Creating Shareable Connections](#creating-shareable-connections)
+    - [Managing Connections](#managing-connections)
+- [Admin Monitoring Workspace](#admin-monitoring-workspace)
+- [Identify Access per report](#identify-access-per-report)
+- [Restrict Access from new gateway connections](#restrict-access-from-new-gateway-connections)
+    - [On-premises Data Gateways](#on-premises-data-gateways)
+    - [Virtual Network VNet Data Gateways](#virtual-network-vnet-data-gateways)
 
 </details>
 
