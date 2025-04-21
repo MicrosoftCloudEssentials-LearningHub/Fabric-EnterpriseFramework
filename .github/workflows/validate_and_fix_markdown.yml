@@ -1,0 +1,44 @@
+name: Validate and Fix Markdown
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  validate-and-fix-markdown:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install Markdown Linter
+        run: npm install -g markdownlint-cli
+
+      - name: Lint and Fix Markdown files
+        run: markdownlint '**/*.md' --fix --config .markdownlint.json
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Commit changes
+        run: |
+          git add -A
+          git commit -m "Fix Markdown syntax issues" || echo "No changes to commit"
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
