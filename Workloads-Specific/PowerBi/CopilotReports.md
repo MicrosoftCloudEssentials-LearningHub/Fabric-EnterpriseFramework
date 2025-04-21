@@ -9,10 +9,10 @@ Last updated: 2025-04-16
 
 ----------
 
-> Prerequisites: 
->  - **Admin Account**: Ensure you have admin privileges in Microsoft Fabric.
->  - **Licenses**: You need a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher).
-
+> Prerequisites:
+>
+> - **Admin Account**: Ensure you have admin privileges in Microsoft Fabric.
+> - **Licenses**: You need a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher).
 
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
@@ -32,14 +32,13 @@ Last updated: 2025-04-16
 
 </details>
 
-
-## How to Tenant configuration 
+## How to Tenant configuration
 
 1. **Sign In**: Log in to Microsoft Fabric using your admin account credentials.
 2. **Access Admin Portal**: Go to the Fabric settings and select the Admin portal from the menu.
 
    <img width="550" alt="image" src="https://github.com/user-attachments/assets/cc31e851-61b0-4030-a948-a9ccfe3f4ab7">
-   
+
 3. **Tenant Settings**: Navigate to the Tenant settings in the Admin portal.
 4. **Enable Copilot**: Use the search feature to locate the Copilot settings. Toggle the switch to enable Copilot in Fabric.
 
@@ -50,8 +49,9 @@ Last updated: 2025-04-16
    <img width="550" alt="image" src="https://github.com/user-attachments/assets/e674a669-b041-4ee8-a60b-d0172d98ae04">
 
 ## How to Configure Workspaces
+
 1. **Workspace Settings**: Ensure that your reports are located in a workspace with either Premium Power BI (P1 and above) or paid Fabric (F64 and above) capacity.
-   
+
     <img width="300" alt="image" src="https://github.com/user-attachments/assets/10399d45-a5e9-426f-818c-09cbded9b3b5">
 
 2. **Apply Capacity**: Check your license type in the Workspace settings and apply either Premium capacity or Fabric capacity to the workspace.
@@ -59,6 +59,7 @@ Last updated: 2025-04-16
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/2fa142ee-117a-4862-a964-a6670ba6351a">
 
 ## How to Using Copilot in Power BI
+
 1. **Access Copilot**: Once enabled, users can access Copilot across different workloads in Fabric, including Power BI.
 2. **Generate Insights**: Use Copilot to transform and analyze data, generate insights, and create visualizations and reports.
 

@@ -30,18 +30,16 @@ Last updated: 2025-04-16
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
   
-
 - [How to Manage Cloud connections](#how-to-manage-cloud-connections)
-    - [Creating Shareable Connections](#creating-shareable-connections)
-    - [Managing Connections](#managing-connections)
+  - [Creating Shareable Connections](#creating-shareable-connections)
+  - [Managing Connections](#managing-connections)
 - [Admin Monitoring Workspace](#admin-monitoring-workspace)
 - [Identify Access per report](#identify-access-per-report)
 - [Restrict Access from new gateway connections](#restrict-access-from-new-gateway-connections)
-    - [On-premises Data Gateways](#on-premises-data-gateways)
-    - [Virtual Network VNet Data Gateways](#virtual-network-vnet-data-gateways)
+  - [On-premises Data Gateways](#on-premises-data-gateways)
+  - [Virtual Network VNet Data Gateways](#virtual-network-vnet-data-gateways)
 
 </details>
-
 
 ## How to Manage Cloud connections
 
@@ -75,9 +73,10 @@ Managing cloud connections in Power BI, below you can find differences between p
 | --- | --- |
 | Private | Contains sensitive or confidential information, and the visibility of the data source may be restricted to authorized users. It is completely isolated from other data sources. Examples include Facebook data, a text file containing stock awards, or a workbook containing an employee review. |
 | Organizational    | Limits the visibility of a data source to a trusted group of people. It is isolated from all Public data sources, but is visible to other Organizational data sources. A common example is a Microsoft Word document on an intranet SharePoint site with permissions enabled for a trusted group. |
-| Public | Gives everyone visibility to the data. Only files, internet data sources, or workbook data can be marked Public. Examples include data from a Wikipedia page, or a local file containing data copied from a public web page.| 
+| Public | Gives everyone visibility to the data. Only files, internet data sources, or workbook data can be marked Public. Examples include data from a Wikipedia page, or a local file containing data copied from a public web page.|
 
-Steps: 
+Steps:
+
 - Go to [Power Bi](https://app.powerbi.com/)
 - Click on ⚙️, and go to `Manage connections and gateways`
 
@@ -89,7 +88,7 @@ Steps:
 
 ### Managing Connections
 
-> - `Switching to Shareable Connections`: If you want to switch from a personal cloud connection to a shareable one, you can do so in the Semantic model settings. This allows you to leverage the benefits of shareable connections, such as easier management and sharing capabilities. <br/> 
+> - `Switching to Shareable Connections`: If you want to switch from a personal cloud connection to a shareable one, you can do so in the Semantic model settings. This allows you to leverage the benefits of shareable connections, such as easier management and sharing capabilities. <br/>
 > - `Granular Access Control`: Power BI allows for granular access control at the tenant, workspace, and semantic model levels. This means you can enforce access policies to ensure that only authorized users can create or use specific connections.
 
 - To assign the connection a semantic model, click on `...` over your semantic model, and go to `Settings`
@@ -118,12 +117,12 @@ Steps to setup admin monitoring workspace:
   
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/fcf3adfa-ff37-488d-8bb0-165a6aa87a6d">
 
-> The report can be accessed from the Admin monitoring workspace and is designed for admins to analyze various usage scenarios. 
+> The report can be accessed from the Admin monitoring workspace and is designed for admins to analyze various usage scenarios.
 
 | Report Name | Details |
-| --- | --- | 
+| --- | --- |
 | Feature Usage and Adoption Report | This report provides an in-depth analysis of how different features are utilized and adopted across your Microsoft Fabric tenant. It includes pages for activity overview, analysis, and detailed activity scenarios, helping identify which users are making use of cloud connections. |
-| Purview Hub | Offers insights into data governance and compliance. It helps administrators manage and monitor data policies, ensuring that data usage aligns with organizational standards and regulatory requirements. | 
+| Purview Hub | Offers insights into data governance and compliance. It helps administrators manage and monitor data policies, ensuring that data usage aligns with organizational standards and regulatory requirements. |
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/7b40d8a6-bdf8-4a9c-b5dc-1772823c6c3e">
 
@@ -144,6 +143,7 @@ Benefits of sharing the semantic model:
 
 > [!IMPORTANT]
 > Other ways to get insights: <br/>
+>
 > - `Monitoring Usage`: You can monitor and manage cloud connections through the Power BI service. By navigating to the Manage connections and gateways section, you can see which users have access to and are using specific cloud connections. <br/>
 > <img width="550" alt="image" src="https://github.com/user-attachments/assets/d64e3acd-aef9-47ba-81c6-c0e92ae5518b"> <br/>
 > - `Premium Capacity Metrics`: For a more detailed analysis, you can use the Premium Capacity Metrics app, which provides insights into the usage and performance of your Power BI Premium capacities.
@@ -161,7 +161,7 @@ Benefits of sharing the semantic model:
 
 ## Restrict Access from new gateway connections
 
-> Facilitate secure data transfer between Power BI or Power Apps and non-cloud data sources like on-premises SQL Server databases or SharePoint sites. 
+> Facilitate secure data transfer between Power BI or Power Apps and non-cloud data sources like on-premises SQL Server databases or SharePoint sites.
 
 Gateway Roles:
 
@@ -179,13 +179,12 @@ Connection Roles:
 | `User`                       | - Can use the connection in Power BI reports and dataflows.<br/>- Cannot see or update credentials. |
 | `User with Sharing`          | - Can use the connection in Power BI reports and dataflows.<br/>- Can share the data source with others with User permission. |
 
-
 Steps to Manage Gateway and Connection Roles:
 
 - Go to [Power Bi/Fabric admin center](https://app.powerbi.com/)
 - Click on ⚙️, and go to `Manage Connections and Gateways`
 - Choose `Connections`, `On premises data gateway` or `Virtual Network data gateways`:
-   
+
   <img width="550" alt="image" src="https://github.com/user-attachments/assets/7c102a22-9040-4ba8-b17a-720c5dd88dd3">
 
 - Click on `...`, and select `Manage users`:
@@ -210,7 +209,6 @@ Steps to Restrict Access for On-Premises Data Gateways:
 > - **Tenant-Level Control**: You can `restrict who can install on-premises data gateways at the tenant level through the Power Platform admin center`. This prevents unauthorized users from creating new gateway connections. <br/>
 > - **Role Management**: Assign specific roles to users, such as Admin, Connection Creator, and Connection Creator with Sharing, `to control who can create and manage connections on the gateway`.
 
-
 1. **Access the Power Platform Admin Center**: Go to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/ext/DataGateways).
 2. **Navigate to Data Gateways**:
    - Click on **Data** (preview) in the left-hand menu.
@@ -224,7 +222,7 @@ Steps to Restrict Access for On-Premises Data Gateways:
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/92ccd161-22b5-47bb-9ab5-09eecb01396f">
 
-###  Virtual Network (VNet) Data Gateways
+### Virtual Network (VNet) Data Gateways
 
 > Allow Power BI to connect to data services within an Azure virtual network without needing an on-premises data gateway. This setup is particularly useful for maintaining security and compliance by keeping data traffic within the Azure backbone.
 

@@ -1,4 +1,4 @@
-# Troubleshooting: Known Errors 
+# Troubleshooting: Known Errors
 
 Costa Rica
 
@@ -9,16 +9,16 @@ Last updated: 2025-04-15
 
 ------------------------------------------
 
-## Content 
+## Content
 
 - [Terraform is not recognized](#terraform-is-not-recognized)
-    - [Step 1: Download Terraform](#step-1-download-terraform)
-    - [Step 2: Install Terraform](#step-2-install-terraform)
-        - [For Windows:](#for-windows)
-        - [For macOS:](#for-macos)
-        - [For Linux:](#for-linux)
-    - [Step 3: Verify the Installation](#step-3-verify-the-installation)
-    - [Step 4: Initialize Terraform](#step-4-initialize-terraform)
+  - [Step 1: Download Terraform](#step-1-download-terraform)
+  - [Step 2: Install Terraform](#step-2-install-terraform)
+    - [For Windows:](#for-windows)
+    - [For macOS:](#for-macos)
+    - [For Linux:](#for-linux)
+  - [Step 3: Verify the Installation](#step-3-verify-the-installation)
+  - [Step 4: Initialize Terraform](#step-4-initialize-terraform)
 - [Resource Group Not Found](#resource-group-not-found)
 - [Resource Not Found](#resource-not-found)
 
@@ -40,17 +40,17 @@ At line:1 char:1
     <img width="990" alt="image" src="https://github.com/user-attachments/assets/98076919-f13a-4461-aa34-55a8bff3d1fc" />
 </p>
 
-
 ### Step 1: Download Terraform
 
 > By command line:
+
 1. Open your command prompt.
 2. Use curl to download Terraform. Replace VERSION with the desired version number (e.g., 1.1.4):
-      
+
       ```
       curl -o terraform.zip https://releases.hashicorp.com/terraform/VERSION/terraform_VERSION_windows_amd64.zip
       ```
-      
+
      <img width="550" alt="image" src="https://github.com/user-attachments/assets/473128f5-f146-4933-8b50-4afa59613810" />
 
 3. Use tar to extract the ZIP file:
@@ -62,6 +62,7 @@ At line:1 char:1
       <img width="316" alt="image" src="https://github.com/user-attachments/assets/c81fb71b-e30b-431e-8974-306ebca51418" />
 
 > By GUI:
+
 1. Go to the [Terraform download page](https://developer.hashicorp.com/terraform/install).
 2. Download the appropriate package for your operating system (e.g., Windows, macOS, Linux).
 
@@ -69,7 +70,7 @@ At line:1 char:1
 
 ### Step 2: Install Terraform
 
-#### For Windows:
+#### For Windows
 
 1. Extract the downloaded ZIP file to a directory of your choice (e.g., `C:\terraform`).
 
@@ -78,62 +79,71 @@ At line:1 char:1
 2. Add the directory to your system's PATH:
   
       > By command line: <br/> `Assuming you have moved terraform.exe to C:\terraform, you can add this directory to the PATH using the following command`
-      
+
       ```
       setx PATH "%PATH%;C:\terraform"
       ```
-    
-    
+
       <img width="550" alt="image" src="https://github.com/user-attachments/assets/dd5fc584-e6b6-4922-a8cd-38a55afb99b1" />
-    
-      
+
       > By GUI:
       - Open the Start menu and search for `Environment Variables`.
       - Click on `Edit the system environment variables`
-      
+
           <img width="550" alt="image" src="https://github.com/user-attachments/assets/495b8e1a-ca79-4103-b743-ed35ad190bec" />
-      
+
       - In the System Properties window, click on `Environment Variables`.
-      
+
            <img width="299" alt="image" src="https://github.com/user-attachments/assets/c5560100-5d3b-4461-a80d-eb1c1c2ede99" />
-      
+
       - Under `System variables`, find the `Path` variable and click `Edit`.
       - Click `New` and add the path to the directory where you extracted Terraform (e.g., `C:\terraform`).
       - Click `OK` to close all windows.
 
-#### For macOS:
+#### For macOS
 
 1. Open a terminal.
 2. Move the Terraform binary to a directory included in your PATH (e.g., `/usr/local/bin`):
+
    ```sh
    sudo mv ~/Downloads/terraform /usr/local/bin/
    ```
+
 3. Ensure the directory is in your PATH by adding the following line to your `~/.bash_profile` or `~/.zshrc` file:
+
    ```sh
    export PATH=$PATH:/usr/local/bin
    ```
+
 4. Reload your profile:
+
    ```sh
    source ~/.bash_profile  # or source ~/.zshrc
    ```
 
-#### For Linux:
+#### For Linux
 
 1. Open a terminal.
 2. Move the Terraform binary to a directory included in your PATH (e.g., `/usr/local/bin`):
+
    ```sh
    sudo mv ~/Downloads/terraform /usr/local/bin/
    ```
+
 3. Ensure the directory is in your PATH by adding the following line to your `~/.bashrc` or `~/.profile` file:
+
    ```sh
    export PATH=$PATH:/usr/local/bin
    ```
+
 4. Reload your profile:
+
    ```sh
    source ~/.bashrc  # or source ~/.profile
    ```
 
 ### Step 3: Verify the Installation
+
 1. Open a new terminal or command prompt.
 2. Run the following command to verify the installation. You should see the installed version of Terraform.
 
@@ -172,7 +182,6 @@ Error: Failed to get existing workspaces: Error retrieving keys for Storage Acco
 <p align="center">
     <img width="990" alt="image" src="https://github.com/user-attachments/assets/6c392d1e-32c5-4929-aaf7-6cdb853cf77d" />
 </p>
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
