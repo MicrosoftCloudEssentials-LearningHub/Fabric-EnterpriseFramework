@@ -21,13 +21,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          python-version: '3.x'
+          node-version: '16'
 
       - name: Install Markdown Linter
-        run: pip install markdownlint-cli
+        run: npm install -g markdownlint-cli
 
       - name: Lint and Fix Markdown files
         run: markdownlint '**/*.md' --fix
