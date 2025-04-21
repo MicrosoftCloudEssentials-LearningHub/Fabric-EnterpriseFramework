@@ -25,6 +25,7 @@ Last updated: 2025-04-21
 - [Generative AI with Microsoft Fabric](https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/generative-ai-with-microsoft-fabric/ba-p/4219444)
 - [Harness Microsoft Fabric AI Skill to Unlock Context-Rich Insights from Your Data](https://blog.fabric.microsoft.com/en-us/blog/harness-microsoft-fabric-ai-skill-to-unlock-context-rich-insights-from-your-data)
 - [LangChain-AzureOpenAI Parameter API Reference](https://python.langchain.com/api_reference/openai/chat_models/langchain_openai.chat_models.azure.AzureChatOpenAI.html#)
+
 </details>
 
 <details>
@@ -32,25 +33,25 @@ Last updated: 2025-04-21
 
 - [Overview](#overview)
 - [Demo](#demo)
-    - [Set Up Your Environment](#set-up-your-environment)
-    - [Install Required Libraries](#install-required-libraries)
-    - [Configure Azure OpenAI Service](#configure-azure-openai-service)
-    - [Basic Usage of LangChain Transformer](#basic-usage-of-langchain-transformer)
-    - [Using LangChain for Large Scale Literature Review](#using-langchain-for-large-scale-literature-review)
-    - [Machine Learning Integration with Microsoft Fabric](#machine-learning-integration-with-microsoft-fabric)
+  - [Set Up Your Environment](#set-up-your-environment)
+  - [Install Required Libraries](#install-required-libraries)
+  - [Configure Azure OpenAI Service](#configure-azure-openai-service)
+  - [Basic Usage of LangChain Transformer](#basic-usage-of-langchain-transformer)
+  - [Using LangChain for Large Scale Literature Review](#using-langchain-for-large-scale-literature-review)
+  - [Machine Learning Integration with Microsoft Fabric](#machine-learning-integration-with-microsoft-fabric)
 
 </details>
 
-## Overview 
+## Overview
 
 > Microsoft Fabric is a comprehensive data analytics platform that brings together various data services to provide an end-to-end solution for data engineering, data science, data warehousing, real-time analytics, and business intelligence. It's designed to simplify the process of working with data and to enable organizations to gain insights more efficiently. <br/> <br/>
 > Capabilities Enabled by LLMs: <br/>
+>
 > - `Document Summarization`: LLMs can process and summarize large documents, making it easier to extract key information. <br/>
 > - `Question Answering:` Users can perform Q&A tasks on PDF documents, allowing for interactive data exploration. <br/>
 > - `Embedding Generation`: LLMs can generate embeddings for document chunks, which can be stored in a vector store for efficient search and retrieval.
 
-  
-## Demo 
+## Demo
 
 Tools in practice:
 
@@ -60,8 +61,9 @@ Tools in practice:
 | **SynapseML**| SynapseML is an open-source library that simplifies the creation of massively scalable machine learning pipelines. It integrates with Azure OpenAI to provide distributed computing capabilities, allowing you to apply large language models at scale. <br>**Use Case**: Applying powerful language models to massive amounts of data, enabling scenarios like batch processing of text data or large-scale text analytics. |
 
 ### Set Up Your Environment
+
 1. **Register the Resource Provider**: Ensure that the `microsoft.fabric` resource provider is registered in your subscription.
-   
+
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/de708b6b-90e9-42b0-957a-7c045d15f699">
 
 2. **Create a Microsoft Fabric Resource**:
@@ -89,7 +91,7 @@ Tools in practice:
 2. **Select Your Workspace**: From the Microsoft Fabric home page, select the workspace where you want to configure SynapseML.
 3. **Create a New Cluster**:
    - Within the **Data Science** component, you should find options to create a new cluster.
-        
+
        <img width="182" alt="image" src="https://github.com/user-attachments/assets/1763b8a0-e3ff-4ae7-adc9-413f0eb454f3">
 
    - Follow the prompts to configure and create your cluster, specifying the details such as cluster name, region, node size, and node count.
@@ -139,7 +141,7 @@ Tools in practice:
 1. **Set Up API Keys**: Ensure you have the API key and endpoint URL for your deployed model. Set these as environment variables
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/a2eb24bf-7279-4f4e-be00-408dbbd82600">
-    
+
      ```python
     import os
     
@@ -193,7 +195,7 @@ Tools in practice:
     print(ai_msg)
      ```
 
-Make sure to replace `"your_openai_api_key"`, `"https://your_openai_api_base/"`, `"your_deployment_name"`, and `"your_model_name"` with your actual API key, base URL, deployment name, and model name from your Azure OpenAI instance. This example demonstrates how to configure and use an existing Azure OpenAI instance in Microsoft Fabric. 
+Make sure to replace `"your_openai_api_key"`, `"https://your_openai_api_base/"`, `"your_deployment_name"`, and `"your_model_name"` with your actual API key, base URL, deployment name, and model name from your Azure OpenAI instance. This example demonstrates how to configure and use an existing Azure OpenAI instance in Microsoft Fabric.
 
 ### Basic Usage of LangChain Transformer
 
@@ -202,6 +204,7 @@ Make sure to replace `"your_openai_api_key"`, `"https://your_openai_api_base/"`,
 > `The LangChain Transformer` is a tool that makes it easy to use advanced language models for `generating and transforming text`. It works by `setting up a template for what you want to create, linking this template to a language model, and then processing your data to produce the desired output`. This setup `helps automate tasks like defining technology terms or generating other text-based content`, making your workflow smoother and more efficient.
 
 > `LangChain Transformer helps you automate the process of generating and transforming text data using advanced language models`, making it easier to integrate AI capabilities into your data workflows. <br/>
+>
 > 1. `Prompt Creation`: Start by `defining a template for the kind of text you want to generate or analyze`. For example, you might create a prompt that asks the model to define a specific technology term.  <br/>
 > 2. `Chain Setup`: Then `set up a chain that links this prompt to a language model`. This chain is responsible for sending the prompt to the model and receiving the generated response.  <br/>
 > 3. `Transformer Configuration`: The LangChain Transformer is `configured to use this chain`. It specifies how the `input data (like a list of technology names) should be processed and what kind of output (like definitions) should be produced`.  <br/>
@@ -254,7 +257,6 @@ Make sure to replace `"your_openai_api_key"`, `"https://your_openai_api_base/"`,
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/a2a8e208-6f1d-4cb0-9944-0d2457106b49">
 
-
      ```python
     from pyspark.sql import SparkSession
     from pyspark.sql.functions import udf
@@ -288,8 +290,8 @@ Make sure to replace `"your_openai_api_key"`, `"https://your_openai_api_base/"`,
 ### Using LangChain for Large Scale Literature Review
 
 > [!NOTE]
-> E.g: Automating the extraction and summarization of academic papers: script for an agent using LangChain to extract content from an online PDF and generate a prompt based on that content. 
-> An `agent` in the context of programming and artificial intelligence is a `software entity that performs tasks autonomously`. It can interact with its` environment, make decisions, and execute actions based on predefined rules or learned behavior.`
+> E.g: Automating the extraction and summarization of academic papers: script for an agent using LangChain to extract content from an online PDF and generate a prompt based on that content.
+> An `agent` in the context of programming and artificial intelligence is a `software entity that performs tasks autonomously`. It can interact with its`environment, make decisions, and execute actions based on predefined rules or learned behavior.`
 
 1. **Define Functions for Content Extraction and Prompt Generation**: Extract content from PDFs linked in arXiv papers and generate prompts for extracting specific information.
 

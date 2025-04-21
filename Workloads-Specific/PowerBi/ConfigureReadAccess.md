@@ -1,4 +1,4 @@
-# Demostration: How to Configure Read Access 
+# Demostration: How to Configure Read Access
 
 Costa Rica
 
@@ -43,17 +43,15 @@ Last updated: 2025-04-16
 
 </details>
 
-## Overview 
+## Overview
 
  **Create a Fabric Capacity**: Follow the prompts to configure and create the capacity.
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/8f259cac-1dcb-4129-9070-0b31899c4ab4">
 
-
 ## Viewer Role in Fabric Workspaces
 
 > `Fabric Workspaces` in Microsoft Fabric are `collaborative environments where users can manage, analyze, and visualize data`. These workspaces integrate various data services and tools, providing a `unified platform for data professional`s to work together
-
 
 | **Capability**         | **Description**                                                                                                                                                                                                 |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -82,10 +80,10 @@ Last updated: 2025-04-16
 > Semantic Model: Provides a logical description of an analytical domain using business-friendly terminology and metrics.
 
 Capabilities:
-  - Data Representation: Organizes data into a star schema with facts and dimensions.
-  - Business Logic: Inherits business logic from parent lakehouses or warehouses.
-  - Visualization: Supports creating Power BI reports and dashboards for visual analysis.
 
+- Data Representation: Organizes data into a star schema with facts and dimensions.
+- Business Logic: Inherits business logic from parent lakehouses or warehouses.
+- Visualization: Supports creating Power BI reports and dashboards for visual analysis.
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/d78fcd11-779f-48f6-8539-85c751be2a5a" />
 
@@ -98,27 +96,28 @@ Capabilities:
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/ad4ab52a-b222-436d-811e-fa6b454621c9" />
 
-
 ## SQL Analytics Endpoint in Fabric
 
 > Lakehouse: A data architecture platform for storing, managing, and analyzing both structured and unstructured data.
 Capabilities:
-  - Data Storage: Combines the capabilities of data lakes and data warehouses.
-  - SQL Analytics Endpoint: Provides a SQL-based experience for querying data.
-  - Automatic Table Discovery: Automatically registers and validates tables.
+
+- Data Storage: Combines the capabilities of data lakes and data warehouses.
+- SQL Analytics Endpoint: Provides a SQL-based experience for querying data.
+- Automatic Table Discovery: Automatically registers and validates tables.
 
 > SQL Analytics Endpoint: Allows users to query data in the lakehouse using SQL.
 Capabilities:
-  - T-SQL Queries: Supports T-SQL language for querying Delta tables.
-  - Read-Only Mode: Operates in read-only mode, allowing data analysis without modifying the data.
-  - Security: Implements SQL security for access control.
+
+- T-SQL Queries: Supports T-SQL language for querying Delta tables.
+- Read-Only Mode: Operates in read-only mode, allowing data analysis without modifying the data.
+- Security: Implements SQL security for access control.
 
 > Apache Endpoint: Used for real-time data streaming and processing.
 Capabilities:
-  - Event Streaming: Streams events to and from Real-Time Intelligence using Apache Kafka.
-  - Integration: Integrates with event streams to process and route real-time events.
-  - Scalability: Supports building scalable, real-time data systems.
 
+- Event Streaming: Streams events to and from Real-Time Intelligence using Apache Kafka.
+- Integration: Integrates with event streams to process and route real-time events.
+- Scalability: Supports building scalable, real-time data systems.
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/bb835f14-3883-422b-a3c4-3f49f7b8f15e" />
 

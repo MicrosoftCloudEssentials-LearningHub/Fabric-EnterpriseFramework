@@ -60,7 +60,7 @@ Last updated: 2025-04-16
 
      <img width="550" alt="image" src="https://github.com/user-attachments/assets/2fae2d31-54d0-40f0-adab-111f5b464cab" />
 
-## Create a pipeline 
+## Create a pipeline
 
 1. **Log in to Azure Portal**: Open your web browser and go to the Azure Portal. Enter your credentials to log in.
 2. **Go to Data Factory**: Use the search bar at the top to search for `Data Factory` and select your Data Factory instance from the list.
@@ -108,7 +108,7 @@ Last updated: 2025-04-16
 
       <img width="550" alt="image" src="https://github.com/user-attachments/assets/11922b16-2d9e-49d8-b0ab-13605a18018f" />
 
- ## How to see who modified a pipeline 
+## How to see who modified a pipeline
 
 1. **Log in to Azure Portal**: Open your web browser and go to the Azure Portal. Enter your credentials to log in.
 2. **Go to Azure Data Factory**: Once logged in, use the search bar at the top to search for `Data Factory` and select your Data Factory instance from the list.

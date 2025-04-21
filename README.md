@@ -13,7 +13,6 @@ Last updated: 2025-04-15
 > This repository contains demos and guides for building a well-architected framework for a Microsoft Fabric enterprise-level data platform. These demos are intended as a guide.
 > `For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly`: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME). For more detailed and official training, please visit the [Microsoft official training site](https://learn.microsoft.com/en-us/training/).
 
-
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
 
@@ -22,7 +21,6 @@ Last updated: 2025-04-15
 - [Azure Well-Architected Framework for data workloads](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/well-architected-framework)
 
 </details>
-
 
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
@@ -41,8 +39,8 @@ Last updated: 2025-04-15
 - An `Azure subscription is required`. All other resources, including instructions for creating a Resource Group, are provided in this workshop.
 - `Contributor role assigned or any custom role that allows`: access to manage all resources, and the ability to deploy resources within subscription.
 - If you choose to use a Terraform approach, please ensure that:
-  -  [Terraform is installed on your local machine](https://developer.hashicorp.com/terraform/tutorials/azure-get-started/install-cli#install-terraform).
-  -  [Install the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) to work with both Terraform and Azure commands.
+  - [Terraform is installed on your local machine](https://developer.hashicorp.com/terraform/tutorials/azure-get-started/install-cli#install-terraform).
+  - [Install the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) to work with both Terraform and Azure commands.
 
 ## Infrastructure as Code (IaC)
 
@@ -51,29 +49,28 @@ Last updated: 2025-04-15
 <details>
 <summary>1. Consistency and Reproducibility</summary>
 
- - **Consistent Environments**: IaC ensures that your development, testing, and production environments are consistent. `This reduces the it works on my machine problem` and ensures that applications run reliably across different environments.
- - **Reproducibility**: With IaC, you can `recreate your infrastructure from scratch in a consistent manner.` This is particularly useful for `disaster recovery and scaling`.
-   
+- **Consistent Environments**: IaC ensures that your development, testing, and production environments are consistent. `This reduces the it works on my machine problem` and ensures that applications run reliably across different environments.
+- **Reproducibility**: With IaC, you can `recreate your infrastructure from scratch in a consistent manner.` This is particularly useful for `disaster recovery and scaling`.
+
 </details>
 
 <details>
 <summary>2. Version Control</summary>
 
- - **Source Control**: By storing IaC configurations in version control systems like GitHub, you `can track changes, collaborate with team members, and roll back to previous versions if needed.`
- - **Change Management**: Version control `provides a history of changes, making it easier to understand what changes were made, who made them, and why.`
-   
+- **Source Control**: By storing IaC configurations in version control systems like GitHub, you `can track changes, collaborate with team members, and roll back to previous versions if needed.`
+- **Change Management**: Version control `provides a history of changes, making it easier to understand what changes were made, who made them, and why.`
+
 </details>
 
 <details>
 <summary>3. Flexibility and IaC tools Options</summary>
 
-
 > Microsoft provides several IaC tools, including Terraform, Bicep, and ARM templates. Each tool offers different features and benefits, allowing you to choose the one that best fits your needs.
 
-   - **Terraform**: A popular IaC tool that uses a high-level configuration language to define and provision infrastructure. It `supports multiple cloud providers, making it a versatile choice.`
-   - **Bicep**: A domain-specific language that uses declarative syntax to deploy Azure resources. It offers a `concise and easy-to-read alternative to JSON-based ARM templates.`
-   - **ARM Templates**: JSON files that` define the infrastructure and configuration for your Azure solution.` They provide a detailed and flexible way to manage Azure resources.
-     
+- **Terraform**: A popular IaC tool that uses a high-level configuration language to define and provision infrastructure. It `supports multiple cloud providers, making it a versatile choice.`
+- **Bicep**: A domain-specific language that uses declarative syntax to deploy Azure resources. It offers a `concise and easy-to-read alternative to JSON-based ARM templates.`
+- **ARM Templates**: JSON files that`define the infrastructure and configuration for your Azure solution.` They provide a detailed and flexible way to manage Azure resources.
+
 </details>
 
 <details>
@@ -89,7 +86,7 @@ Last updated: 2025-04-15
 
 - **Dynamic Scaling**: IaC enables `dynamic scaling of resources based on demand.` This ensures that your infrastructure can handle varying workloads efficiently.
 - **Resource Optimization**: By automating the `provisioning and de-provisioning of resources,` IaC helps optimize resource usage and reduce costs.
- 
+
 </details>
 
 <details>
@@ -100,9 +97,8 @@ Last updated: 2025-04-15
 
 </details>
 
-
 > [!TIP]
-> Just in case, find here some [additional Terraform templates for different Azure resources across different areas](https://github.com/MicrosoftCloudEssentials-LearningHub/AzureTerraformTemplates-v0.0.0). 
+> Just in case, find here some [additional Terraform templates for different Azure resources across different areas](https://github.com/MicrosoftCloudEssentials-LearningHub/AzureTerraformTemplates-v0.0.0).
 
 > E.g [Demonstration: Deploying Azure Resources for a Data Platform](./Terraform)
 
@@ -115,7 +111,7 @@ Last updated: 2025-04-15
 - **Fabric Workspace Integration**: Integrate your Fabric workspace with [GitHub](./GitHub-Integration.md) or Azure DevOps to manage code related to data objects and workflows.
 - **Continuous Integration/Continuous Deployment (CI/CD)**: Implement CI/CD pipelines to [automate the deployment](./Deployment-Pipelines/) of changes to your data platform.
 
-## Security 
+## Security
 
 > Implementing robust security measures ensures that sensitive data is protected, access is controlled, and compliance requirements are met.
 
@@ -125,10 +121,11 @@ Last updated: 2025-04-15
 | **Data Protection & Encryption** | -  **Data Masking:** Hide sensitive information from unauthorized users. <br/> -  **Audit Logs:** Keep detailed records to monitor user activities and detect anomalies. <br/> -  **Encryption at Rest:** Use Azure Storage Service Encryption and Transparent Data Encryption (TDE) to protect stored data. <br/> -  **Encryption in Transit:** Secure communications with TLS/SSL protocols and VPNs. |
 | **Networking & Granular Controls** | -  **Granular Security Controls:** Implement layered security measures to comprehensively protect sensitive data. <br/> -  **Networking:** Leverage Fabric’s unified platform to simplify secure network configurations. For more details, see [Networking](#networking) |
 
-## Networking 
+## Networking
 
 > Networking is a critical component of any enterprise-level data platform. In Microsoft Fabric, networking configurations are simplified and secured through its `unified platform.`:
-> - **Simplified Configuration**: Microsoft Fabric provides a unified platform that integrates different networking components, making it easier to configure and manage network settings. This unified approach reduces complexity and ensures that all networking elements work seamlessly together. <br/> 
+>
+> - **Simplified Configuration**: Microsoft Fabric provides a unified platform that integrates different networking components, making it easier to configure and manage network settings. This unified approach reduces complexity and ensures that all networking elements work seamlessly together. <br/>
 > - **Centralized Management**: With a unified platform, you can manage all networking configurations from a single interface. This centralization streamlines operations and enhances visibility into network performance and security.
 
 | **Category**                | **Description**|
