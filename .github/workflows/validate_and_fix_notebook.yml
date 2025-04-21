@@ -4,9 +4,6 @@ on:
   pull_request:
     branches:
       - main
-  push:
-    branches:
-      - main
 
 permissions:
   contents: write
@@ -35,12 +32,15 @@ jobs:
           python -c "
           import nbformat
           import glob
-          for file in glob.glob('**/*.ypyb', recursive=True):
+          for file in glob.glob('**/*.ipynb', recursive=True):
               with open(file, 'r') as f:
                   nb = nbformat.read(f, as_version=4)
               nbformat.validate(nb)
-              if 'application/vnd.beylor-adapt+notebook' not in nb.metadata:
-                  nb.metadata['application/vnd.beylor-adapt+notebook'] = {'version': '1.0'}
+              if 'widgets' in nb.metadata:
+                  if 'application/vnd.jupyter.widget-state+json' not in nb.metadata['widgets']:
+                      nb.metadata['widgets']['application/vnd.jupyter.widget-state+json'] = {'version': '1.0', 'state': {}}
+                  elif 'state' not in nb.metadata['widgets']['application/vnd.jupyter.widget-state+json']:
+                      nb.metadata['widgets']['application/vnd.jupyter.widget-state+json']['state'] = {}
               with open(file, 'w') as f:
                   nbformat.write(nb, f)
           "
