@@ -4,7 +4,7 @@ on:
   pull_request:
     branches:
       - main
-      
+
 permissions:
   contents: write
 
@@ -36,8 +36,8 @@ jobs:
               with open(file, 'r') as f:
                   nb = nbformat.read(f, as_version=4)
               nbformat.validate(nb)
-              if 'application/vnd.jupyter.widget-state+json' not in nb.metadata:
-                  nb.metadata['application/vnd.jupyter.widget-state+json'] = {'version': '1.0'}
+              if 'application/vnd.jupyter.widget-state+json' not in nb.metadata.get('widgets', {}):
+                  nb.metadata['widgets'] = {'application/vnd.jupyter.widget-state+json': {'version': '1.0'}}
               with open(file, 'w') as f:
                   nbformat.write(nb, f)
           "
