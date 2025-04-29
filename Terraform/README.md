@@ -9,7 +9,7 @@ Last updated: 2025-04-21
 
 ------------------------------------------
 
-> This repository contains Terraform configurations for setting up Microsoft Fabric Capacity and an SQL Server with a database on a public network, which are basic resources for a data platform.
+> This repository contains Terraform configurations for setting up Microsoft Fabric Capacity and an SQL Server with a database on a public network, which are basic resources for demo a data platform.
 > `Please note, it is important to follow infrastructure as code (IaC) practices to source control the infrastructure, not just the application objects.`
 > Here, you can find [additional Terraform templates for different Azure resources across different areas](https://github.com/MicrosoftCloudEssentials-LearningHub/AzureTerraformTemplates-v0.0.0). Feel free to explore and take a look!
 
