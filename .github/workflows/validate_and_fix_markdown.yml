@@ -38,7 +38,7 @@ jobs:
         run: |
           git fetch origin
           git checkout ${{ github.event.pull_request.head.ref }}
-          git rebase origin/${{ github.event.pull_request.head.ref }}
           git add -A
+          git rebase origin/${{ github.event.pull_request.head.ref }}
           git commit -m "Fix Markdown syntax issues" || echo "No changes to commit"
           git push origin HEAD:${{ github.event.pull_request.head.ref }}
