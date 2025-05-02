@@ -204,7 +204,7 @@ Click to read more about [Microsoft Purview for Fabric - Overview](./Purview-Fab
 - [Data Warehouse - Best Practices Overview]() - in progress
 - [Data Science - Best Practices Overview]() - in progress
 - [Real-Time Intelligence - Best Practices Overview]() - in progress
-- [Power Bi - Best Practices Overview]() - in progress
+- [Power Bi - Best Practices Overview](./Workloads-Specific/PowerBi/BestPractices.md)
 - [Copilot - Best Practices Overview]() - in progress
 - [Purview - Best Practices Overview]() - in progress
 - [OneLake - Best Practices Overview]() - in progress
