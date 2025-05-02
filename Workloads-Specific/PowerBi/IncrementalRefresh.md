@@ -1,11 +1,11 @@
-# Power Bi: Incremental Refresh for Reporting - Overview
+# Incremental Refresh for Reporting - Overview
 
 Costa Rica
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-21
+Last updated: 2025-05-02
 
 ----------
 
