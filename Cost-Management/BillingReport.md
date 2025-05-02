@@ -1,4 +1,4 @@
-# Azure Billing Report - Overview
+# Billing Report - Overview
 
 Costa Rica
 
@@ -11,10 +11,21 @@ Last updated: 2025-05-02
 
 ----------
 
-## Content 
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+
+- [Cost Management documentation](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/)
+- [Cost Management + Billing documentation](https://learn.microsoft.com/en-us/azure/cost-management-billing/)
+
+</details>
+
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
 
 - [Cost Analysis](#cost-analysis)
 - [Billing Report](#billing-report)
+
+</details>
 
 ## Cost Analysis
 
