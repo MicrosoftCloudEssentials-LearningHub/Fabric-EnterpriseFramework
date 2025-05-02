@@ -57,25 +57,21 @@ Key Features:
 
 ## How it works
 
-1. Go to Data Science space:
-   
-    <img width="500" alt="image" src="https://github.com/user-attachments/assets/a8624ffd-314b-45f4-b8d0-c260655b3003">
+1. Go to the `workspace`, click on `+ New item`, search for `Data agent`, and select it.
 
-2. Choose the name for the AI Skill instance:
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/42ff0a1c-3e61-4e24-8bb5-e56db6fe9b7e" />
+
+2. Choose the name for the Data agent instance:
    
-    <img width="500" alt="image" src="https://github.com/user-attachments/assets/61b52cea-9124-4f51-9be6-d40b0e426b15">
+     https://github.com/user-attachments/assets/752734e4-f7f6-44a3-8ccb-069ac005a410
 
 3. Add data:
    
-    <img width="500" alt="image" src="https://github.com/user-attachments/assets/d3d85411-f18a-4ad4-8c24-919a35d4239a">
+     https://github.com/user-attachments/assets/9800e74e-cbca-45ff-a712-bb2e8a095bb5
 
-4. If new, choose the source/connection:
+4. Relate tables, and start asking!
 
-    <img width="500" alt="image" src="https://github.com/user-attachments/assets/f82beaf6-708f-45ed-9388-787f74cb23af">
-
-5. Relate tables, and start asking!
-
-    <img width="500" alt="image" src="https://github.com/user-attachments/assets/bd105edc-6011-4cb9-bae7-f587486e0819">
+     <img width="550" alt="image" src="https://github.com/user-attachments/assets/77d5ddbe-8230-440d-9617-d937da48b3cd" />
 
 ## Examples of what to ask 
 
