@@ -63,11 +63,11 @@ Key Features:
 
 2. Choose the name for the Data agent instance:
    
-     https://github.com/user-attachments/assets/752734e4-f7f6-44a3-8ccb-069ac005a410
+     <https://github.com/user-attachments/assets/752734e4-f7f6-44a3-8ccb-069ac005a410>
 
 3. Add data:
    
-     https://github.com/user-attachments/assets/9800e74e-cbca-45ff-a712-bb2e8a095bb5
+     <https://github.com/user-attachments/assets/9800e74e-cbca-45ff-a712-bb2e8a095bb5>
 
 4. Relate tables, and start asking!
 
