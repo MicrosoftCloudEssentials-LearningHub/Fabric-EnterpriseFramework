@@ -23,7 +23,9 @@ Last updated: 2025-05-02
 - [DirectQuery optimization scenarios with the Optimize ribbon in Power BI Desktop – Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-optimize-ribbon-scenarios)  
 - [What is Microsoft Fabric for Power BI service users?](https://learn.microsoft.com/en-us/power-bi/fundamentals/fabric-power-bi)  
 - [Tutorial: Microsoft Fabric for Power BI users – Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/fundamentals/fabric-get-started)  
-- [Automate deployment pipelines with APIs for Power BI items – Microsoft Learn](https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/pipeline-automation)  
+- [Automate deployment pipelines with APIs for Power BI items – Microsoft Learn](https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/pipeline-automation)
+- [Understand star schema and the importance for Power BI](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema)
+
 </details>
 
 <details>
@@ -44,8 +46,6 @@ Last updated: 2025-05-02
 - [Architecture Examples](#architecture-examples)
 </details>
 
----
-
 ## Clear Dashboard and Report Structure
 
 > Ensure that your Power BI dashboards and reports are organized, visually cohesive, and provide clear insights at a glance.
@@ -61,17 +61,16 @@ Last updated: 2025-05-02
 
 > **Report**: SalesPerformanceReport
 
-```mermaid
-graph TD
-    A[Data Model] --> B[DAX Measures]
-    B --> C[Visualizations]
-    C --> D[Dashboard Overview]
-```
-
 1. **Data Model**: Use a star schema to separate fact tables from dimension tables for clarity and efficiency.  
 2. **DAX Measures**: Implement clear DAX measures with inline comments to describe the underlying logic.  
 3. **Visualizations**: Combine various visuals (charts, tables, slicers) to provide interactive data insights.  
 4. **Dashboard Overview**: Summarize key metrics and trends on a dedicated overview page.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/81603a8a-796c-4ee0-94b3-84164c821abf" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
+From [Understand star schema and the importance for Power BI](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema)
 
 ## Parameterization and Dynamic Content
 
@@ -92,10 +91,14 @@ graph TD
 | **Enable Incremental Refresh**         | Set up incremental refresh policies to refresh only new or modified data, reducing load time and resource usage.                        | Use the [Data refresh in Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-data) guidelines to configure incremental refresh for large datasets.                   |
 | **Data Partitioning**                  | Partition your data by logical segments (e.g., date ranges) to target refresh operations more efficiently.                                   | Partition sales or transaction data by month or quarter so that only the most recent partitions are refreshed during scheduled updates.                                                         |
 
+> Click to read [Incremental Refresh for Reporting - Overview](./Workloads-Specific/PowerBi/IncrementalRefresh.md)
+
 ### Optimized Refresh Schedules
 
 - **Staggered Refreshes**: Schedule refresh operations during off-peak hours to balance resource consumption.  
 - **Monitoring Refresh Performance**: Follow best practices in [Configure scheduled refresh](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh) to monitor and troubleshoot scheduled refresh cycles.
+
+    https://github.com/user-attachments/assets/61780cc9-5778-4c55-8f05-ffbaedd7802c
 
 ## Data Modeling and DAX Optimization
 
@@ -116,9 +119,8 @@ graph TD
 | **Best Practice**                     | **Description**                                                                                                                      | **Example**                                                                                                                                                                                 |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Define RLS in Power BI Desktop**     | Use Power BI Desktop to create roles and restrict data at the row level.                                                             | Implement RLS by defining roles such as `SalesManager` and applying DAX filters (e.g., `[Region] = USERPRINCIPALNAME()`) as described in [Row-level security (RLS) guidance in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/guidance/rls-guidance).  |
-| **Test RLS Thoroughly**                | Validate security settings using the “View as Role” feature before publishing your reports.                                           | Verify RLS filters by simulating different user roles to ensure users can only view allowed data, following practices from [Row-level security (RLS) with Power BI – Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/security/service-admin-row-level-security).  |
+| **Test RLS Thoroughly**                | Validate security settings using the “View as Role” feature before publishing your reports.                                           | Verify RLS filters by simulating different user roles to ensure users can only view allowed data. |
 | **Optimize RLS Implementation**        | Apply RLS filters preferably on dimension tables so that filtering propagates efficiently through relationships.                      | Structure RLS so that filters on the Customer or Region tables automatically restrict the related fact table data.                                                                         |
-
 
 ## Source Control and Collaboration
 
