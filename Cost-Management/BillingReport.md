@@ -29,9 +29,9 @@ Last updated: 2025-05-02
 
 ## Cost Analysis
 
- - Select `Cost Analysis` from the Cost Management menu.
- - `Use filters and groupings` to drill down into cost details by resource, resource group, or tags.
- - `Save and share custom views` to keep stakeholders informed.
+- Select `Cost Analysis` from the Cost Management menu.
+- `Use filters and groupings` to drill down into cost details by resource, resource group, or tags.
+- `Save and share custom views` to keep stakeholders informed.
    
     <img width="611" alt="image" src="https://github.com/user-attachments/assets/9b7ad624-99c8-4bd6-bbd0-f3ac1e717b78">
 
@@ -46,32 +46,32 @@ Last updated: 2025-05-02
 > By committing to the F64 reservation of Microsoft Fabric, you receive a significant discount compared to the pay-as-you-go rate. The pay-as-you-go rate might be $11.52 per hour, but with the reservation, you pay $6.853 per hour, saving ~41%
 
 - **Navigate to Subscription**:
-   - `Sign in` to the Azure portal.
-   - `Select` the subscription where the factory is located from the `Subscriptions` menu.
+  - `Sign in` to the Azure portal.
+  - `Select` the subscription where the factory is located from the `Subscriptions` menu.
 - **Access Cost Analysis**:
-   - In the left-hand menu, click on `Cost Management + Billing`.
-   - Under `Cost Management`, click on `Cost analysis`.
+  - In the left-hand menu, click on `Cost Management + Billing`.
+  - Under `Cost Management`, click on `Cost analysis`.
   
      <img width="550" alt="image" src="https://github.com/user-attachments/assets/601db977-1fc1-4cab-8e2d-f93f5857909f">
 
 - **Select Time Range**:
-   - In the Cost Analysis window, `click on the date range selector` at the top of the page.
-   - `Choose the start and end dates` for the period during which the issue occurred.
-   - `Apply` the selected date range.
+  - In the Cost Analysis window, `click on the date range selector` at the top of the page.
+  - `Choose the start and end dates` for the period during which the issue occurred.
+  - `Apply` the selected date range.
   
       <img width="395" alt="image" src="https://github.com/user-attachments/assets/4b0a9485-5b87-4c73-9179-d22eed3bdb8e">
 
 - **Group by** :
-   - In the Cost Analysis window, find the `Group by` dropdown menu.
-   - Select the desired option, e.g `Meter` from the dropdown options to group the costs by meter.
+  - In the Cost Analysis window, find the `Group by` dropdown menu.
+  - Select the desired option, e.g `Meter` from the dropdown options to group the costs by meter.
   
       <img width="550" alt="image" src="https://github.com/user-attachments/assets/4f015458-d068-4375-90e5-1c78c9ec412e">
 
 - **Add Filter**:
-   - Click on `Add filter` located above the cost breakdown chart.
-   - From the first dropdown menu, select `Resource`.
-   - From the second dropdown menu, `select the resource ID` of the factory in question.
-   - `Apply` the filter to narrow down the costs to the specific resource.
+  - Click on `Add filter` located above the cost breakdown chart.
+  - From the first dropdown menu, select `Resource`.
+  - From the second dropdown menu, `select the resource ID` of the factory in question.
+  - `Apply` the filter to narrow down the costs to the specific resource.
   
       <img width="503" alt="image" src="https://github.com/user-attachments/assets/9f6461f2-e6f1-4ceb-a5ae-d730d57a11ed">
 
@@ -98,13 +98,12 @@ Last updated: 2025-05-02
      | UnitOfMeasure     | The billing unit of measure for the service.                                    |
 
 - **Download Report**:
-   - At the top of the Cost Analysis window, click on the `Download` button.
-   - `Choose the format` (e.g., CSV, Excel) for the report.
-   - `Save the report` to your local machine.
-   - `Share the report` with the relevant stakeholders or team members.
+  - At the top of the Cost Analysis window, click on the `Download` button.
+  - `Choose the format` (e.g., CSV, Excel) for the report.
+  - `Save the report` to your local machine.
+  - `Share the report` with the relevant stakeholders or team members.
   
       <img width="550" alt="image" src="https://github.com/user-attachments/assets/f677d4b9-882e-4893-9624-a0cad7624d73">
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
