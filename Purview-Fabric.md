@@ -25,7 +25,6 @@ Last updated: 2025-05-02
 - [Microsoft Purview Pricing: Fabric focused](#microsoft-purview-pricing-fabric-focused)
 - [Cost Optimization Strategies](#cost-optimization-strategies)
 
-
 ## Purview + Fabric 
 
 > Microsoft Purview and Microsoft Fabric are integrated to provide a comprehensive `data governance and analytics platform`.
@@ -64,8 +63,8 @@ graph TD
 ```
 
 > [!TIP]
-> `Compute resources` are used for `operations` such as scanning, ingestion, classification, enrichment, and report generation. These operations involve processing data and performing various tasks that require computational power.	<br/> 
-> `Storage resources` are used to `store metadata`, data maps, and other related information. This includes the storage of scanned metadata, enriched metadata, and generated reports.	
+> `Compute resources` are used for `operations` such as scanning, ingestion, classification, enrichment, and report generation. These operations involve processing data and performing various tasks that require computational power. <br/> 
+> `Storage resources` are used to `store metadata`, data maps, and other related information. This includes the storage of scanned metadata, enriched metadata, and generated reports. 
 
 | Aspect | Description | Pricing |
 |--------|-------------|---------|
@@ -74,6 +73,7 @@ graph TD
 | **Data Governance** | **Data Map Operations**: Scanning and cataloging Fabric data assets in Purview. | Charged based on the number of operations performed. |
 
 > Pricing example: <br/> 
+>
 > 1. **Automated Scanning, Ingestion & Classification**: **Other data sources**: 0.5 minutes of total scan duration using 16 vCores. <br/> 
 > 2. **Data Map Enrichment**: 365 hours of advanced resource set usage. <br/> 
 > 3. **Report Generation**: 365 hours of report generation. <br/>
@@ -93,6 +93,7 @@ graph TD
 | **Insights Consumption** | API calls for insights and data access. | 0 API calls | $0.21 per API call | $0.00 |
 
 > Total Optimized Monthly Cost: 
+
 - **Automated Scanning and Classification**: $0.09
 - **Data Map Enrichment**: $76.65
 - **Report Generation**: $299.30
