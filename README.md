@@ -173,6 +173,7 @@ Click to read more about [Microsoft Purview for Fabric - Overview](./Purview-Fab
 > You can leverage `Azure Cost Management`, a suite of tools designed to help organizations monitor, allocate, and optimize their cloud spending. It provides comprehensive insights into your Azure usage and costs, enabling you to manage your budget effectively and ensure that your spending aligns with your financial goals.
  
 > [!TIP] 
+>
 > - **Use Tags**: Ensure your resources are properly tagged to make filtering and grouping easier.
 > - **Save Views**: You can save custom views in Cost Analysis for quick access in the future.
 > - **Set Up Alerts**: Consider setting up cost alerts to monitor spending and avoid unexpected charges.
@@ -185,7 +186,6 @@ Click to read more about [Microsoft Purview for Fabric - Overview](./Purview-Fab
 | **Optimization** | - **Recommendations**: Receive recommendations for cost-saving opportunities.<br/>- **Anomaly Detection**: Identify and address spending anomalies proactively. |
 | **Reporting**    | - **Custom Reports**: Generate custom reports to share with stakeholders.<br/>- **Power BI Integration**: Use Power BI for advanced reporting and dashboard creation. |
 | **Automation**   | - **Data Export**: Automate the export of cost data to storage accounts for further analysis.<br/>- **Integration**: Integrate cost data with external tools and processes. |
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
