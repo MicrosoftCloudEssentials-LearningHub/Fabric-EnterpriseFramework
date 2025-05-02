@@ -32,6 +32,7 @@ Last updated: 2025-05-02
 - [Microsoft Purview for Fabric](#microsoft-purview-for-fabric)
 - [Networking](#networking)
 - [Monitoring and Observability](#monitoring-and-observability)
+- [Cost Management](#cost-management)
 
 </details>
 
