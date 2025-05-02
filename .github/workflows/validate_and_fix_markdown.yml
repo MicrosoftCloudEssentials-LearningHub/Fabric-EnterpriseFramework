@@ -35,7 +35,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
 
       - name: Commit changes
-        run: | 
+        run: |
           git fetch origin
           git checkout ${{ github.event.pull_request.head.ref }}
           git rebase origin/${{ github.event.pull_request.head.ref }}
