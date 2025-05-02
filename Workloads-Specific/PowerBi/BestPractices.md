@@ -50,12 +50,12 @@ Last updated: 2025-05-02
 
 > Ensure that your Power BI dashboards and reports are organized, visually cohesive, and provide clear insights at a glance.
 
-| **Best Practice**                    | **Description**                                                                                      | **Example**                                                                                                                                                                             |
-|--------------------------------------|------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Consistent Naming Conventions**    | Use clear and descriptive names for reports, pages, visuals, measures, and datasets.                 | Instead of generic names like `Report1`, prefer descriptive names such as `SalesPerformanceReport`.                                                                                     |
-| **Modular Report Design**            | Organize your reports by separating key performance indicators (KPIs), detailed analysis, and context.  | Design separate pages for overviews, analytics details, and contextual information as your audience drills down.                                                                          |
+| **Best Practice**                    | **Description**    |         **Example**        |
+|--------------------------------------|-------------------------|-------------------------------------------------------------------|
+| **Consistent Naming Conventions**    | Use clear and descriptive names for reports, pages, visuals, measures, and datasets.                 | Instead of generic names like `Report1`, prefer descriptive names such as `SalesPerformanceReport`. |
+| **Modular Report Design**            | Organize your reports by separating key performance indicators (KPIs), detailed analysis, and context.  | Design separate pages for overviews, analytics details, and contextual information as your audience drills down. |
 | **Visual Consistency**               | Apply a uniform theme and layout using Power BI themes to maintain brand consistency and readability. | Follow [Tips for designing a great Power BI dashboard](https://learn.microsoft.com/en-us/power-bi/create-reports/service-dashboards-design-tips) for layout and visual emphasis best practices.  |
-| **Annotations and Tooltips**         | Document complex visual logic and calculations via in-report annotations and dynamic tooltips.       | Include tooltips that explain data sources or DAX logic to enhance report understandability.                                                                                            |
+| **Annotations and Tooltips**         | Document complex visual logic and calculations via in-report annotations and dynamic tooltips.       | Include tooltips that explain data sources or DAX logic to enhance report understandability. |
 
 ### Example Report Layout
 
@@ -76,20 +76,20 @@ From [Understand star schema and the importance for Power BI](https://learn.micr
 
 > Enhance report flexibility by using parameters and dynamic expressions.
 
-| **Best Practice**                      | **Description**                                                                                      | **Example**                                                                                                                                                 |
-|----------------------------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Power Query Parameters**             | Use parameters to dynamically adjust data sources and filter conditions during data ingestion.         | Define date range parameters in Power Query to allow reports to automatically update based on user configurations.                                             |
+| **Best Practice** | **Description** | **Example** |
+|----------------------------------------|-------------------------------------------|------------------------------------------------------------------------|
+| **Power Query Parameters**             | Use parameters to dynamically adjust data sources and filter conditions during data ingestion.         | Define date range parameters in Power Query to allow reports to automatically update based on user configurations. |
 | **Dynamic DAX Expressions**            | Create DAX measures that change in response to slicer selections or other user inputs.                   | Implement dynamic calculations using variables in DAX so that measures (like Year-over-Year growth) adjust automatically per user selection.             |
-| **Dynamic Drill-throughs**             | Build drill-through URLs and links dynamically for a seamless navigation experience.                  | Concatenate strings and field values in DAX to direct users to detailed reports or external dashboards.                                                     |
+| **Dynamic Drill-throughs**             | Build drill-through URLs and links dynamically for a seamless navigation experience.                  | Concatenate strings and field values in DAX to direct users to detailed reports or external dashboards. |
 
 ## Incremental Data Refresh
 
 > Optimize your data refresh process by updating only the data that has changed.
 
-| **Best Practice**                      | **Description**                                                                                                                      | **Example**                                                                                                                                                                                       |
-|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Best Practice**                      | **Description** |       **Example**      |
+|----------------------------------------|--------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | **Enable Incremental Refresh**         | Set up incremental refresh policies to refresh only new or modified data, reducing load time and resource usage.                        | Use the [Data refresh in Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-data) guidelines to configure incremental refresh for large datasets.                   |
-| **Data Partitioning**                  | Partition your data by logical segments (e.g., date ranges) to target refresh operations more efficiently.                                   | Partition sales or transaction data by month or quarter so that only the most recent partitions are refreshed during scheduled updates.                                                         |
+| **Data Partitioning**                  | Partition your data by logical segments (e.g., date ranges) to target refresh operations more efficiently.                                   | Partition sales or transaction data by month or quarter so that only the most recent partitions are refreshed during scheduled updates. |
 
 > Click to read [Incremental Refresh for Reporting - Overview](./Workloads-Specific/PowerBi/IncrementalRefresh.md)
 
@@ -104,10 +104,10 @@ From [Understand star schema and the importance for Power BI](https://learn.micr
 
 > Build robust data models and optimize DAX calculations to ensure high performance and maintainability.
 
-| **Best Practice**                    | **Description**                                                                                         | **Example**                                                                                                                                                                        |
-|--------------------------------------|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Star Schema Implementation**       | Structure your data using a star schema to improve clarity and query performance.                         | Separate fact tables (e.g., Sales) from dimension tables (e.g., Date, Customer) as recommended by [Power BI guidance documentation](https://learn.microsoft.com/en-us/power-bi/guidance/). |
-| **Efficient DAX Coding**             | Utilize variables and avoid deeply nested functions to streamline DAX calculations.                         | Replace nested CALCULATE functions with variables: <br/><code>VAR TotalSales = SUM('Sales'[Amount]) RETURN TotalSales</code> to simplify logic and improve performance.       |
+| **Best Practice**                    | **Description**                                                                                         | **Example**|
+|--------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------|
+| **Star Schema Implementation**       | Structure your data using a star schema to improve clarity and query performance.| Separate fact tables (e.g., Sales) from dimension tables (e.g., Date, Customer) as recommended by [Power BI guidance documentation](https://learn.microsoft.com/en-us/power-bi/guidance/). |
+| **Efficient DAX Coding**             | Utilize variables and avoid deeply nested functions to streamline DAX calculations.| Replace nested CALCULATE functions with variables: <br/><code>VAR TotalSales = SUM('Sales'[Amount]) RETURN TotalSales</code> to simplify logic and improve performance.       |
 | **Reduce Cardinality When Possible** | Pre-aggregate data where applicable to reduce the detail in fact tables and improve efficiency.              | Aggregate detailed transaction logs to daily totals if high granularity is not necessary, as covered in the [Optimization guide for Power BI](https://learn.microsoft.com/en-us/power-bi/guidance/power-bi-optimization).      |
 
 ## Security and Governance
@@ -116,28 +116,28 @@ From [Understand star schema and the importance for Power BI](https://learn.micr
 
 ### Row-Level Security (RLS)
 
-| **Best Practice**                     | **Description**                                                                                                                      | **Example**                                                                                                                                                                                 |
-|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Define RLS in Power BI Desktop**     | Use Power BI Desktop to create roles and restrict data at the row level.                                                             | Implement RLS by defining roles such as `SalesManager` and applying DAX filters (e.g., `[Region] = USERPRINCIPALNAME()`) as described in [Row-level security (RLS) guidance in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/guidance/rls-guidance).  |
-| **Test RLS Thoroughly**                | Validate security settings using the “View as Role” feature before publishing your reports.                                           | Verify RLS filters by simulating different user roles to ensure users can only view allowed data. |
-| **Optimize RLS Implementation**        | Apply RLS filters preferably on dimension tables so that filtering propagates efficiently through relationships.                      | Structure RLS so that filters on the Customer or Region tables automatically restrict the related fact table data.                                                                         |
+| **Best Practice**                     | **Description**| **Example**|
+|---------------------------------------|--------------------------------------------------------------------|----------------|
+| **Define RLS in Power BI Desktop**     | Use Power BI Desktop to create roles and restrict data at the row level. | Implement RLS by defining roles such as `SalesManager` and applying DAX filters (e.g., `[Region] = USERPRINCIPALNAME()`) as described in [Row-level security (RLS) guidance in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/guidance/rls-guidance).  |
+| **Test RLS Thoroughly**                | Validate security settings using the “View as Role” feature before publishing your reports. | Verify RLS filters by simulating different user roles to ensure users can only view allowed data. |
+| **Optimize RLS Implementation**        | Apply RLS filters preferably on dimension tables so that filtering propagates efficiently through relationships. | Structure RLS so that filters on the Customer or Region tables automatically restrict the related fact table data. |
 
 ## Source Control and Collaboration
 
 > Leverage version control systems and collaborative workspaces for efficient report deployment and teamwork.
 
-| **Best Practice**                     | **Description**                                                                                                      | **Example**                                                                                                                                                               |
-|---------------------------------------|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Best Practice** | **Description** | **Example** |
+|---------------------------------------|------------------------------|----------------------------------------------|
 | **Git-based Version Control**          | Use Git repositories (via Azure DevOps or GitHub) to manage and version your Power BI Desktop projects.                  | Follow the [Azure DevOps build pipeline integration with Power BI Desktop projects](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-build-pipelines) guidance for setting up continuous integration. |
 | **Collaborative Workspaces**          | Configure shared workspaces within the Power BI service for team collaboration and controlled deployment.                 | Integrate your workspace with Git as described in [Power BI Desktop projects Azure DevOps integration](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-azdo) to manage team contributions.  |
-| **Change Documentation**               | Maintain a detailed changelog or README file to document major updates and decision rationales.                             | Use Git commit messages and an in-repository README to capture changes and ensure transparency across development cycles.
+| **Change Documentation**               | Maintain a detailed changelog or README file to document major updates and decision rationales.                             | Use Git commit messages and an in-repository README to capture changes and ensure transparency across development cycles. | 
 
 ## Performance Tuning
 
 > Enhance report responsiveness and reduce resource load by optimizing visuals and query performance.
 
-| **Best Practice**                     | **Description**                                                                                                                | **Example**                                                                                                                                                             |
-|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Best Practice**                     | **Description**   | **Example**    |
+|---------------------------------------|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Optimize Visuals and Interactions**  | Limit the number of visuals per report page and simplify complex interactions to improve performance.                            | Use [Optimize ribbon in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-optimize-ribbon) to pause visuals and control query execution during design. |
 | **DirectQuery Optimization**           | Use features from the Optimize ribbon to streamline DirectQuery interactions and reduce redundant queries.                          | Follow methods in [DirectQuery optimization scenarios with the Optimize ribbon in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-optimize-ribbon-scenarios) to adjust visual refresh behavior. |
 
@@ -145,22 +145,21 @@ From [Understand star schema and the importance for Power BI](https://learn.micr
 
 > Keep your reports self-explanatory and maintain a centralized repository for ongoing support and future enhancements.
 
-| **Best Practice**                     | **Description**                                                                                                              | **Example**                                                                                                                                                              |
-|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Best Practice**                     | **Description**                                                                                                              | **Example**|
+|---------------------------------------|-----------------------------------------------------------|--------------------|
 | **In-Report Annotations**              | Use text boxes, tooltips, and in-report comments to document data sources, transformations, and calculation logic.             | Include explanatory notes within report pages as encouraged in the [Power BI guidance documentation](https://learn.microsoft.com/en-us/power-bi/guidance/).                                                  |
 | **Scheduled Reviews and Updates**      | Periodically review report performance, refresh schedules, and security settings to keep the solution optimized and current.      | Adopt a routine review cycle based on feedback and usage metrics provided by Power BI service administration tools.                                                     |
-| **Centralized Repository**            | Store and version-control all project artifacts (PBIX files, change logs, documentation) in a secure repository.                 | Use Azure DevOps or another Git-based repository, following the practices laid out in the source control sections above.
+| **Centralized Repository**            | Store and version-control all project artifacts (PBIX files, change logs, documentation) in a secure repository.                 | Use Azure DevOps or another Git-based repository, following the practices laid out in the source control sections above. | 
 
 ## Deploying Reports with DevOps Best Practices
 
 > Automate and streamline deployment processes using CI/CD pipelines integrated within your Power BI environment.
 
-| **Best Practice**                     | **Description**                                                                                                                    | **Example**                                                                                                                                                                          |
-|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Best Practice**                     | **Description** | **Example**|
+|---------------------------------------|------------------------------------------------------------|---------------------------------|
 | **Automated Build Pipelines**          | Integrate Git repositories with Azure DevOps to automatically validate and deploy Power BI content.                                   | Refer to [Azure DevOps build pipeline integration with Power BI Desktop projects](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-build-pipelines) for guidance.                       |
 | **Deployment Pipelines via APIs**      | Use the Power BI deployment pipelines APIs to automate report deployment steps and ensure quality across environments.               | Implement automated deployments as described in [Automate deployment pipelines with APIs for Power BI items](https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/pipeline-automation).  |
 | **Continuous Integration**            | Incorporate quality gates and automated testing within your CI/CD process to catch issues early in the development cycle.             | Utilize Git-based integration and automated tests as shown in [Power BI Desktop projects Azure DevOps integration](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-azdo) for best practices.      |
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
