@@ -200,7 +200,7 @@ Click to read more about [Microsoft Purview for Fabric - Overview](./Purview-Fab
 ## Best Practices 
 
 - [Azure Data Factory (ADF) - Best Practices Overview](./Workloads-Specific/DataFactory/BestPractices.md)
-- [Data Engineering - Best Practices Overview]() - in progress
+- [Data Engineering - Best Practices Overview](./Workloads-Specific/DataEngineering/BestPractices.md)
 - [Data Warehouse - Best Practices Overview]() - in progress
 - [Data Science - Best Practices Overview]() - in progress
 - [Real-Time Intelligence - Best Practices Overview]() - in progress
