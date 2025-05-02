@@ -1,4 +1,4 @@
-# Power Bi: Incremental Refresh for Reporting - Overview
+# Incremental Refresh for Reporting - Overview
 
 Costa Rica
 
