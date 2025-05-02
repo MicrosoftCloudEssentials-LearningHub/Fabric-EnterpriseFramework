@@ -29,6 +29,7 @@ Last updated: 2025-04-21
 - [Infrastructure as Code IaC](#infrastructure-as-code-iac)
 - [Source Control Integration](#source-control-integration)
 - [Security](#security)
+- [Microsoft Purview for Fabric](#microsoft-purview-for-fabric)
 - [Networking](#networking)
 - [Monitoring and Observability](#monitoring-and-observability)
 
@@ -120,6 +121,25 @@ Last updated: 2025-04-21
 | **Identity & Access Management (IAM)** | -  **RBAC:** Assign permissions based on user roles for simplified management. <br/> -  **ABAC:** Implement dynamic, context-aware access based on attributes. <br/> -  **RLS & CLS:** Apply row- and column-level security using dynamic filters and selective visibility. <br/> -  **MFA, SSO & MSI:** Enhance authentication with multi-factor methods, streamline access via single sign-on, and utilize managed service identities to avoid hard-coded credentials. |
 | **Data Protection & Encryption** | -  **Data Masking:** Hide sensitive information from unauthorized users. <br/> -  **Audit Logs:** Keep detailed records to monitor user activities and detect anomalies. <br/> -  **Encryption at Rest:** Use Azure Storage Service Encryption and Transparent Data Encryption (TDE) to protect stored data. <br/> -  **Encryption in Transit:** Secure communications with TLS/SSL protocols and VPNs. |
 | **Networking & Granular Controls** | -  **Granular Security Controls:** Implement layered security measures to comprehensively protect sensitive data. <br/> -  **Networking:** Leverage Fabric’s unified platform to simplify secure network configurations. For more details, see [Networking](#networking) |
+
+## Microsoft Purview for Fabric
+
+> **Microsoft Purview** is a unified data governance solution that helps `organizations manage and govern` their on-premises, multi-cloud, and software-as-a-service (SaaS) data. When integrated with **Microsoft Fabric**, Purview enhances `data discovery, classification, lineage, and access control` across the entire data estate. In the context of **Microsoft Fabric**, which is an end-to-end analytics platform that unifies data engineering, data science, real-time analytics, and business intelligence, Purview plays a crucial role in:
+
+- **Data Cataloging**: Automatically scanning and cataloging data assets across Fabric workspaces.
+- **Data Lineage**: Tracking how data flows and transforms across pipelines, notebooks, and reports.
+- **Access Management**: Enforcing data access policies and ensuring compliance.
+- **Data Classification**: Identifying sensitive data using built-in or custom classifiers.
+
+> When to Integrate Purview with Fabric?
+
+1. **You need centralized data governance** across multiple data sources and services within Fabric.
+2. **Compliance and regulatory requirements** demand visibility into data usage, classification, and lineage.
+3. **Your organization handles sensitive data** (e.g., PII, financial data) and needs automated classification and protection.
+4. **You want to empower data consumers** (analysts, scientists, engineers) to discover and understand data assets easily.
+5. **You are scaling your data operations** and need consistent governance policies across teams and projects.
+
+Click to read more about [Microsoft Purview for Fabric - Overview](./Purview-Fabric.md).
 
 ## Networking
 
