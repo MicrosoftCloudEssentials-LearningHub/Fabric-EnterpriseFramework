@@ -32,13 +32,13 @@ Last updated: 2025-05-02
 <summary><b>Table of Content</b> (Click to expand)</summary>
 
 - [Clear Dashboard and Report Structure](#clear-dashboard-and-report-structure)
-    - [Example Report Layout](#example-report-layout)
+  - [Example Report Layout](#example-report-layout)
 - [Parameterization and Dynamic Content](#parameterization-and-dynamic-content)
 - [Incremental Data Refresh](#incremental-data-refresh)
-    - [Optimized Refresh Schedules](#optimized-refresh-schedules)
+  - [Optimized Refresh Schedules](#optimized-refresh-schedules)
 - [Data Modeling and DAX Optimization](#data-modeling-and-dax-optimization)
 - [Security and Governance](#security-and-governance)
-    - [Row-Level Security RLS](#row-level-security-rls)
+  - [Row-Level Security RLS](#row-level-security-rls)
 - [Source Control and Collaboration](#source-control-and-collaboration)
 - [Performance Tuning](#performance-tuning)
 - [Documentation and Maintenance](#documentation-and-maintenance)
@@ -98,7 +98,7 @@ From [Understand star schema and the importance for Power BI](https://learn.micr
 - **Staggered Refreshes**: Schedule refresh operations during off-peak hours to balance resource consumption.  
 - **Monitoring Refresh Performance**: Follow best practices in [Configure scheduled refresh](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh) to monitor and troubleshoot scheduled refresh cycles.
 
-    https://github.com/user-attachments/assets/61780cc9-5778-4c55-8f05-ffbaedd7802c
+    <https://github.com/user-attachments/assets/61780cc9-5778-4c55-8f05-ffbaedd7802c>
 
 ## Data Modeling and DAX Optimization
 
