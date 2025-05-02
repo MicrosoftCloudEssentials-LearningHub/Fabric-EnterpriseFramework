@@ -41,24 +41,19 @@ Key Features:
 
 ## Setup required
 
-1. **F64 Fabric capacity or higher**: Ensure you have the appropriate Fabric capacity.
-2. **Workspace configured with Fabric Capacity**:
+1. Please ensure you read all the [prerequisites](https://learn.microsoft.com/en-us/fabric/data-science/how-to-create-data-agent#prerequisites)
+2. **Tenant switch enabled**: These features must be activated as mentioned here [prerequisites](https://learn.microsoft.com/en-us/fabric/data-science/how-to-create-data-agent#prerequisites)
+ 
+    https://github.com/user-attachments/assets/f0df6fb9-e139-4c97-9b68-a6ea05eb6584
+
+3. **F2 Fabric capacity or higher**: Ensure you have the appropriate Fabric capacity.
+4. **Workspace configured with Fabric Capacity**:
 
     <img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/7fbfb16d-a32a-4540-bd03-e6b3c0412a5b">
 
     <img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/1cb31d49-6138-4c95-835a-a61ccb08661b">
 
-3. **Tenant switch enabled**: This feature must be activated.
-    - Enable tenant configuration for AI Skills:
-    
-      <img width="700" alt="image" src="https://github.com/user-attachments/assets/5930167b-39f1-4165-8876-3cac3bf52780">
-    
-    - Enable tenant configuration for Copilot and AI:
-    
-      <img width="700" alt="image" src="https://github.com/user-attachments/assets/e0aa19e9-e525-4c45-919a-3f6aeaa12b41">
-
-4. **Cross-Geo sharing for AI enabled**: If relevant to your setup, this should be enabled.
-5. **A Warehouse or Lakehouse with data**: You need to have data available in either a Warehouse or Lakehouse.
+5. At least one of these: A warehouse, a lakehouse, one or more Power BI semantic models, or a KQL database with data.
 
 ## How it works
 
