@@ -33,6 +33,7 @@ Last updated: 2025-05-02
 - [Networking](#networking)
 - [Monitoring and Observability](#monitoring-and-observability)
 - [Cost Management](#cost-management)
+- [Best Practices](#best-practices)
 
 </details>
 
@@ -195,6 +196,18 @@ Click to read more about [Microsoft Purview for Fabric - Overview](./Purview-Fab
 | **Automation**   | - **Data Export**: Automate the export of cost data to storage accounts for further analysis.<br/>- **Integration**: Integrate cost data with external tools and processes. |
 
 > Click to read [Billing Report - Overview](./Cost-Management/BillingReport.md), and [Budget & Alerts - Overview](./Cost-Management/BudgetAlerts.md).
+
+## Best Practices 
+
+- [Azure Data Factory (ADF) - Best Practices Overview](./Workloads-Specific/DataFactory/BestPractices.md)
+- [Data Engineering - Best Practices Overview]() - in progress
+- [Data Warehouse - Best Practices Overview]() - in progress
+- [Data Science - Best Practices Overview]() - in progress
+- [Real-Time Intelligence - Best Practices Overview]() - in progress
+- [Power Bi - Best Practices Overview]() - in progress
+- [Copilot - Best Practices Overview]() - in progress
+- [Purview - Best Practices Overview]() - in progress
+- [OneLake - Best Practices Overview]() - in progress
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
