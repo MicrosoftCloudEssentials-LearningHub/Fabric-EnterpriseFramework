@@ -136,8 +136,8 @@ From [Understand star schema and the importance for Power BI](https://learn.micr
 
 > Enhance report responsiveness and reduce resource load by optimizing visuals and query performance.
 
-| **Best Practice**                     | **Description**                                                                                                                | **Example**                                                                                                                                                             |
-|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Best Practice**                     | **Description**   | **Example**    |
+|---------------------------------------|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Optimize Visuals and Interactions**  | Limit the number of visuals per report page and simplify complex interactions to improve performance.                            | Use [Optimize ribbon in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-optimize-ribbon) to pause visuals and control query execution during design. |
 | **DirectQuery Optimization**           | Use features from the Optimize ribbon to streamline DirectQuery interactions and reduce redundant queries.                          | Follow methods in [DirectQuery optimization scenarios with the Optimize ribbon in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-optimize-ribbon-scenarios) to adjust visual refresh behavior. |
 
@@ -145,22 +145,21 @@ From [Understand star schema and the importance for Power BI](https://learn.micr
 
 > Keep your reports self-explanatory and maintain a centralized repository for ongoing support and future enhancements.
 
-| **Best Practice**                     | **Description**                                                                                                              | **Example**                                                                                                                                                              |
-|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Best Practice**                     | **Description**                                                                                                              | **Example**|
+|---------------------------------------|-----------------------------------------------------------|--------------------|
 | **In-Report Annotations**              | Use text boxes, tooltips, and in-report comments to document data sources, transformations, and calculation logic.             | Include explanatory notes within report pages as encouraged in the [Power BI guidance documentation](https://learn.microsoft.com/en-us/power-bi/guidance/).                                                  |
 | **Scheduled Reviews and Updates**      | Periodically review report performance, refresh schedules, and security settings to keep the solution optimized and current.      | Adopt a routine review cycle based on feedback and usage metrics provided by Power BI service administration tools.                                                     |
-| **Centralized Repository**            | Store and version-control all project artifacts (PBIX files, change logs, documentation) in a secure repository.                 | Use Azure DevOps or another Git-based repository, following the practices laid out in the source control sections above.
+| **Centralized Repository**            | Store and version-control all project artifacts (PBIX files, change logs, documentation) in a secure repository.                 | Use Azure DevOps or another Git-based repository, following the practices laid out in the source control sections above. | 
 
 ## Deploying Reports with DevOps Best Practices
 
 > Automate and streamline deployment processes using CI/CD pipelines integrated within your Power BI environment.
 
-| **Best Practice**                     | **Description**                                                                                                                    | **Example**                                                                                                                                                                          |
-|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Best Practice**                     | **Description** | **Example**|
+|---------------------------------------|------------------------------------------------------------|---------------------------------|
 | **Automated Build Pipelines**          | Integrate Git repositories with Azure DevOps to automatically validate and deploy Power BI content.                                   | Refer to [Azure DevOps build pipeline integration with Power BI Desktop projects](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-build-pipelines) for guidance.                       |
 | **Deployment Pipelines via APIs**      | Use the Power BI deployment pipelines APIs to automate report deployment steps and ensure quality across environments.               | Implement automated deployments as described in [Automate deployment pipelines with APIs for Power BI items](https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/pipeline-automation).  |
 | **Continuous Integration**            | Incorporate quality gates and automated testing within your CI/CD process to catch issues early in the development cycle.             | Utilize Git-based integration and automated tests as shown in [Power BI Desktop projects Azure DevOps integration](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-azdo) for best practices.      |
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
