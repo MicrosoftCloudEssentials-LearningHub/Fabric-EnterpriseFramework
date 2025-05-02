@@ -147,7 +147,7 @@ From [Microsoft Documentation](https://learn.microsoft.com/pt-br/fabric/fundamen
 4. **You want to empower data consumers** (analysts, scientists, engineers) to discover and understand data assets easily.
 5. **You are scaling your data operations** and need consistent governance policies across teams and projects.
 
-Click to read more about [Microsoft Purview for Fabric - Overview](./Purview-Fabric.md).
+Click to read more about [Microsoft Purview for Fabric - Overview](./Workloads-Specific/Purview/PurviewforFabric.md).
 
 ## Networking
 
