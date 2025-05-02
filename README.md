@@ -188,6 +188,8 @@ Click to read more about [Microsoft Purview for Fabric - Overview](./Purview-Fab
 | **Reporting**    | - **Custom Reports**: Generate custom reports to share with stakeholders.<br/>- **Power BI Integration**: Use Power BI for advanced reporting and dashboard creation. |
 | **Automation**   | - **Data Export**: Automate the export of cost data to storage accounts for further analysis.<br/>- **Integration**: Integrate cost data with external tools and processes. |
 
+> Click to read [Billing Report - Overview](./Cost-Management/BillingReport.md), and [Budget & Alerts - Overview](./Cost-Management/BudgetAlerts.md).
+
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
