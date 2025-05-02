@@ -9,7 +9,6 @@ Last updated: 2025-05-02
 
 ----------
 
-
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
 
@@ -29,13 +28,13 @@ Last updated: 2025-05-02
 
 </details>
 
-
 > AI skills in Microsoft Fabric enable users to `create conversational AI experiences that answer questions about data stored
 > in lakehouses, warehouses, Power BI semantic models, and KQL databases`. These skills make data insights accessible and
 > actionable, allowing users to `interact with data naturally and receive relevant answers without needing technical expertise`.
 > You can create custom Q&A systems using generative AI, guiding the AI with instructions and examples to ensure it understands your organization's context and data.
 
 Key Features:
+
 - Customizable Q&A Systems: Tailor the AI to answer specific questions relevant to your organization.
 - Generative AI: Leverage advanced AI to interact with your data, enhancing data-driven decision-making.
 - Ease of Use: Once set up, users can simply ask questions and get accurate answers without needing deep technical knowledge.
@@ -47,9 +46,7 @@ Key Features:
 
     <img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/7fbfb16d-a32a-4540-bd03-e6b3c0412a5b">
 
-
     <img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/1cb31d49-6138-4c95-835a-a61ccb08661b">
-
 
 3. **Tenant switch enabled**: This feature must be activated.
     - Enable tenant configuration for AI Skills:
@@ -87,7 +84,6 @@ Key Features:
 
 ## Examples of what to ask 
 
-
 | **Question**                                                                 | **Example of it looks**                                                                                       |
 |------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | **Data Exploration**                                                         |                                                                                                               |
@@ -97,7 +93,6 @@ Key Features:
 | What patterns or trends can you identify in this data?                     |<img width="500" alt="image" src="https://github.com/user-attachments/assets/899653c3-fa41-4834-8606-37759a7f1ad6">               |
 | Can you highlight any correlations between variables?                      | <img width="500" alt="image" src="https://github.com/user-attachments/assets/a9442f38-ade1-45ee-9cb6-4adf8bdbf0f7">              |
 | What are the outliers in this dataset?                                     | <img width="500" alt="image" src="https://github.com/user-attachments/assets/1c0d07b2-91fe-4335-9760-886c10e77bb9">                 |
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
