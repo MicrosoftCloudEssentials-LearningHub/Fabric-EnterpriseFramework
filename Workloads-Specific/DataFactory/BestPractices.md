@@ -1,4 +1,4 @@
-# Azure Data Factory (ADF) Best Practices - Overview
+# Azure Data Factory (ADF) - Best Practices Overview
 
 Costa Rica
 
