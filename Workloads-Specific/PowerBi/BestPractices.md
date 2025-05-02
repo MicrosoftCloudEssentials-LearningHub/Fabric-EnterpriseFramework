@@ -32,18 +32,18 @@ Last updated: 2025-05-02
 <summary><b>Table of Content</b> (Click to expand)</summary>
 
 - [Clear Dashboard and Report Structure](#clear-dashboard-and-report-structure)
-  - [Example Report Layout](#example-report-layout)
+    - [Example Report Layout](#example-report-layout)
 - [Parameterization and Dynamic Content](#parameterization-and-dynamic-content)
 - [Incremental Data Refresh](#incremental-data-refresh)
-  - [Optimized Refresh Schedules](#optimized-refresh-schedules)
+    - [Optimized Refresh Schedules](#optimized-refresh-schedules)
 - [Data Modeling and DAX Optimization](#data-modeling-and-dax-optimization)
 - [Security and Governance](#security-and-governance)
-  - [Row-Level Security (RLS)](#row-level-security-rls)
+    - [Row-Level Security RLS](#row-level-security-rls)
 - [Source Control and Collaboration](#source-control-and-collaboration)
 - [Performance Tuning](#performance-tuning)
 - [Documentation and Maintenance](#documentation-and-maintenance)
 - [Deploying Reports with DevOps Best Practices](#deploying-reports-with-devops-best-practices)
-- [Architecture Examples](#architecture-examples)
+
 </details>
 
 ## Clear Dashboard and Report Structure
