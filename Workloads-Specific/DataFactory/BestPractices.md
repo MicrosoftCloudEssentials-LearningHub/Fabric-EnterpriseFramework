@@ -56,7 +56,6 @@ Last updated: 2025-05-02
 
 </details>
 
-
 ## Clear Pipeline Structure
 
 > Ensure your pipelines are well-organized and easy to understand.
@@ -364,6 +363,7 @@ graph TD
 ## Source Control
 
 > Benefits of Git Integration: <br/>
+>
 > - **Version Control**: Track and audit changes, and revert to previous versions if needed.  <br/>
 > - **Collaboration**: Multiple team members can work on the same project simultaneously.  <br/>
 > - **Incremental Saves**: Save partial changes without publishing them live.  <br/>
