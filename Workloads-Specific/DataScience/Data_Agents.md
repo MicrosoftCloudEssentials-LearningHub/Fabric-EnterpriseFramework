@@ -44,7 +44,7 @@ Key Features:
 1. Please ensure you read all the [prerequisites](https://learn.microsoft.com/en-us/fabric/data-science/how-to-create-data-agent#prerequisites)
 2. **Tenant switch enabled**: These features must be activated as mentioned here [prerequisites](https://learn.microsoft.com/en-us/fabric/data-science/how-to-create-data-agent#prerequisites)
  
-    https://github.com/user-attachments/assets/f0df6fb9-e139-4c97-9b68-a6ea05eb6584
+    <https://github.com/user-attachments/assets/f0df6fb9-e139-4c97-9b68-a6ea05eb6584>
 
 3. **F2 Fabric capacity or higher**: Ensure you have the appropriate Fabric capacity.
 4. **Workspace configured with Fabric Capacity**:
