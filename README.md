@@ -201,13 +201,13 @@ Click to read more about [Microsoft Purview for Fabric - Overview](./Purview-Fab
 
 - [Azure Data Factory (ADF) - Best Practices Overview](./Workloads-Specific/DataFactory/BestPractices.md)
 - [Data Engineering - Best Practices Overview](./Workloads-Specific/DataEngineering/BestPractices.md)
-- [Data Warehouse - Best Practices Overview]() - in progress
-- [Data Science - Best Practices Overview]() - in progress
-- [Real-Time Intelligence - Best Practices Overview]() - in progress
+- [Data Warehouse - Best Practices Overview](./Workloads-Specific/DataWarehouse/BestPractices.md) - in progress
+- [Data Science - Best Practices Overview](./Workloads-Specific/DataScience/BestPractices.md) - in progress
+- [Real-Time Intelligence - Best Practices Overview](./Workloads-Specific/RealTimeIntelligence/BestPractices.md) - in progress
 - [Power Bi - Best Practices Overview](./Workloads-Specific/PowerBi/BestPractices.md)
-- [Copilot - Best Practices Overview]() - in progress
-- [Purview - Best Practices Overview]() - in progress
-- [OneLake - Best Practices Overview]() - in progress
+- [Copilot - Best Practices Overview](./Workloads-Specific/Copilot/BestPractices.md) - in progress
+- [Purview - Best Practices Overview](./Workloads-Specific/Purview/BestPractices.md) - in progress
+- [OneLake - Best Practices Overview](./Workloads-Specific/OneLake/BestPractices.md) - in progress
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
