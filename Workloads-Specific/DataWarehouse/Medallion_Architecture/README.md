@@ -23,13 +23,12 @@ Last updated: 2025-05-03
 
 - [Overview](#overview)
 - [Demo](#demo)
-    - [Step 1: Set Up Your Environment](#step-1-set-up-your-environment)
-    - [Step 2: Ingest Data into the Bronze Layer](#step-2-ingest-data-into-the-bronze-layer)
-    - [Step 3: Transform Data in the Silver Layer](#step-3-transform-data-in-the-silver-layer)
-    - [Step 4: Curate Data in the Gold Layer](#step-4-curate-data-in-the-gold-layer)
-    - [Step 5: Set Up Pipelines for Orchestration](#step-5-set-up-pipelines-for-orchestration)
-    - [Step 6: Enable Data Access for Reporting](#step-6-enable-data-access-for-reporting)
-
+  - [Step 1: Set Up Your Environment](#step-1-set-up-your-environment)
+  - [Step 2: Ingest Data into the Bronze Layer](#step-2-ingest-data-into-the-bronze-layer)
+  - [Step 3: Transform Data in the Silver Layer](#step-3-transform-data-in-the-silver-layer)
+  - [Step 4: Curate Data in the Gold Layer](#step-4-curate-data-in-the-gold-layer)
+  - [Step 5: Set Up Pipelines for Orchestration](#step-5-set-up-pipelines-for-orchestration)
+  - [Step 6: Enable Data Access for Reporting](#step-6-enable-data-access-for-reporting)
 
 </details>
 
@@ -49,7 +48,6 @@ Last updated: 2025-05-03
 > [!IMPORTANT]
 > If you are not able to see the `auto-create report` option neither `copilot` be aware you need to enable AI features in your tenant, click [here](https://github.com/brown9804/MicrosoftCloudEssentialsHub/blob/main/0_Azure/2_AzureAnalytics/0_Fabric/demos/6_PBiCopilot.md#tenant-configuration) to see how.
 
-
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/7eec0098-7b7b-453c-9dbb-ee1a6390577b">
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/4bbb5f10-415b-44b2-8fd0-a5a12482ce2c">
@@ -57,6 +55,7 @@ Last updated: 2025-05-03
 ## Demo 
 
 Implementing a medallion architecture provides several benefits:
+
 - **Data Quality**: By organizing data into layers, you can apply quality checks and transformations in a structured manner, ensuring that the data in the Gold layer is reliable and ready for analysis.
 - **Scalability**: The architecture allows you to scale your data processing pipelines independently for each layer, providing flexibility and efficiency.
 - **Performance**: The Gold layer is optimized for performance, which means that your reporting and analytics queries will run faster.
@@ -79,14 +78,13 @@ Implementing a medallion architecture provides several benefits:
    - Click on `Workspaces`, then select either your existing workspace or create a new one by clicking `New Workspace`:
    - Provide a name and other required details, then create the workspace.
      
-
       <img width="550" alt="image" src="https://github.com/user-attachments/assets/2f3225fc-6aa6-4eeb-8207-75038b36f18f">
 
    - Now, assign the Fabric Capacity to your workspace by clicking on `Workspace settings` and selecting the fabric capacity under the license.
 
       <img width="550" alt="image" src="https://github.com/user-attachments/assets/1831c97d-6b9a-4470-968d-e7803bc58b80">
 
-        https://github.com/user-attachments/assets/c524741c-be91-4fe4-82bc-c841fae8c6c9
+        <https://github.com/user-attachments/assets/c524741c-be91-4fe4-82bc-c841fae8c6c9>
 
 2. **Create Lakehouses**: Set up three lakehouses for the Bronze, Silver, and Gold layers.
 
@@ -98,7 +96,7 @@ Implementing a medallion architecture provides several benefits:
 
       <img width="958" alt="image" src="https://github.com/user-attachments/assets/828adf9d-8722-4bef-8694-8c22de330797">
 
-        https://github.com/user-attachments/assets/fdb64dd2-a6ec-4da0-a385-e55f875c8f8e
+        <https://github.com/user-attachments/assets/fdb64dd2-a6ec-4da0-a385-e55f875c8f8e>
 
 ### Step 2: Ingest Data into the Bronze Layer
 
@@ -116,7 +114,7 @@ Implementing a medallion architecture provides several benefits:
         | --- | --- | 
         |  <img width="550" alt="image" src="https://github.com/user-attachments/assets/09994e75-3029-4f61-aac8-b50f7c5fd2b1"> |  <img width="550" alt="image" src="https://github.com/user-attachments/assets/2b25d187-85e2-48e7-9a97-e7549f28ed9c"> | 
 
-        https://github.com/user-attachments/assets/56308a58-cf72-4f0f-bf3e-e9e1669fa0df
+        <https://github.com/user-attachments/assets/56308a58-cf72-4f0f-bf3e-e9e1669fa0df>
 
 > Suppose you need to extract data from your `sql database`
 
@@ -145,7 +143,7 @@ VALUES
 (5, 'Sarah', 'Davis', '1995-09-30', '2020-11-20', 'Marketing Specialist', 60000.0000);
 ```
 
-https://github.com/user-attachments/assets/357184bf-cc49-4311-84d4-6369514b3366
+<https://github.com/user-attachments/assets/357184bf-cc49-4311-84d4-6369514b3366>
 
 > [!IMPORTANT]
 > Besides using Data pipelines to bring your SQL information, you can also leverage Microsoft Fabric's mirrored SQL capability. This feature allows you to create a mirrored copy of your SQL database, improving data availability, reliability, and disaster recovery. By maintaining a synchronized copy of your database in a different location, it ensures that your data is always accessible, even in the event of a failure or outage.
@@ -155,8 +153,7 @@ https://github.com/user-attachments/assets/357184bf-cc49-4311-84d4-6369514b3366
 > `For example, both Azure SQL Database and Microsoft Fabric are Microsoft products. However, the concept of outbound connections still applies because the data is moving from one service (Azure SQL Database) to another service (Microsoft Fabric), even though they are both within the Microsoft ecosystem. This movement of data is considered outbound because it is leaving the Azure SQL Database environment and entering the Microsoft Fabric environment`. <br/> <br/>
 > Under the Zero Trust Architecture, both inbound and outbound connections are treated with the same level of scrutiny and security protocols. This means that whether the connection is inbound or outbound, it is subject to strict verification processes to ensure it is safe and authorized. Key principles of Zero Trust include verification of every access request, least privilege access, continuous monitoring, and micro-segmentation. By applying these principles, Azure ensures that both inbound and outbound connections are secure, reducing the risk of unauthorized access and data breaches.
 
-
-https://github.com/user-attachments/assets/2a64762a-f120-4448-b0fb-7a49f4d1bedb
+<https://github.com/user-attachments/assets/2a64762a-f120-4448-b0fb-7a49f4d1bedb>
 
 2. **Create Dataflows or Pipelines**: Use Data Factory to create dataflows or pipelines that ingest data into the Bronze lakehouse.
    - In Data Factory, create a new pipeline.
@@ -182,6 +179,7 @@ https://github.com/user-attachments/assets/2a64762a-f120-4448-b0fb-7a49f4d1bedb
             <img width="550" alt="image" src="https://github.com/user-attachments/assets/5e0ae097-e747-47a5-b0c3-e7408e90292a">
 
 ### Step 3: Transform Data in the Silver Layer
+
 1. **Create Notebooks or Dataflows**: Use Fabric's notebooks or dataflows to read data from the Bronze layer.
    - In the Fabric workspace, create a new notebook.
 
@@ -198,6 +196,7 @@ https://github.com/user-attachments/assets/2a64762a-f120-4448-b0fb-7a49f4d1bedb
    - Use the `write.format("delta").save()` method to save the data to the `cleansed_Silver` lakehouse.
 
       > **PySpark Code to Move Data from Bronze to Silver**:
+
         ```python
         # Read data from the Bronze layer
         bronze_df = spark.read.format("delta").load("abfss://<your-container-name>@<your-storage-account-name>.dfs.core.windows.net/<your-bronze-lakehousename>.Lakehouse/Tables/<table name>")
@@ -216,6 +215,7 @@ https://github.com/user-attachments/assets/2a64762a-f120-4448-b0fb-7a49f4d1bedb
         <img width="550" alt="image" src="https://github.com/user-attachments/assets/5affce77-ec21-4b03-881e-877ff2425b9d">
 
 ### Step 4: Curate Data in the Gold Layer
+
 1. **Read Data from Silver Layer**: Use notebooks or dataflows to read data from the Silver lakehouse.
    - In a new notebook, connect to the `cleansed_Silver` lakehouse.
 2. **Apply Business Logic**: Apply any additional business logic or aggregations.
@@ -231,6 +231,7 @@ https://github.com/user-attachments/assets/2a64762a-f120-4448-b0fb-7a49f4d1bedb
         > Applying some transformations: If you want see more, click [here](./src/1_notebook_silver_to_gold.ipynb) to see a sample of the notebook.
 
         > **PySpark Code to Move Data from Silver to Gold**:
+
         ```python
         # Read data from the Silver layer
         silver_df = spark.read.format("delta").load("abfss://<your-container-name>@<your-storage-account-name>.dfs.core.windows.net/<your-silver-lakehouse>.Lakehouse/Tables/<table name>")
@@ -245,9 +246,11 @@ https://github.com/user-attachments/assets/2a64762a-f120-4448-b0fb-7a49f4d1bedb
         # Write data to the Gold layer
         gold_df.write.mode("overwrite").option("mergeSchema", "true").format("delta").save("abfss://<your-container-name>@<your-storage-account-name>.dfs.core.windows.net/<your-gold-lakehouse name>.Lakehouse/Tables/<your table name>")
         ```
+
         <img width="550" alt="image" src="https://github.com/user-attachments/assets/d092d34f-86f5-4853-aea7-88ff4062f4af">
 
 ### Step 5: Set Up Pipelines for Orchestration
+
 1. **Create Pipelines**: Create pipelines to automate the movement of data from the Bronze layer to the Silver layer, and from the Silver layer to the Gold layer.
    - In Data Factory, create a new pipeline.
    - Add a copy activity to move data from the `raw_Bronze` lakehouse to the `cleansed_Silver` lakehouse.
@@ -257,6 +260,7 @@ https://github.com/user-attachments/assets/2a64762a-f120-4448-b0fb-7a49f4d1bedb
    - Consider the frequency of data updates and the latency that is acceptable for your use case.
 
 ### Step 6: Enable Data Access for Reporting
+
 1. **Configure SQL Analytics Endpoint**:
    - Validate if you have the SQL Analytics Endpoint configured, you can review it from workspace view, primarly is required for Gold layer to be accessible to your reporting tools. 
 
