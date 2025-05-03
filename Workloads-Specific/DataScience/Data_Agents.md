@@ -1,4 +1,4 @@
-# Demostration: Data Agents in Microsoft Fabric (Preview)
+# Demonstration: Data Agents in Microsoft Fabric (Preview)
 
 Costa Rica
 
