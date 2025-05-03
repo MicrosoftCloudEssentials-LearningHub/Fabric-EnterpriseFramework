@@ -1,4 +1,4 @@
-# Microsoft Fabric: Automating Pipeline Execution with Activator
+# Demonstration: Automating Pipeline Execution with Activator
 
 Costa Rica
 

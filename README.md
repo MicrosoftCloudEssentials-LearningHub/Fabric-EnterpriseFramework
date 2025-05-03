@@ -173,7 +173,7 @@ Click to read more about [Microsoft Purview for Fabric - Overview](./Workloads-S
 - **Microsoft [Fabric Capacity Metrics](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability/MonitorUsage.md#microsoft-fabric-capacity-metrics-app) app**: Powerful tool for administrators to `monitor and manage their capacity usage`. It provides detailed insights into `capacity utilization, throttling, and system events, helping to optimize performance and resource allocation`. By tracking these metrics, admins can make informed decisions to ensure efficient use of resources.
 - **Admin Monitoring**: Configure and use the [Admin Monitoring Workspace](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability/MonitorUsage.md#admin-monitoring) it's a centralized hub for `tracking and analyzing usage metrics across the organization`. It includes `pre-built reports and semantic models that provide insights into feature adoption, performance, and compliance`. This workspace helps administrators maintain the health and efficiency of their Fabric environment by offering a comprehensive `view of usage patterns and system events`.
 - **Monitor Hub**: Access and utilize the [Monitor Hub](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability/MonitorUsage.md#monitor-hub). Allows users to `view and track the status of activities across all workspaces they have permissions for`. It provides a detailed overview of operations, `including dataset refreshes, Spark job runs, and other activities`. With features like historical views, customizable displays, and filtering options, the Monitor Hub helps ensure smooth operations and timely interventions when needed.
-- **Event Hub Integration**: Use Event Hub to capture and analyze events for real-time monitoring. For example, leverage it for [Automating pipeline execution with Activator](./Monitoring-Observability/FabricActivatorRulePipeline/)
+- **Event Hub Integration**: Use Event Hub to capture and analyze events for real-time monitoring. For example, leverage it for [Automating pipeline execution with Activator](./Workloads-Specific/RealTimeIntelligence/FabricActivatorRulePipeline/)
 - **Alerting**: Configure alerts for critical events and thresholds to ensure timely responses to issues. For example, [Steps to Configure Capacity Alerts](./Monitoring-Observability/StepsCapacityAlert.md)
 
 ## Cost Management 
@@ -202,12 +202,10 @@ Click to read more about [Microsoft Purview for Fabric - Overview](./Workloads-S
 - [Azure Data Factory (ADF) - Best Practices Overview](./Workloads-Specific/DataFactory/BestPractices.md)
 - [Data Engineering - Best Practices Overview](./Workloads-Specific/DataEngineering/BestPractices.md)
 - [Data Warehouse - Best Practices Overview](./Workloads-Specific/DataWarehouse/BestPractices.md) 
-- [Data Science - Best Practices Overview](./Workloads-Specific/DataScience/BestPractices.md) - in progress
-- [Real-Time Intelligence - Best Practices Overview](./Workloads-Specific/RealTimeIntelligence/BestPractices.md) - in progress
+- [Data Science - Best Practices Overview](./Workloads-Specific/DataScience/BestPractices.md) 
+- [Real-Time Intelligence - Best Practices Overview](./Workloads-Specific/RealTimeIntelligence/BestPractices.md)
 - [Power Bi - Best Practices Overview](./Workloads-Specific/PowerBi/BestPractices.md)
-- [Copilot - Best Practices Overview](./Workloads-Specific/Copilot/BestPractices.md) - in progress
 - [Purview - Best Practices Overview](./Workloads-Specific/Purview/BestPractices.md) - in progress
-- [OneLake - Best Practices Overview](./Workloads-Specific/OneLake/BestPractices.md) - in progress
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
