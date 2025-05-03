@@ -86,7 +86,7 @@ Implementing a medallion architecture provides several benefits:
 
       <img width="550" alt="image" src="https://github.com/user-attachments/assets/1831c97d-6b9a-4470-968d-e7803bc58b80">
 
-https://github.com/user-attachments/assets/c524741c-be91-4fe4-82bc-c841fae8c6c9
+        https://github.com/user-attachments/assets/c524741c-be91-4fe4-82bc-c841fae8c6c9
 
 2. **Create Lakehouses**: Set up three lakehouses for the Bronze, Silver, and Gold layers.
 
@@ -98,9 +98,10 @@ https://github.com/user-attachments/assets/c524741c-be91-4fe4-82bc-c841fae8c6c9
 
       <img width="958" alt="image" src="https://github.com/user-attachments/assets/828adf9d-8722-4bef-8694-8c22de330797">
 
-https://github.com/user-attachments/assets/fdb64dd2-a6ec-4da0-a385-e55f875c8f8e
+        https://github.com/user-attachments/assets/fdb64dd2-a6ec-4da0-a385-e55f875c8f8e
 
 ### Step 2: Ingest Data into the Bronze Layer
+
 1. **Identify Data Sources**:
    - Determine the sources from which you'll ingest data.
    - List all the data sources such as databases, APIs, file systems, etc.
@@ -115,7 +116,7 @@ https://github.com/user-attachments/assets/fdb64dd2-a6ec-4da0-a385-e55f875c8f8e
         | --- | --- | 
         |  <img width="550" alt="image" src="https://github.com/user-attachments/assets/09994e75-3029-4f61-aac8-b50f7c5fd2b1"> |  <img width="550" alt="image" src="https://github.com/user-attachments/assets/2b25d187-85e2-48e7-9a97-e7549f28ed9c"> | 
 
-https://github.com/user-attachments/assets/56308a58-cf72-4f0f-bf3e-e9e1669fa0df
+        https://github.com/user-attachments/assets/56308a58-cf72-4f0f-bf3e-e9e1669fa0df
 
 > Suppose you need to extract data from your `sql database`
 
