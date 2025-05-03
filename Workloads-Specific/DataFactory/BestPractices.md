@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-05-02
+Last updated: 2025-05-03
 
 ----------
 
@@ -56,6 +56,9 @@ Last updated: 2025-05-02
 
 </details>
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/658689cd-f045-491f-996c-e64e4008acd1" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
 
 ## Clear Pipeline Structure
 
@@ -364,6 +367,7 @@ graph TD
 ## Source Control
 
 > Benefits of Git Integration: <br/>
+>
 > - **Version Control**: Track and audit changes, and revert to previous versions if needed.  <br/>
 > - **Collaboration**: Multiple team members can work on the same project simultaneously.  <br/>
 > - **Incremental Saves**: Save partial changes without publishing them live.  <br/>
