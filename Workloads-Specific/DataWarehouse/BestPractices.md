@@ -50,7 +50,7 @@ Create a warehouse solution that segments data as follows:
 - Silver Layer: Applies data cleansing, validation, and enrichment.
 - Gold Layer: Produces analytics-ready data using optimized storage formats like Parquet or Delta Lake, with partitioning by date or region. Integrate metadata catalogs and RBAC controls for added governance.
 
-> Here is a [reference of a medallion architecture using only Fabric](./Workloads-Specific/DataWarehouse/Medallion_Archuitecture/). If you need to handle `complex data transformations and large-scale data processing`, you can use our combined solution of **Fabric + Databricks**. This powerful combination leverages the strengths of both platforms to provide a robust data processing pipeline. This workshop on [Fabric with Databricks for Data Analytics](https://microsoft.github.io/TechExcel-Fabric-with-Databricks-for-Data-Analytics/) offers a comprehensive step-by-step guide on developing Medallion Architecture using Fabric and Databricks. <br/>
+> Here is a [reference of a medallion architecture using only Fabric](./Workloads-Specific/DataWarehouse/Medallion_Architecture/). If you need to handle `complex data transformations and large-scale data processing`, you can use our combined solution of **Fabric + Databricks**. This powerful combination leverages the strengths of both platforms to provide a robust data processing pipeline. This workshop on [Fabric with Databricks for Data Analytics](https://microsoft.github.io/TechExcel-Fabric-with-Databricks-for-Data-Analytics/) offers a comprehensive step-by-step guide on developing Medallion Architecture using Fabric and Databricks. <br/>
 
 | Medallion Architecture using only Fabric | Medallion Architecture Fabric + Databricks | 
 | --- | --- | 
