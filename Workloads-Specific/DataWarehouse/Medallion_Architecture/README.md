@@ -1,4 +1,4 @@
-# Demostration: Medallion Architecture Overview
+# Demonstration: Medallion Architecture Overview
 
 Costa Rica
 
