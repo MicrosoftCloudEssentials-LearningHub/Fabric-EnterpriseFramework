@@ -56,6 +56,10 @@ Last updated: 2025-05-03
 
 </details>
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/658689cd-f045-491f-996c-e64e4008acd1" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
 ## Clear Pipeline Structure
 
 > Ensure your pipelines are well-organized and easy to understand.
