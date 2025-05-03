@@ -13,6 +13,10 @@ Last updated: 2025-05-03
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [Real-Time Intelligence documentation in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/)
+- [What is Real-Time Intelligence?](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/overview)
+- [Implement medallion architecture in Real-Time Intelligence](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/architecture-medallion)
+
 </details>
 
 <details>
@@ -45,7 +49,11 @@ Last updated: 2025-05-03
                                          
 ## Dynamic Activator Configuration
 
-> Implement Activator to respond to events with rule-based triggers that can automatically initiate workflows, send notifications, or activate remediation processes. Ensure that your activation rules are flexible and customizable so that actions can be fine-tuned to the specific nuances of your environment. For example: Set up Activator rules that trigger alerts or automated remedial actions when certain thresholds are reached—such as a sudden spike in error events or a dip in transaction volumes. For example, configure the system to send an SMS or email alert when abnormal patterns are detected, and automatically adjust system parameters via an integrated ITSM tool. 
+> Implement Activator to respond to events with rule-based triggers that can automatically initiate workflows, send notifications, or activate remediation processes. Ensure that your activation rules are flexible and customizable so that actions can be fine-tuned to the specific nuances of your environment. For example: Set up Activator rules that trigger alerts or automated remedial actions when certain thresholds are reached—such as a sudden spike in error events or a dip in transaction volumes. For example, configure the system to send an SMS or email alert when abnormal patterns are detected, and automatically adjust system parameters via an integrated ITSM tool.
+
+Click to read [Demonstration: Automating Pipeline Execution with Activator](./FabricActivatorRulePipeline): Shows how to set up Microsoft Fabric Activator to automate workflows by detecting file creation events in a storage system and triggering another pipeline to run.
+
+   <https://github.com/user-attachments/assets/0a1dab70-2317-4636-b0be-aa0cb301b496>
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
