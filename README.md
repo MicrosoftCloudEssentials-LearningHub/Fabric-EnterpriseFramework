@@ -203,7 +203,7 @@ Click to read more about [Microsoft Purview for Fabric - Overview](./Workloads-S
 - [Data Engineering - Best Practices Overview](./Workloads-Specific/DataEngineering/BestPractices.md)
 - [Data Warehouse - Best Practices Overview](./Workloads-Specific/DataWarehouse/BestPractices.md) 
 - [Data Science - Best Practices Overview](./Workloads-Specific/DataScience/BestPractices.md) 
-- [Real-Time Intelligence - Best Practices Overview](./Workloads-Specific/RealTimeIntelligence/BestPractices.md) - in progress
+- [Real-Time Intelligence - Best Practices Overview](./Workloads-Specific/RealTimeIntelligence/BestPractices.md)
 - [Power Bi - Best Practices Overview](./Workloads-Specific/PowerBi/BestPractices.md)
 - [Purview - Best Practices Overview](./Workloads-Specific/Purview/BestPractices.md) - in progress
 
