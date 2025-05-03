@@ -46,6 +46,10 @@ Last updated: 2025-05-02
 
 </details>
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/cb0bbc10-f812-47a7-860e-3e498be777de" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
 ## Clear Dashboard and Report Structure
 
 > Ensure that your Power BI dashboards and reports are organized, visually cohesive, and provide clear insights at a glance.
