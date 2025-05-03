@@ -30,6 +30,10 @@ Last updated: 2025-05-03
 
 > Ensure that your data science workflows in Microsoft Fabric are built for rapid experimentation, efficient model management, and seamless deployment. Each element should be managed with clear versioning, detailed documentation, and reproducible environments, enabling a smooth transition from experimentation to production.
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f86cdba7-e9a6-4ce1-8dcc-912b7f438398" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
 ## ML Model Management 
 
 > Use model registries integrated within Fabric to store and version your models. Include a descriptive README, link relevant experiment IDs, and attach performance metrics such as accuracy, AUC, and confusion matrices. For example, link your production-ready model (v#.#) from a registered repository along with its associated validation metrics and deployment instructions.  
