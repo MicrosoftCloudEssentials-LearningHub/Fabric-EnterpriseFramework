@@ -31,7 +31,7 @@ Last updated: 2025-05-03
   <img src="https://github.com/user-attachments/assets/708fcd7b-4315-4f88-a149-d2c0824ee08f" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
-## Structured Eventhouse Implementation	
+## Structured Eventhouse Implementation 
 
 > Design your Eventhouse to serve as the backbone of your real-time data ingestion. Organize event data using defined schemas, partitioning strategies, and indexing to optimize for both immediate query performance and historical analysis. This approach enhances data governance and ensures that critical event details are captured for quick retrieval and auditing. E.g `Create dedicated partitions in Eventhouse based on time windows or event type. For instance, set up policies to automatically archive older events while retaining a hot partition for current data. This enables rapid detection of anomalies and supports retrospective analysis when patterns or trends need to be reviewed.`
 
