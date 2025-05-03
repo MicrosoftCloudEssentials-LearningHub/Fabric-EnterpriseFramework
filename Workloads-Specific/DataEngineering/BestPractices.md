@@ -61,7 +61,7 @@ Last updated: 2025-05-02
    - **Comprehensive Schema Documentation:** Create detailed, auto-generated documentation for every endpoint; include sample queries, expected responses, and precise error messages to aid developer understanding.
    - **Robust Error Handling:** Implement consistent, informative error responses and integrate thorough test suites to guarantee smooth operation and backward compatibility as the API evolves.
 
-       https://github.com/user-attachments/assets/8971651d-9aff-4b41-94ca-9a35b9241f22
+       <https://github.com/user-attachments/assets/8971651d-9aff-4b41-94ca-9a35b9241f22>
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
