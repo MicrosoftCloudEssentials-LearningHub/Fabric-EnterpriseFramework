@@ -37,8 +37,6 @@ Last updated: 2025-05-03
 ## Experiment Tracking & Management 
 
 > Set up an experiment dashboard that automatically logs training runs. For instance, record runs with various hyperparameter combinations, tag them with unique identifiers, and visualize comparative metrics over multiple iterations. This dashboard can help you decide whether a model trained with early stopping or one with higher epochs best meets performance goals.
-
-<https://github.com/user-attachments/assets/4c73eaaa-cf03-47cf-807b-69007c8df704>
                                                                                                        
 ## Reproducible Environments 
 
