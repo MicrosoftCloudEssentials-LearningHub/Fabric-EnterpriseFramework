@@ -10,6 +10,7 @@ Last updated: 2025-04-21
 ----------
 
 > This process shows how to set up Microsoft Fabric Activator to automate workflows by detecting file creation events in a storage system and triggering another pipeline to run. <br/>
+>
 > 1. **First Pipeline**: The process starts with a pipeline that ends with a `Copy Data` activity. This activity uploads data into the `Lakehouse`. <br/>
 > 2. **Event Stream Setup**: An `Event Stream` is configured in Activator to monitor the Lakehouse for file creation or data upload events. <br/>
 > 3. **Triggering the Second Pipeline**: Once the event is detected (e.g., a file is uploaded), the Event Stream triggers the second pipeline to continue the workflow.
