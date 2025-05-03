@@ -30,6 +30,8 @@ Last updated: 2025-05-03
 
 > Develop an isolated sample warehouse to prototype, test, and train on the data warehouse structure. This environment mimics the production warehouse architecture but contains a representative subset of data. Its purpose is to validate new queries, ETL routines, and performance tuning while insulating production operations from potential disruptions.	You can deploy a sample warehouse using anonymized or synthetic data. For example, use a smaller, mirrored version of the production warehouse structure to experiment with SQL queries, develop new ETL pipelines, or train team members without impacting live data and processes.
 
+https://github.com/user-attachments/assets/acaecdd1-e81c-4e3a-b14a-db054f700f3e
+
 ## Structured Warehouse Implementation	
 
 > Build a robust, centralized data warehouse that organizes data into well-defined layers (often referred to as Bronze, Silver, and Gold). Layering the data warehouse ensures fast query performance, streamlined management, and strong governance. Leverage proper indexing, partitioning schemes, metadata tagging, and lineage tracking to support compliance and facilitate troubleshooting.	
@@ -38,6 +40,13 @@ Create a warehouse solution that segments data as follows:
 - Bronze Layer: Ingests raw, untransformed data maintaining source fidelity.
 - Silver Layer: Applies data cleansing, validation, and enrichment.
 - Gold Layer: Produces analytics-ready data using optimized storage formats like Parquet or Delta Lake, with partitioning by date or region. Integrate metadata catalogs and RBAC controls for added governance.
+
+> Here is a [reference of a medallion architecture using only Fabric](./Workloads-Specific/DataWarehouse/Medallion_Archuitecture/). <br/>
+> If you need to handle `complex data transformations and large-scale data processing`, you can use our combined solution of **Fabric + Databricks**. This powerful combination leverages the strengths of both platforms to provide a robust data processing pipeline. This workshop on [Fabric with Databricks for Data Analytics](https://microsoft.github.io/TechExcel-Fabric-with-Databricks-for-Data-Analytics/) offers a comprehensive step-by-step guide on developing Medallion Architecture using Fabric and Databricks. <br/>
+
+| Medallion Architecture using only Fabric | Medallion Architecture Fabric + Databricks | 
+| --- | --- | 
+|   <img width="550" alt="image" src="https://github.com/user-attachments/assets/b4394d54-9bb0-453b-abf8-cfaaa8e532d2" /> |   <img width="550" alt="image" src="https://github.com/user-attachments/assets/c866098c-ffd1-4438-bc77-565786c91601">
 
 ## Interactive Notebooks for Data Warehousing	
 
