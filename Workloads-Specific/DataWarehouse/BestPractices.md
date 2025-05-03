@@ -6,28 +6,53 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-05-03
+Last updated: 2025-05-02
 
 ----------
+
+> Ensure that your data warehouse solution is engineered for scalability, resilience, and efficient integration of diverse data sources. Every component (from the core warehouse to mirrored databases) should adhere to strict best practices for structure, documentation, and management, ensuring long-term maintainability and robust disaster recovery.
 
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
 </details>
 
-> Ensure that your data warehouse solution is engineered for scalability, resilience, and efficient integration of diverse data sources. Every component (from the core warehouse to mirrored databases) should adhere to strict best practices for structure, documentation, and management, ensuring long-term maintainability and robust disaster recovery.
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
 
-| **Best Practice** | **Description** | **Example** |
-|---------------|-------|-------------------|
-| **Structured Warehouse Implementation**   | Build a robust, centralized data warehouse that organizes data into well-defined layers (often referred to as Bronze, Silver, and Gold). Layering the data warehouse ensures fast query performance, streamlined management, and strong governance. Leverage proper indexing, partitioning schemes, metadata tagging, and lineage tracking to support compliance and facilitate troubleshooting.| Create a warehouse solution that segments data as follows:<br>- **Bronze Layer:** Ingests raw, untransformed data maintaining source fidelity.<br>- **Silver Layer:** Applies data cleansing, validation, and enrichment.<br>- **Gold Layer:** Produces analytics-ready data using optimized storage formats like Parquet or Delta Lake, with partitioning by date or region. Integrate metadata catalogs and RBAC controls for added governance. |
-| **Sample Warehouse Environment**          | Develop an isolated sample warehouse to prototype, test, and train on the data warehouse structure. This environment mimics the production warehouse architecture but contains a representative subset of data. Its purpose is to validate new queries, ETL routines, and performance tuning while insulating production operations from potential disruptions.| Deploy a sample warehouse using anonymized or synthetic data. For example, use a smaller, mirrored version of the production warehouse structure to experiment with SQL queries, develop new ETL pipelines, or train team members without impacting live data and processes.|
-| **Interactive Notebooks for Data Warehousing**    | Use interactive notebooks as exploratory and documentation tools for your warehouse operations. These notebooks serve as an effective interface for testing queries, performing data analysis, and capturing transformation logic. Rich markdown annotations, code segmentation, and version control increase collaboration while ensuring reproducibility across the team.| Create notebooks that are segmented into distinct sections:<br>- **Data Loading:** Scripts to pull data from the warehouse.<br>- **Data Transformation:** Blocks that illustrate cleaning and enrichment steps.<br>- **Analysis & Visualization:** SQL queries and charts generated from warehouse data, supplemented with detailed markdown explanations and inline comments to clarify business logic.|
-| **Mirrored Azure SQL Database**           | Implement mirroring for your Azure SQL Database to enhance high availability and enable robust disaster recovery. This mirroring facilitates load balancing, supports failover scenarios, and enables non-disruptive maintenance (crucial for mission-critical operations).                                                                                                 | Configure a mirrored Azure SQL Database with geo-redundancy and automatic failover. For example, use Azure’s built-in replication to maintain a secondary copy that seamlessly takes over during primary instance outages, ensuring continuous data availability.|
-| **Mirrored Snowflake**                    | Establish a mirrored Snowflake instance to boost resilience and data consistency. Mirroring your Snowflake environment can help you maintain continuous integration testing and rapid recovery in case of primary instance failures, while also ensuring global replication consistency.                                                   | Deploy a Snowflake mirror by setting up data replication between your primary instance and a secondary environment. Regularly validate synchronization and monitor rollback capabilities to confirm that the mirror remains current and can support operations during failover or testing cycles.|
-| **Mirrored Azure Cosmos DB (Preview)**    | Leverage the preview features of mirrored Azure Cosmos DB to set up a redundant NoSQL datastore. This setup targets high availability and low latency access for globally distributed applications, providing additional resilience through multi-region replication and load balancing.                                                     | Configure an Azure Cosmos DB mirroring setup in preview mode that replicates data across multiple regions. Test the environment by simulating high-load queries and failover events to ensure that global access is maintained with minimal latency.|
-| **Mirrored Azure Database for PostgreSQL (Preview)** | Utilize mirroring for Azure Database for PostgreSQL (in preview) to boost availability and support continuous operations. This safeguards maintenance activities, minimizes downtime, and ensures the consistency of transactional workloads.                                                                              | Set up a mirrored Azure Database for PostgreSQL in its preview configuration. Create read replicas with continuous synchronization, perform failover drills, and track replication latency to guarantee that the mirrored instance maintains data integrity and high availability during operational stress.|
-| **Mirrored Azure SQL Managed Instance (Preview)** | Deploy a mirrored configuration for Azure SQL Managed Instance (preview) to combine the power of SQL Server with cloud agility. This approach underpins your enterprise’s disaster recovery strategy and supports legacy workloads with advanced data security and resiliency.                                                                                                         | Configure an Azure SQL Managed Instance in a mirrored setup using strategies like log shipping or transactional replication. Monitor key performance metrics to ensure that replication latency is minimal, and the mirror is capable of supporting a swift transition during outages or maintenance windows.|
-| **Mirrored Database (Preview)**            | Implement a generic mirrored database solution (in preview) to test cross-platform replication strategies. This flexible approach allows you to verify that your mirroring configurations, error-handling, and failover processes are robust before production rollout.                                                                                          | Set up a mirrored database configuration that synchronizes periodically with a primary instance. Schedule automated tests and synchronization checks, and simulate failover events to validate that the data remains consistent, with built-in alerts and monitoring demonstrating the mirror’s readiness for production use.|
+</details>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/47c01e2a-48aa-4bc5-9a0f-fd2630618687" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
+## Sample Warehouse Environment	
+
+> Develop an isolated sample warehouse to prototype, test, and train on the data warehouse structure. This environment mimics the production warehouse architecture but contains a representative subset of data. Its purpose is to validate new queries, ETL routines, and performance tuning while insulating production operations from potential disruptions.	You can deploy a sample warehouse using anonymized or synthetic data. For example, use a smaller, mirrored version of the production warehouse structure to experiment with SQL queries, develop new ETL pipelines, or train team members without impacting live data and processes.
+
+## Structured Warehouse Implementation	
+
+> Build a robust, centralized data warehouse that organizes data into well-defined layers (often referred to as Bronze, Silver, and Gold). Layering the data warehouse ensures fast query performance, streamlined management, and strong governance. Leverage proper indexing, partitioning schemes, metadata tagging, and lineage tracking to support compliance and facilitate troubleshooting.	
+
+Create a warehouse solution that segments data as follows:
+- Bronze Layer: Ingests raw, untransformed data maintaining source fidelity.
+- Silver Layer: Applies data cleansing, validation, and enrichment.
+- Gold Layer: Produces analytics-ready data using optimized storage formats like Parquet or Delta Lake, with partitioning by date or region. Integrate metadata catalogs and RBAC controls for added governance.
+
+## Interactive Notebooks for Data Warehousing	
+
+> Use interactive notebooks as exploratory and documentation tools for your warehouse operations. These notebooks serve as an effective interface for testing queries, performing data analysis, and capturing transformation logic. Rich markdown annotations, code segmentation, and version control increase collaboration while ensuring reproducibility across the team.
+
+Create notebooks that are segmented into distinct sections:
+- Data Loading: Scripts to pull data from the warehouse.
+- Data Transformation: Blocks that illustrate cleaning and enrichment steps.
+- Analysis & Visualization: SQL queries and charts generated from warehouse data, supplemented with detailed markdown explanations and inline comments to clarify business logic.
+
+## Using Mirroring to Your Benefit
+
+> Mirroring offers a modern, efficient way to continuously and seamlessly access and ingest data from operational databases or data warehouses. It works by replicating a snapshot of the source database into OneLake, and then keeping that replica in near real-time sync with the original. This ensures that your data is always up to date and readily available for analytics or downstream processing. `As part of the value offering, each Fabric compute SKU includes a built-in allowance of free Mirroring storage, proportional to the compute capacity you provision. For example, provisioning an F64 SKU grants you 64 terabytes of free Mirroring storage. You only begin incurring OneLake storage charges if your mirrored data exceeds this free limit or if the compute capacity is paused.` Click [here](https://azure.microsoft.com/en-us/pricing/details/microsoft-fabric/?msockid=38ec3806873362243e122ce086486339) to read more about it.
+
+
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
