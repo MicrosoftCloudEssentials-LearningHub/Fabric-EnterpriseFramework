@@ -1,4 +1,4 @@
-# Copilot - Best Practices Overview
+# Demonstration: How to train a ML model with AutoML
 
 Costa Rica
 
@@ -10,10 +10,15 @@ Last updated: 2025-05-03
 
 ----------
 
-<details>
-<summary><b>List of References</b> (Click to expand)</summary>
+> How to create an experiment to train a ML model with AutoML:
 
-</details>
+<https://github.com/user-attachments/assets/4c73eaaa-cf03-47cf-807b-69007c8df704>
+
+Click to see notebook generated [Train a ML model with AutoML](./Train_MLmodel_AutoML.ipynb)
+
+> Run the notebook the generated: 
+
+<https://github.com/user-attachments/assets/6dfedbac-beb7-4025-9a42-f98dade7f431>
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
