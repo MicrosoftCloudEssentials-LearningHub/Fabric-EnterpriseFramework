@@ -18,7 +18,7 @@ Click to see notebook generated [Train a ML model with AutoML](./Train_MLmodel_A
 
 > Run the notebook the generated: 
 
-https://github.com/user-attachments/assets/6dfedbac-beb7-4025-9a42-f98dade7f431
+<https://github.com/user-attachments/assets/6dfedbac-beb7-4025-9a42-f98dade7f431>
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
