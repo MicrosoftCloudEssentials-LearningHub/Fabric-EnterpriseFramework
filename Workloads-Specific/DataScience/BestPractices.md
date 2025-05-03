@@ -50,7 +50,7 @@ Last updated: 2025-05-03
 
 > Integrate the Data Agent into your pipeline to automatically validate incoming datasets for completeness and consistency. For instance, set up rules that flag missing data or out-of-range values and trigger notifications when anomalies are detected. Track and document these incidents to help refine the agent’s calibration, ensuring that data passing to your experiments meets quality standards.  
 
-Click to read [Demonstration: Data Agents in Microsoft Fabric](./Workloads-Specific/DataScience/Data_Agents.md).
+Click to read [Demonstration: Data Agents in Microsoft Fabric](./Data_Agents.md).
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
