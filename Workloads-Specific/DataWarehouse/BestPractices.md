@@ -34,17 +34,18 @@ Last updated: 2025-05-03
   <img src="https://github.com/user-attachments/assets/47c01e2a-48aa-4bc5-9a0f-fd2630618687" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
-## Sample Warehouse Environment	
+## Sample Warehouse Environment 
 
-> Develop an isolated sample warehouse to prototype, test, and train on the data warehouse structure. This environment mimics the production warehouse architecture but contains a representative subset of data. Its purpose is to validate new queries, ETL routines, and performance tuning while insulating production operations from potential disruptions.	You can deploy a sample warehouse using anonymized or synthetic data. For example, use a smaller, mirrored version of the production warehouse structure to experiment with SQL queries, develop new ETL pipelines, or train team members without impacting live data and processes.
+> Develop an isolated sample warehouse to prototype, test, and train on the data warehouse structure. This environment mimics the production warehouse architecture but contains a representative subset of data. Its purpose is to validate new queries, ETL routines, and performance tuning while insulating production operations from potential disruptions. You can deploy a sample warehouse using anonymized or synthetic data. For example, use a smaller, mirrored version of the production warehouse structure to experiment with SQL queries, develop new ETL pipelines, or train team members without impacting live data and processes.
 
-https://github.com/user-attachments/assets/acaecdd1-e81c-4e3a-b14a-db054f700f3e
+<https://github.com/user-attachments/assets/acaecdd1-e81c-4e3a-b14a-db054f700f3e>
 
-## Structured Warehouse Implementation	
+## Structured Warehouse Implementation 
 
-> Build a robust, centralized data warehouse that organizes data into well-defined layers (often referred to as Bronze, Silver, and Gold). Layering the data warehouse ensures fast query performance, streamlined management, and strong governance. Leverage proper indexing, partitioning schemes, metadata tagging, and lineage tracking to support compliance and facilitate troubleshooting.	
+> Build a robust, centralized data warehouse that organizes data into well-defined layers (often referred to as Bronze, Silver, and Gold). Layering the data warehouse ensures fast query performance, streamlined management, and strong governance. Leverage proper indexing, partitioning schemes, metadata tagging, and lineage tracking to support compliance and facilitate troubleshooting. 
 
 Create a warehouse solution that segments data as follows:
+
 - Bronze Layer: Ingests raw, untransformed data maintaining source fidelity.
 - Silver Layer: Applies data cleansing, validation, and enrichment.
 - Gold Layer: Produces analytics-ready data using optimized storage formats like Parquet or Delta Lake, with partitioning by date or region. Integrate metadata catalogs and RBAC controls for added governance.
@@ -55,11 +56,12 @@ Create a warehouse solution that segments data as follows:
 | --- | --- | 
 |   <img width="550" alt="image" src="https://github.com/user-attachments/assets/b4394d54-9bb0-453b-abf8-cfaaa8e532d2" /> |   <img width="550" alt="image" src="https://github.com/user-attachments/assets/c866098c-ffd1-4438-bc77-565786c91601"> | 
 
-## Interactive Notebooks for Data Warehousing	
+## Interactive Notebooks for Data Warehousing 
 
 > Use interactive notebooks as exploratory and documentation tools for your warehouse operations. These notebooks serve as an effective interface for testing queries, performing data analysis, and capturing transformation logic. Rich markdown annotations, code segmentation, and version control increase collaboration while ensuring reproducibility across the team.
 
 Create notebooks that are segmented into distinct sections:
+
 - Data Loading: Scripts to pull data from the warehouse.
 - Data Transformation: Blocks that illustrate cleaning and enrichment steps.
 - Analysis & Visualization: SQL queries and charts generated from warehouse data, supplemented with detailed markdown explanations and inline comments to clarify business logic.
