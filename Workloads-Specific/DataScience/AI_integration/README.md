@@ -1,4 +1,4 @@
-# Demostration: How to integrate AI in Microsoft Fabric
+# Demonstration: How to integrate AI in Microsoft Fabric
 
 Costa Rica
 
