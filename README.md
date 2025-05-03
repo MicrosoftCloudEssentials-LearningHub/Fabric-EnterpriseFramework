@@ -202,7 +202,7 @@ Click to read more about [Microsoft Purview for Fabric - Overview](./Workloads-S
 - [Azure Data Factory (ADF) - Best Practices Overview](./Workloads-Specific/DataFactory/BestPractices.md)
 - [Data Engineering - Best Practices Overview](./Workloads-Specific/DataEngineering/BestPractices.md)
 - [Data Warehouse - Best Practices Overview](./Workloads-Specific/DataWarehouse/BestPractices.md) 
-- [Data Science - Best Practices Overview](./Workloads-Specific/DataScience/BestPractices.md) - in progress
+- [Data Science - Best Practices Overview](./Workloads-Specific/DataScience/BestPractices.md) 
 - [Real-Time Intelligence - Best Practices Overview](./Workloads-Specific/RealTimeIntelligence/BestPractices.md) - in progress
 - [Power Bi - Best Practices Overview](./Workloads-Specific/PowerBi/BestPractices.md)
 - [Copilot - Best Practices Overview](./Workloads-Specific/Copilot/BestPractices.md) - in progress
