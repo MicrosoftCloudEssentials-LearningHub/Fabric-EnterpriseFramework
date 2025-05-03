@@ -92,7 +92,7 @@ Implementing a medallion architecture provides several benefits:
 
    - In your Fabric workspace, create three lakehouses named `raw_Bronze`, `cleansed_Silver`, and `curated_Gold`.
 
-      <img src="https://github.com/user-attachments/assets/5827c73a-1291-4fb6-a2c6-0c61f4808164" width="550"> 
+      <img width="550" alt="image" src="https://github.com/user-attachments/assets/5827c73a-1291-4fb6-a2c6-0c61f4808164">
 
       <img width="550" alt="image" src="https://github.com/user-attachments/assets/ca3c64c7-d414-4ec0-8cbc-cf39548bf758">
 
