@@ -205,7 +205,7 @@ Click to read more about [Microsoft Purview for Fabric - Overview](./Workloads-S
 - [Data Science - Best Practices Overview](./Workloads-Specific/DataScience/BestPractices.md) 
 - [Real-Time Intelligence - Best Practices Overview](./Workloads-Specific/RealTimeIntelligence/BestPractices.md)
 - [Power Bi - Best Practices Overview](./Workloads-Specific/PowerBi/BestPractices.md)
-- [Purview - Best Practices Overview](./Workloads-Specific/Purview/BestPractices.md) - in progress
+- [Purview - Best Practices Overview](./Workloads-Specific/Purview/BestPractices.md) 
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
