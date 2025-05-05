@@ -41,8 +41,8 @@ Last updated: 2025-05-05
 <details>
 <summary><b> Detailed Table: Free vs Enterprise </b> (Click to expand)</summary>
 
-| **Feature**                        | **Purview Free**                                                                                       | **Purview Enterprise**                                                                                       |
-|------------------------------------|--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| **Feature**                        | **Purview Free**                                                                                       | **Purview Enterprise**|
+|------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | **Data Catalog**                   | Basic cataloging capabilities. <br> Limited to 1,000 annotated assets.| Full cataloging capabilities. <br> No limit on the number of annotated assets.|
 | **Data Discovery**                 | Limited to Azure and Microsoft Fabric resources. <br> Auto discovery of Azure data sources.| Supports a wide range of data sources, including on-premises, multicloud, and SaaS applications. <br> Automated scans for the hybrid data estate.       |
 | **Data Lineage**                   | Basic lineage tracking for a limited set of data sources.| Comprehensive lineage tracking across all supported data sources.|
@@ -91,7 +91,6 @@ Last updated: 2025-05-05
 
 > Ensure that **metadata scanning is enabled** for all relevant Fabric workspaces.
 > This allows Purview to automatically discover and register items like: Lakehouses, Dataflows, Semantic models, Reports <br/>
->
 > - Scanning can be configured at the **workspace level** or **tenant level** by an admin.
 
 1. **Configure tenant settings**:
@@ -107,15 +106,17 @@ Last updated: 2025-05-05
      - Use the **Purview portal** or **scanner APIs** to initiate a scan.
      - You can perform full, incremental, or scoped scans depending on your governance needs.
 
+       https://github.com/user-attachments/assets/a815517c-f19a-41a7-a4eb-efbaf138a883
+
 3. **Where to monitor**: Once scanning is active, go to the **Purview hub in Fabric** to view registered items, lineage graphs, and metadata properties.
 
 ### 3. **View and Explore the Unified Catalog**
 
-- Once scanning is active, go to the **“Data Catalog”** section within the Purview hub.
+- Once scanning is active, go to the `Data Catalog` section within the Purview hub.
 - Here, you can:
   - Search for datasets, models, and reports.
   - View **metadata** such as schema, owner, last modified date.
-  - See **data lineage**—how data flows from source to report.
+  - See **data lineage** (e.g how data flows from source to report).
   - Filter by sensitivity labels, endorsements, or domains.
 
 ### 4. **Use Lineage for Impact Analysis**
