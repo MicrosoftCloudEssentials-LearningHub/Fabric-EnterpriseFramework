@@ -26,9 +26,9 @@ Last updated: 2025-05-05
 <summary><b>Table of Content</b> (Click to expand)</summary>
 
 - [Unified Data Catalog](#unified-data-catalog)
-    - [Access the Purview Hub in Fabric](#access-the-purview-hub-in-fabric)
-    - [Enable Metadata Scanning](#enable-metadata-scanning)
-    - [View and Explore the Unified Catalog](#view-and-explore-the-unified-catalog)
+  - [Access the Purview Hub in Fabric](#access-the-purview-hub-in-fabric)
+  - [Enable Metadata Scanning](#enable-metadata-scanning)
+  - [View and Explore the Unified Catalog](#view-and-explore-the-unified-catalog)
 - [Sensitivity Labeling](#sensitivity-labeling)
 - [Data Loss Prevention DLP](#data-loss-prevention-dlp)
 - [End-to-End Lineage](#end-to-end-lineage)
@@ -125,17 +125,16 @@ Last updated: 2025-05-05
   - See **data lineage** (e.g how data flows from source to report).
   - Filter by sensitivity labels, endorsements, or domains.
 - Use Lineage for Impact Analysis
-    - Click on any item to view its **lineage graph**.
-    - This shows upstream and downstream dependencies (e.g., a semantic model feeding into multiple reports).
-    - Use this to assess the impact of changes or troubleshoot data issues.
+  - Click on any item to view its **lineage graph**.
+  - This shows upstream and downstream dependencies (e.g., a semantic model feeding into multiple reports).
+  - Use this to assess the impact of changes or troubleshoot data issues.
 
-
-      https://github.com/user-attachments/assets/846f63f1-9d53-45ae-9812-9375b93d139f
+      <https://github.com/user-attachments/assets/846f63f1-9d53-45ae-9812-9375b93d139f>
 
 - Promote Discoverability
-    - Add **descriptions, tags, and endorsements** to important items.
-    - This helps other users find and trust the right data assets.
-    - Encourage data producers to maintain metadata hygiene.
+  - Add **descriptions, tags, and endorsements** to important items.
+  - This helps other users find and trust the right data assets.
+  - Encourage data producers to maintain metadata hygiene.
 
 ## Sensitivity Labeling 
 
@@ -156,7 +155,6 @@ Last updated: 2025-05-05
 ## Trust & Endorsement
 
 > Encourage data producers to endorse trusted datasets and models. Use tags and descriptions to improve discoverability and promote reuse. This builds a culture of data trust and reduces duplication. Click [Govern your Fabric data](https://learn.microsoft.com/en-us/fabric/governance/onelake-catalog-govern)
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
