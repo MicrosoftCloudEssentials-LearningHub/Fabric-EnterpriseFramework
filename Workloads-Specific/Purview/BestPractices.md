@@ -35,7 +35,6 @@ Last updated: 2025-05-05
 > [!NOTE]
 > Below is how to upgrade from `Free` account.
 
-
 > `Purview Free`: Provides basic data governance capabilities, suitable for small-scale or initial exploration of Purview’s features. It includes basic cataloging, limited data discovery, and basic compliance tools. <br/>
 > `Purview Enterprise`: Offers comprehensive data governance, protection, and compliance features. It supports a wide range of data sources, advanced classification, full DLP, information protection, compliance management, and seamless integration with Azure services.
 
@@ -66,14 +65,14 @@ Last updated: 2025-05-05
 
 </details>
 
-https://github.com/user-attachments/assets/9d644322-d3fc-4827-92d3-a623e39e55de
-
+<https://github.com/user-attachments/assets/9d644322-d3fc-4827-92d3-a623e39e55de>
 
 ## Unified Data Catalog
 
 > Use the Microsoft Purview Unified Catalog to automatically register and view metadata for Fabric items. This helps users discover datasets, semantic models, and reports with full lineage and context. Ensure metadata scanning is enabled across all Fabric workspaces.
 
 > [!IMPORTANT]
+>
 > - **Admins** can configure scanning policies and permissions in the **Microsoft Purview governance portal**. <br/>
 > - Ensure that **Fabric is registered as a data source** in Purview. <br/>
 > - Use **role-based access control (RBAC)** to manage who can view or edit catalog metadata.
