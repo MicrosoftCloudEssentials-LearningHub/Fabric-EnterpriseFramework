@@ -82,7 +82,7 @@ Last updated: 2025-05-05
 > - Ensure that **Fabric is registered as a data source** in Purview. <br/>
 > - Use **role-based access control (RBAC)** to manage who can view or edit catalog metadata.
 
-### 1. **Access the Purview Hub in Fabric**
+### Access the Purview Hub in Fabric
 
 - Go to the [Microsoft Fabric portal](https://app.fabric.microsoft.com/)
 - Click on ⚙️, select **“Purview hub”**.
@@ -92,7 +92,7 @@ Last updated: 2025-05-05
 
     <https://github.com/user-attachments/assets/cf5f5a25-29bd-4b78-9d3c-c926026e13be>
 
-### 2. **Enable Metadata Scanning**
+### Enable Metadata Scanning
 
 > Ensure that **metadata scanning is enabled** for all relevant Fabric workspaces.
 > This allows Purview to automatically discover and register items like: Lakehouses, Dataflows, Semantic models, Reports <br/>
@@ -116,7 +116,7 @@ Last updated: 2025-05-05
 
 3. **Where to monitor**: Once scanning is active, go to the **Purview hub in Fabric** to view registered items, lineage graphs, and metadata properties.
 
-### 3. **View and Explore the Unified Catalog**
+### View and Explore the Unified Catalog
 
 - Once scanning is active, go to the `Data Map` section within the [Purview hub](
 - Here, you can:
