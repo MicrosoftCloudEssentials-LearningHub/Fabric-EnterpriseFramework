@@ -54,6 +54,8 @@ Last updated: 2025-05-05
 ### 2. **Enable Metadata Scanning**
 
 > Ensure that **metadata scanning is enabled** for all relevant Fabric workspaces.
+> This allows Purview to automatically discover and register items like: Lakehouses, Dataflows, Semantic models, Reports <br/>
+> - Scanning can be configured at the **workspace level** or **tenant level** by an admin.
 
 1. **Configure tenant settings**:
    - In the [Fabric admin portal](https://app.fabric.microsoft.com/), go to **Tenant Settings**.
@@ -64,18 +66,11 @@ Last updated: 2025-05-05
     
         https://github.com/user-attachments/assets/276cf0bd-e388-4b59-89b3-5a07de214ae8
 
-  2.. **Run a scan**:
-         - Use the **Purview portal** or **scanner APIs** to initiate a scan.
-         - You can perform full, incremental, or scoped scans depending on your governance needs.
+2. **Run a scan**:
+     - Use the **Purview portal** or **scanner APIs** to initiate a scan.
+     - You can perform full, incremental, or scoped scans depending on your governance needs.
 
-- This allows Purview to automatically discover and register items like:
-  - Lakehouses
-  - Dataflows
-  - Semantic models
-  - Reports
-- Scanning can be configured at the **workspace level** or **tenant level** by an admin.
-- **Where to monitor**: Once scanning is active, go to the **Purview hub in Fabric** to view registered items, lineage graphs, and metadata properties.
-
+3. **Where to monitor**: Once scanning is active, go to the **Purview hub in Fabric** to view registered items, lineage graphs, and metadata properties.
 
 ### 3. **View and Explore the Unified Catalog**
 - Once scanning is active, go to the **“Data Catalog”** section within the Purview hub.
