@@ -37,6 +37,7 @@ Last updated: 2025-05-05
 > Use the Microsoft Purview Unified Catalog to automatically register and view metadata for Fabric items. This helps users discover datasets, semantic models, and reports with full lineage and context. Ensure metadata scanning is enabled across all Fabric workspaces.
 
 > [!IMPORTANT]
+>
 > - **Admins** can configure scanning policies and permissions in the **Microsoft Purview governance portal**. <br/>
 > - Ensure that **Fabric is registered as a data source** in Purview. <br/>
 > - Use **role-based access control (RBAC)** to manage who can view or edit catalog metadata.
@@ -49,12 +50,13 @@ Last updated: 2025-05-05
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/9f22b062-051f-41b3-b480-4c109d332a57" />  
 
-    https://github.com/user-attachments/assets/cf5f5a25-29bd-4b78-9d3c-c926026e13be
+    <https://github.com/user-attachments/assets/cf5f5a25-29bd-4b78-9d3c-c926026e13be>
 
 ### 2. **Enable Metadata Scanning**
 
 > Ensure that **metadata scanning is enabled** for all relevant Fabric workspaces.
 > This allows Purview to automatically discover and register items like: Lakehouses, Dataflows, Semantic models, Reports <br/>
+>
 > - Scanning can be configured at the **workspace level** or **tenant level** by an admin.
 
 1. **Configure tenant settings**:
@@ -64,7 +66,7 @@ Last updated: 2025-05-05
 
    - Enable detailed metadata scanning, and allow service principal access:
     
-        https://github.com/user-attachments/assets/276cf0bd-e388-4b59-89b3-5a07de214ae8
+        <https://github.com/user-attachments/assets/276cf0bd-e388-4b59-89b3-5a07de214ae8>
 
 2. **Run a scan**:
      - Use the **Purview portal** or **scanner APIs** to initiate a scan.
@@ -73,6 +75,7 @@ Last updated: 2025-05-05
 3. **Where to monitor**: Once scanning is active, go to the **Purview hub in Fabric** to view registered items, lineage graphs, and metadata properties.
 
 ### 3. **View and Explore the Unified Catalog**
+
 - Once scanning is active, go to the **“Data Catalog”** section within the Purview hub.
 - Here, you can:
   - Search for datasets, models, and reports.
@@ -81,16 +84,18 @@ Last updated: 2025-05-05
   - Filter by sensitivity labels, endorsements, or domains.
 
 ### 4. **Use Lineage for Impact Analysis**
+
 - Click on any item to view its **lineage graph**.
 - This shows upstream and downstream dependencies (e.g., a semantic model feeding into multiple reports).
 - Use this to assess the impact of changes or troubleshoot data issues.
 
 ### 5. **Promote Discoverability**
+
 - Add **descriptions, tags, and endorsements** to important items.
 - This helps other users find and trust the right data assets.
 - Encourage data producers to maintain metadata hygiene.
 
-## Sensitivity Labeling	
+## Sensitivity Labeling 
 
 > Apply sensitivity labels to all Fabric items (e.g., Lakehouses, semantic models, reports) using `Microsoft Purview Information Protection`. Labels persist across exports and help enforce data protection policies. Regularly audit label usage and ensure labels align with your data classification framework.
 
@@ -106,15 +111,13 @@ Last updated: 2025-05-05
 
 > Use tenant, domain, and workspace-level settings to delegate governance responsibilities. Platform admins should define global policies, while domain and workspace admins manage local configurations. This supports scalability and autonomy.
 
-##  Trust & Endorsement
+## Trust & Endorsement
 
 > Encourage data producers to endorse trusted datasets and models. Use tags and descriptions to improve discoverability and promote reuse. This builds a culture of data trust and reduces duplication.
 
 ## Monitoring & Auditing
 
 > Use the Purview hub in Fabric to monitor sensitivity labels, DLP activity, and data access. Regularly review audit logs to detect anomalies and ensure compliance with internal and external regulations.
-
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
