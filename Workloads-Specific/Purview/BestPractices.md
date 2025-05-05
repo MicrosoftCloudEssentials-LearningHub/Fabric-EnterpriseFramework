@@ -10,12 +10,15 @@ Last updated: 2025-05-05
 
 ----------
 
+> Use the Purview hub in Fabric to monitor sensitivity labels, DLP activity, and data access. Regularly review audit logs to detect anomalies and ensure compliance with internal and external regulations.
+
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
 - [Use Microsoft Purview to govern Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/governance/microsoft-purview-fabric)
 - [Governance overview and guidance](https://learn.microsoft.com/en-us/fabric/governance/governance-compliance-overview)
 - [Metadata scanning overview](https://learn.microsoft.com/en-us/fabric/governance/metadata-scanning-overview)
+- [Get started with sensitivity labels](https://learn.microsoft.com/en-us/purview/get-started-with-sensitivity-labels)
 
 </details>
 
@@ -113,48 +116,45 @@ Last updated: 2025-05-05
 
 ### 3. **View and Explore the Unified Catalog**
 
-- Once scanning is active, go to the `Data Catalog` section within the Purview hub.
+- Once scanning is active, go to the `Data Map` section within the [Purview hub](
 - Here, you can:
   - Search for datasets, models, and reports.
   - View **metadata** such as schema, owner, last modified date.
   - See **data lineage** (e.g how data flows from source to report).
   - Filter by sensitivity labels, endorsements, or domains.
+- Use Lineage for Impact Analysis
+    - Click on any item to view its **lineage graph**.
+    - This shows upstream and downstream dependencies (e.g., a semantic model feeding into multiple reports).
+    - Use this to assess the impact of changes or troubleshoot data issues.
 
-### 4. **Use Lineage for Impact Analysis**
 
-- Click on any item to view its **lineage graph**.
-- This shows upstream and downstream dependencies (e.g., a semantic model feeding into multiple reports).
-- Use this to assess the impact of changes or troubleshoot data issues.
+      https://github.com/user-attachments/assets/846f63f1-9d53-45ae-9812-9375b93d139f
 
-### 5. **Promote Discoverability**
-
-- Add **descriptions, tags, and endorsements** to important items.
-- This helps other users find and trust the right data assets.
-- Encourage data producers to maintain metadata hygiene.
+- Promote Discoverability
+    - Add **descriptions, tags, and endorsements** to important items.
+    - This helps other users find and trust the right data assets.
+    - Encourage data producers to maintain metadata hygiene.
 
 ## Sensitivity Labeling 
 
-> Apply sensitivity labels to all Fabric items (e.g., Lakehouses, semantic models, reports) using `Microsoft Purview Information Protection`. Labels persist across exports and help enforce data protection policies. Regularly audit label usage and ensure labels align with your data classification framework.
+> Apply sensitivity labels to all Fabric items (e.g., Lakehouses, semantic models, reports) using `Microsoft Purview Information Protection`. Labels persist across exports and help enforce data protection policies. Regularly audit label usage and ensure labels align with your data classification framework. Click [Learn about sensitivity labels](https://learn.microsoft.com/en-us/purview/sensitivity-labels).
 
 ## Data Loss Prevention (DLP)
 
-> Implement DLP policies for Power BI semantic models to prevent accidental data leaks. Define rules that restrict sharing or exporting sensitive data. Monitor DLP alerts and refine policies based on usage patterns.
+> Implement DLP policies for Power BI semantic models to prevent accidental data leaks. Define rules that restrict sharing or exporting sensitive data. Monitor DLP alerts and refine policies based on usage patterns. Click to [Learn about data loss prevention](https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp)
 
 ## End-to-End Lineage
 
-> Enable data lineage tracking to visualize how data flows from sources (e.g., OneLake, SQL, Cosmos DB) through transformations to reports. Use this to assess impact before making changes and to support compliance audits.
+> Enable data lineage tracking to visualize how data flows from sources (e.g., OneLake, SQL, Cosmos DB) through transformations to reports. Use this to assess impact before making changes and to support compliance audits. Click [Data lineage user guide](https://learn.microsoft.com/en-us/purview/data-governance-classic-lineage-user-guide)
 
 ## Role-Based Governance
 
-> Use tenant, domain, and workspace-level settings to delegate governance responsibilities. Platform admins should define global policies, while domain and workspace admins manage local configurations. This supports scalability and autonomy.
+> Use tenant, domain, and workspace-level settings to delegate governance responsibilities. Platform admins should define global policies, while domain and workspace admins manage local configurations. This supports scalability and autonomy. Click [Data governance roles and permissions in Microsoft Purview](https://learn.microsoft.com/en-us/purview/data-governance-roles-permissions)
 
 ## Trust & Endorsement
 
-> Encourage data producers to endorse trusted datasets and models. Use tags and descriptions to improve discoverability and promote reuse. This builds a culture of data trust and reduces duplication.
+> Encourage data producers to endorse trusted datasets and models. Use tags and descriptions to improve discoverability and promote reuse. This builds a culture of data trust and reduces duplication. Click [Govern your Fabric data](https://learn.microsoft.com/en-us/fabric/governance/onelake-catalog-govern)
 
-## Monitoring & Auditing
-
-> Use the Purview hub in Fabric to monitor sensitivity labels, DLP activity, and data access. Regularly review audit logs to detect anomalies and ensure compliance with internal and external regulations.
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
