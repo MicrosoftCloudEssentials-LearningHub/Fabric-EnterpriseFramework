@@ -32,12 +32,48 @@ Last updated: 2025-05-05
 
 </details>
 
+> [!NOTE]
+> Below is how to upgrade from `Free` account.
+
+
+> `Purview Free`: Provides basic data governance capabilities, suitable for small-scale or initial exploration of Purview’s features. It includes basic cataloging, limited data discovery, and basic compliance tools. <br/>
+> `Purview Enterprise`: Offers comprehensive data governance, protection, and compliance features. It supports a wide range of data sources, advanced classification, full DLP, information protection, compliance management, and seamless integration with Azure services.
+
+<details>
+<summary><b> Detailed Table: Free vs Enterprise </b> (Click to expand)</summary>
+
+| **Feature**                        | **Purview Free**                                                                                       | **Purview Enterprise**                                                                                       |
+|------------------------------------|--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| **Data Catalog**                   | Basic cataloging capabilities. <br> Limited to 1,000 annotated assets.| Full cataloging capabilities. <br> No limit on the number of annotated assets.|
+| **Data Discovery**                 | Limited to Azure and Microsoft Fabric resources. <br> Auto discovery of Azure data sources.| Supports a wide range of data sources, including on-premises, multicloud, and SaaS applications. <br> Automated scans for the hybrid data estate.       |
+| **Data Lineage**                   | Basic lineage tracking for a limited set of data sources.| Comprehensive lineage tracking across all supported data sources.|
+| **Data Classification**            | Basic classification capabilities. <br> Definition and manual application of classifications and terms.| Advanced classification with automatic labeling and sensitivity labels. <br> Automated application of classifications and terms.|
+| **Data Loss Prevention (DLP)**     | Not included.| Full DLP capabilities to prevent unauthorized sharing of sensitive information.|
+| **Information Protection**         | Not included.| Includes encryption and access controls to protect sensitive data.|
+| **Compliance Management**          | Basic compliance tools.| Comprehensive compliance management, including Compliance Manager and audit capabilities.              |
+| **Data Quality**                   | Basic data profiling.| Advanced data quality features, including quality rules and continuous monitoring.                     |
+| **Insider Risk Management**        | Not included.| Full insider risk management capabilities to detect and respond to potential data leaks.|
+| **eDiscovery**| Not included.| Full eDiscovery capabilities for legal and compliance investigations.|
+| **Integration with Azure Services**| Limited integration with Azure services.| Seamless integration with a wide range of Azure services, including Synapse Analytics, SQL, and Power BI. |
+| **Data Map**                       | Basic data map capabilities. <br> Manual creation of assets using the data map APIs.| Full data map with detailed visualizations and relationship tracking. <br> Full use of Microsoft Purview's REST APIs.|
+| **Monitoring and Reporting**       | Basic monitoring and reporting.| Advanced monitoring and reporting, including Data Estate Insights.|
+| **User Access**                    | Limited to data curators. <br> Role group access control to platform and apps.| Full access for all users, including data stewards and analysts. <br> Fine-grained, collection-level access control to platform and apps.|
+| **Support and SLA**                | Community support.| Enterprise-grade support and SLA.|
+| **Workflows**                      | Not included.                                                                                     | Included.|
+| **Business Rules**                 | Not included.| Included.|
+| **Support for Business Assets and Managed Attributes** | Not included.| Included.|
+| **Descriptions, Tags, and Contacts** | Manual descriptions, tags, and contacts.| Manual and bulk descriptions, tags, and contacts.|
+
+</details>
+
+https://github.com/user-attachments/assets/9d644322-d3fc-4827-92d3-a623e39e55de
+
+
 ## Unified Data Catalog
 
 > Use the Microsoft Purview Unified Catalog to automatically register and view metadata for Fabric items. This helps users discover datasets, semantic models, and reports with full lineage and context. Ensure metadata scanning is enabled across all Fabric workspaces.
 
 > [!IMPORTANT]
->
 > - **Admins** can configure scanning policies and permissions in the **Microsoft Purview governance portal**. <br/>
 > - Ensure that **Fabric is registered as a data source** in Purview. <br/>
 > - Use **role-based access control (RBAC)** to manage who can view or edit catalog metadata.
