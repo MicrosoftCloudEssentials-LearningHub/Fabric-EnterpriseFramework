@@ -26,12 +26,14 @@ Last updated: 2025-05-05
 <summary><b>Table of Content</b> (Click to expand)</summary>
 
 - [Unified Data Catalog](#unified-data-catalog)
+    - [Access the Purview Hub in Fabric](#access-the-purview-hub-in-fabric)
+    - [Enable Metadata Scanning](#enable-metadata-scanning)
+    - [View and Explore the Unified Catalog](#view-and-explore-the-unified-catalog)
 - [Sensitivity Labeling](#sensitivity-labeling)
 - [Data Loss Prevention DLP](#data-loss-prevention-dlp)
 - [End-to-End Lineage](#end-to-end-lineage)
 - [Role-Based Governance](#role-based-governance)
 - [Trust & Endorsement](#trust--endorsement)
-- [Monitoring & Auditing](#monitoring--auditing)
 
 </details>
 
