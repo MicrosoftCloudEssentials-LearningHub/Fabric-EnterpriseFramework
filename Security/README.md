@@ -14,6 +14,7 @@ Last updated: 2025-05-08
 - [Semantic Models Permissions](./SemanticModelsPermissions.md): Semantic Models
 - [Dashboards Permissions](./DashboardPermissions.md): Dashboards
 - [Copy Job Permissions](./CopyJobPermissions.md): Copy Job
+- [Data Pipelines Permissions](./DataPipelinesPermissions.md): Data Pipelines 
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
