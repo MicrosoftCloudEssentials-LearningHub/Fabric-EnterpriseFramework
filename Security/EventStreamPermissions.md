@@ -20,9 +20,8 @@ Last updated: 2025-05-08
 </details>
 
 > [!NOTE]
-> `Workspace roles in Microsoft Fabric (Admin, Member, Contributor, Viewer) grant access to all items within the workspace, not just Event Streams.`  
-> This includes Dashboards, Semantic Models, Data Warehouses, Notebooks, Pipelines, Copy Jobs, and more.  
-> There is currently no way to assign permissions to Event Streams individually, access is inherited from the user's role in the workspace.
+> As now, access to Event Stream is controlled `entirely through workspace roles (Admin, Member, Contributor, Viewer).`
+> `There is no support for assigning permissions to individual Event Stream` or managing them through SQL-like GRANT, REVOKE, or DENY statements.
 
 <div align="center">
   <img width="700" alt="image" src="https://github.com/user-attachments/assets/66b7a6ec-12fb-4f22-af45-fd481caa3f30" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
