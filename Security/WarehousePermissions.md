@@ -21,6 +21,13 @@ Last updated: 2025-05-08
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
+- [Read all data using SQL](#read-all-data-using-sql)
+- [Read all OneLake data and subscribe to events](#read-all-onelake-data-and-subscribe-to-events)
+- [Build reports on the default semantic models](#build-reports-on-the-default-semantic-models)
+- [Monitor queries](#monitor-queries)
+- [Audit queries](#audit-queries)
+- [Share granted permissions](#share-granted-permissions)
+
 </details>
 
 > `Data Warehouse` is a centralized repository for `storing large volumes of structured data`. It is optimized for querying and analysis, providing high-performance SQL-based analytics.
@@ -44,15 +51,63 @@ Last updated: 2025-05-08
 
 ## Read all data using SQL 
 
+> Permissions:
+> - Read <br/>
+> - Read Data
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/a7e4b48d-cefb-447f-8f50-e4f1499444e3">
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/6fc51fef-8fd9-4f5c-9b2d-2944e02a21de" />
+
 ## Read all OneLake data and subscribe to events
+
+> Permissions:
+> - Read <br/>
+> - Read All <br/>
+> - Subscribe OneLake Events 
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/8f16dce7-aaf6-46c4-b5c6-b4f14bf88353">
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/a368c386-4ada-411a-b83d-54222139e603" />
 
 ## Build reports on the default semantic models
 
+> Permissions:
+> - Read <br/>
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/43d1685f-94ca-42fb-a1e3-29e49db63e75">
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/fd9a4469-2447-44b0-a50b-c7e9d956770f" />
+
 ## Monitor queries
+
+> Permissions:
+> - Read <br/>
+> - Monitor 
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/06f59fbc-d595-4265-824b-469ca35fabea">
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/50b22d07-9fcd-46d4-a1d3-d35061b74960">
 
 ## Audit queries
 
+> Permissions:
+> - Read <br/>
+> - Audit
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/24aa044c-9afa-4748-8b43-141fde0d1a1a">
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/e40c788b-8d0e-4a9e-9fbe-2afa87214a20">
+
 ## Share granted permissions
+
+> Permissions:
+> - Read <br/>
+> - Reshare 
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/2e526411-c109-440d-834d-cb9c3c81a31b">
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/72e6c5b5-7946-436c-857a-88b69a074cfd">
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
