@@ -72,9 +72,7 @@ Last updated: 2025-05-08
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/88691b89-1356-49a1-9945-8ec82c21ae3a">
 
-
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/124e1a5f-728f-4360-bdeb-3e4b86fe33bd">
-
 
 ## Lakehouse Semantic Model
 
