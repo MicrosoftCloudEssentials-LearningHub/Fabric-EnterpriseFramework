@@ -52,6 +52,7 @@ Last updated: 2025-05-08
 ## Read all data using SQL 
 
 > Permissions:
+>
 > - Read <br/>
 > - Read Data
 
@@ -59,8 +60,8 @@ Last updated: 2025-05-08
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/6fc51fef-8fd9-4f5c-9b2d-2944e02a21de" />
 
-
 > Here you can grant: <br/>
+>
 > - Reshare <br/>
 > - Build <br/>
 > - Write 
@@ -72,6 +73,7 @@ Last updated: 2025-05-08
 ## Read all OneLake data and subscribe to events
 
 > Permissions:
+>
 > - Read <br/>
 > - Read All <br/>
 > - Subscribe OneLake Events 
@@ -83,6 +85,7 @@ Last updated: 2025-05-08
 ## Build reports on the default semantic models
 
 > Permissions:
+>
 > - Read <br/>
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/43d1685f-94ca-42fb-a1e3-29e49db63e75">
@@ -92,6 +95,7 @@ Last updated: 2025-05-08
 ## Monitor queries
 
 > Permissions:
+>
 > - Read <br/>
 > - Monitor 
 
@@ -102,6 +106,7 @@ Last updated: 2025-05-08
 ## Audit queries
 
 > Permissions:
+>
 > - Read <br/>
 > - Audit
 
@@ -112,6 +117,7 @@ Last updated: 2025-05-08
 ## Share granted permissions
 
 > Permissions:
+>
 > - Read <br/>
 > - Reshare 
 
