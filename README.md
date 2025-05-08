@@ -122,7 +122,7 @@ From [Microsoft Documentation](https://learn.microsoft.com/pt-br/fabric/fundamen
 
 ## Security
 
-> Implementing robust security measures ensures that sensitive data is protected, access is controlled, and compliance requirements are met.
+> Implementing robust security measures ensures that sensitive data is protected, access is controlled, and compliance requirements are met. Click to read more about [Security \& Governance](./Security/)
 
 | **Category** | **Description** |
 |--------------|-----------------|
