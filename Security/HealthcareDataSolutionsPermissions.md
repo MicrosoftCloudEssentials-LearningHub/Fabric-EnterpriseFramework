@@ -9,17 +9,26 @@ Last updated: 2025-05-08
 
 ------------------------------------------
 
-> 
+> `Healthcare Data Solution` in Microsoft Fabric is a `comprehensive and secure framework` designed to manage, integrate, and analyze healthcare data across various systems. It enables seamless data movement and transformation using tools like Copy Jobs, Pipelines, and Event Streams, supporting ingestion into `OneLake`, `Data Warehouses`, or `Lakehouses`. Healthcare Data Solutions are ideal for `clinical data integration, regulatory reporting, population health analytics, and interoperability`, providing a scalable and compliant foundation for delivering insights and improving patient outcomes.
 
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [Overview of healthcare data solutions in Microsoft Fabric](https://learn.microsoft.com/en-us/industry/healthcare/healthcare-data-solutions/overview)
+- [Compliance and security in healthcare data solutions in Microsoft Fabric](https://learn.microsoft.com/en-us/industry/healthcare/healthcare-data-solutions/compliance?toc=%2Findustry%2Fhealthcare%2Ftoc.json&bc=%2Findustry%2Fbreadcrumb%2Ftoc.json)
+
 </details>
 
 > [!NOTE]
+> `There is currently no support for assigning permissions to individual Healthcare Data Solutions`, nor can access be managed using SQL-like `GRANT`, `REVOKE`, or `DENY` statements.  
+> For healthcare organizations handling regulated data (e.g., PHI or clinical records), it's essential to structure workspaces carefully and apply role-based access control (RBAC) at the workspace level to maintain compliance and data governance.
 
 <div align="center">
-  <img width="700" alt="image" src="" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img width="700" alt="image" src="https://github.com/user-attachments/assets/6f3a21b9-a38e-438d-821b-9e4fe73bf3b7" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
+<div align="center">
+  <img width="700" alt="image" src="https://github.com/user-attachments/assets/25dede78-ef39-497c-a9da-3d86d9ad24f7" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
 > [!IMPORTANT]
