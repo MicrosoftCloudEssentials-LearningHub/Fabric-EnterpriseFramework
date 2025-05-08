@@ -29,6 +29,7 @@ Last updated: 2025-05-03
 - [Infrastructure as Code IaC](#infrastructure-as-code-iac)
 - [Source Control Integration](#source-control-integration)
 - [Security](#security)
+- [Role Based Access Control](#role-based-access-control) 
 - [Microsoft Purview for Fabric](#microsoft-purview-for-fabric)
 - [Networking](#networking)
 - [Monitoring and Observability](#monitoring-and-observability)
@@ -122,13 +123,21 @@ From [Microsoft Documentation](https://learn.microsoft.com/pt-br/fabric/fundamen
 
 ## Security
 
-> Implementing robust security measures ensures that sensitive data is protected, access is controlled, and compliance requirements are met. Click to read more about [Security \& Governance](./Security/)
+> Implementing robust security measures ensures that sensitive data is protected, access is controlled, and compliance requirements are met. 
 
 | **Category** | **Description** |
 |--------------|-----------------|
 | **Identity & Access Management (IAM)** | -  **RBAC:** Assign permissions based on user roles for simplified management. <br/> -  **ABAC:** Implement dynamic, context-aware access based on attributes. <br/> -  **RLS & CLS:** Apply row- and column-level security using dynamic filters and selective visibility. <br/> -  **MFA, SSO & MSI:** Enhance authentication with multi-factor methods, streamline access via single sign-on, and utilize managed service identities to avoid hard-coded credentials. |
 | **Data Protection & Encryption** | -  **Data Masking:** Hide sensitive information from unauthorized users. <br/> -  **Audit Logs:** Keep detailed records to monitor user activities and detect anomalies. <br/> -  **Encryption at Rest:** Use Azure Storage Service Encryption and Transparent Data Encryption (TDE) to protect stored data. <br/> -  **Encryption in Transit:** Secure communications with TLS/SSL protocols and VPNs. |
 | **Networking & Granular Controls** | -  **Granular Security Controls:** Implement layered security measures to comprehensively protect sensitive data. <br/> -  **Networking:** Leverage Fabric’s unified platform to simplify secure network configurations. For more details, see [Networking](#networking) |
+
+## Role Based Access Control 
+
+> Role-Based Access Control (RBAC)
+
+- **Workspace Roles**: Define roles within the Fabric workspace to control access to resources.  
+- **Object-Level Roles**: Implement roles at the object level to manage permissions for specific data objects. Click to read more about [Security \& Governance by Object Level](./Security/) 
+- **Purview Integration**: Use Microsoft Purview to manage and enforce data governance policies.
 
 ## Microsoft Purview for Fabric
 
