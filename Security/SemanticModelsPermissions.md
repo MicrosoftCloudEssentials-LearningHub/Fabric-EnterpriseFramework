@@ -18,7 +18,6 @@ Last updated: 2025-05-08
 
 </details>
 
-
 > Semantic Model is a `curated layer` that provides a `business-friendly view of data`. It abstracts complex data structures into understandable entities, measures, and relationships, enabling users to create reports and perform analysis without needing to write complex queries. E.g `custom data view`.
 
 <div align="center">
