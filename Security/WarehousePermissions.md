@@ -59,6 +59,16 @@ Last updated: 2025-05-08
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/6fc51fef-8fd9-4f5c-9b2d-2944e02a21de" />
 
+
+> Here you can grant: <br/>
+> - Reshare <br/>
+> - Build <br/>
+> - Write 
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/b4330145-f98e-40e0-b10b-441597749d45" />
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/92283e55-0260-46b7-b683-12f50eb84e46" />
+
 ## Read all OneLake data and subscribe to events
 
 > Permissions:
