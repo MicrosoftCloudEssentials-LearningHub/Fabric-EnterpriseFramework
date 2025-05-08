@@ -29,7 +29,10 @@ Last updated: 2025-05-03
 - [Infrastructure as Code IaC](#infrastructure-as-code-iac)
 - [Source Control Integration](#source-control-integration)
 - [Security](#security)
-- [Role Based Access Control](#role-based-access-control) 
+- [Role Based Access Control](#role-based-access-control)
+- [Data Protection](#data-protection)
+- [Data Lineage and Cataloging](#data-lineage-and-cataloging)
+- [Data Governance](#data-governance)
 - [Microsoft Purview for Fabric](#microsoft-purview-for-fabric)
 - [Networking](#networking)
 - [Monitoring and Observability](#monitoring-and-observability)
@@ -138,6 +141,22 @@ From [Microsoft Documentation](https://learn.microsoft.com/pt-br/fabric/fundamen
 - **Workspace Roles**: Define roles within the Fabric workspace to control access to resources.  
 - **Object-Level Roles**: Implement roles at the object level to manage permissions for specific data objects. Click to read more about [Security \& Governance by Object Level](./Security/) 
 - **Purview Integration**: Use Microsoft Purview to manage and enforce data governance policies.
+
+## Data Protection
+
+- **Data Encryption**: Encrypt sensitive data both at rest and in transit.
+- **Data Masking**: Implement data masking techniques to protect sensitive information.
+- **Compliance**: Ensure compliance with relevant regulations and standards (e.g., GDPR, HIPAA).
+
+## Data Lineage and Cataloging
+
+- **Data Lineage**: Track data lineage to understand the flow and transformations of data within the platform.
+- **Data Catalog**: Use Microsoft Purview to create a comprehensive data catalog for easy discovery and management of data assets.
+
+## Data Governance
+
+- **Data Policies**: Define and enforce data governance policies to ensure data quality, security, and compliance.
+- **Data Stewardship**: Assign data stewards to manage and oversee data governance practices.
 
 ## Microsoft Purview for Fabric
 
