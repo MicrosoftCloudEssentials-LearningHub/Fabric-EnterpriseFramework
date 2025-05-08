@@ -9,6 +9,9 @@ Last updated: 2025-05-02
 
 ----------
 
+> [!NOTE]
+> When you create a `semantic model in Microsoft Fabric`, it supports `incremental refresh` configurations defined in `Power BI Desktop as well as Fabric’s` own refresh orchestration tools. This allows you to set up policies such as retaining historical data while refreshing only recent periods, and once the model is published to Fabric, those settings are preserved and enforced. However, it is important to note that if you are working with a `Power BI semantic model`, the `incremental refresh must be configured in Power BI Desktop before publishing to Fabric`. Once published, you cannot define or modify the incremental refresh policy directly in the Fabric service. `This distinction ensures that refresh behavior is consistent and optimized, but it also means planning and configuration must be done in advance when using Power BI semantic models.`
+
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
