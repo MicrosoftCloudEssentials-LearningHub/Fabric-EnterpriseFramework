@@ -9,7 +9,6 @@ Last updated: 2025-05-08
 
 ------------------------------------------
 
-
 > `Copy Job` in Microsoft Fabric is a `data movement operation` that enables users to transfer data from one location to another within the Fabric ecosystem or from external sources. It supports a wide range of connectors and formats, allowing seamless ingestion into `OneLake`, `Data Warehouses`, or `Lakehouses`. Copy Jobs are ideal for `ETL/ELT workflows, data onboarding, and integration scenarios`, providing a scalable and efficient way to automate data loading and refresh processes across environments.
 
 <details>
@@ -30,7 +29,7 @@ Last updated: 2025-05-08
 
 > [!IMPORTANT]
 > `Workspace roles in Microsoft Fabric (Admin, Member, Contributor, Viewer) grant access to all items within the workspace, not just Copy Jobs.` This includes Dashboards,
->  Semantic Models, Data Warehouses, Notebooks, Pipelines, and more. There is currently no way to assign permissions to Copy Jobs individually, access is inherited from the user's role in the workspace.
+> Semantic Models, Data Warehouses, Notebooks, Pipelines, and more. There is currently no way to assign permissions to Copy Jobs individually, access is inherited from the user's role in the workspace.
 
 | **Workspace Role** | **Access to Copy Jobs**                                                                 |
 |--------------------|------------------------------------------------------------------------------------------|
@@ -38,7 +37,6 @@ Last updated: 2025-05-08
 | **Member**         | Can create, edit, and run Copy Jobs; can also share them with others.                    |
 | **Contributor**    | Can create and run Copy Jobs, but cannot manage permissions or share them.               |
 | **Viewer**         | Can view Copy Jobs and their status but cannot create, edit, or run them.                |
-
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/93ccd9f1-a650-4663-a631-3b2b20434cae" />
 
