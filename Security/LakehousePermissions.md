@@ -41,7 +41,7 @@ Last updated: 2025-05-08
 
 https://github.com/user-attachments/assets/2974bdee-4b02-4750-ba6c-b745215e0f82
 
-### Read all SQL endpoint data
+## Read all SQL endpoint data
 
 > Permissions:
 > - Read <br/>
@@ -64,7 +64,7 @@ https://github.com/user-attachments/assets/2974bdee-4b02-4750-ba6c-b745215e0f82
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/2035ae73-f247-493d-905c-d9a3d76ec5f2" />
 
 
-### Lakehouse Semantic Model
+## Lakehouse Semantic Model
 
 > Permissions:
 > - Reshare <br/>
@@ -75,7 +75,7 @@ https://github.com/user-attachments/assets/2974bdee-4b02-4750-ba6c-b745215e0f82
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/a574988f-f78c-43be-b29c-150f67599386">
 
-### SQL Analytics Endpoint 
+## SQL Analytics Endpoint 
 
 > Permissions:
 > - Read <br/>
