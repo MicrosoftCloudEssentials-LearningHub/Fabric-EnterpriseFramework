@@ -25,6 +25,50 @@ Last updated: 2025-02-03
 
 https://github.com/user-attachments/assets/2974bdee-4b02-4750-ba6c-b745215e0f82
 
+### Read all SQL endpoint data
+
+> Permissions:
+> - Read <br/>
+> - Read All <br/>
+> - Subscribe OneLake Events 
+
+
+> Lakehouse Manage Permissions: 
+
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/a2559d8a-35b9-456b-a14c-81c9bb5d2b9c" /> | 
+
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/2f0c625d-2cbb-43c0-930a-a2ee29eff60f" />
+
+> When `Read all SQL endpoint data`:
+
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/19a31eaf-79e6-4836-a380-75137823e315" />
+
+> `Read` access is granted, you add more permissions.
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/2035ae73-f247-493d-905c-d9a3d76ec5f2" />
+
+
+### Lakehouse Semantic Model
+
+> Permissions:
+> - Reshare <br/>
+> - Build <br/>
+> - Write 
+
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/f767acdc-6491-4576-a99e-337cf6f2b37c" />
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/a574988f-f78c-43be-b29c-150f67599386">
+
+### SQL Analytics Endpoint 
+
+> Permissions:
+> - Read <br/>
+> - Read Data <br/>
+> - Read All 
+
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/969433d1-5ceb-4369-a11f-26a29bb606dd" />
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/60241837-759f-44f6-8934-67bb98002ada" />
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
