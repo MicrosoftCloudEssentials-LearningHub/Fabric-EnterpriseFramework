@@ -14,8 +14,10 @@ Last updated: 2025-05-08
 - [Semantic Models Permissions](./SemanticModelsPermissions.md): Semantic Models
 - [Dashboards Permissions](./DashboardPermissions.md): Dashboards
 - [Copy Job Permissions](./CopyJobPermissions.md): Copy Job
-- [Data Pipelines Permissions](./DataPipelinesPermissions.md): Data Pipelines 
-
+- [Data Pipelines Permissions](./DataPipelinesPermissions.md): Data Pipelines
+- [Event Stream Permissions](./EventStreamPermissions.md): Event Stream
+- [Healthcare data solutions Permissions](./HealthcareDataSolutionsPermissions.md): Healthcare Data Solutions
+  
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
