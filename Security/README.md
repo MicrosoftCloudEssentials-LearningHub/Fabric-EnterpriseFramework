@@ -10,6 +10,7 @@ Last updated: 2025-05-08
 ------------------------------------------
 
 - [Lakehouse Permissions](./LakehousePermissions.md): Lakehouse, Semantic Model, SQL Endpoint 
+- [Warehouse Permissions](./WarehousePermissions.md): Warehouse, Semantic Model
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
