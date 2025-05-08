@@ -40,7 +40,7 @@ Last updated: 2025-05-08
 | Audit queries (`Audit`) – PREVIEW             | Allows auditing of query activity for compliance and governance.               | - `Security Audits`: Reviewing who queried what and when.<br/>- `Compliance Reporting`: Ensuring data access policies are followed.<br/>- `Anomaly Detection`: Spotting unusual query patterns. |
 | Share granted permissions (`Reshare`)         | Allows users to share permissions they’ve been granted with others.            | - `Collaboration`: Delegating access to teammates.<br/>- `Data Stewardship`: Empowering trusted users to manage access.<br/>- `Self-service BI`: Enabling broader access without admin bottlenecks. |
 
-https://github.com/user-attachments/assets/ee3daf56-9aca-4321-b154-35cfbae05f65
+<https://github.com/user-attachments/assets/ee3daf56-9aca-4321-b154-35cfbae05f65>
 
 ## Read all data using SQL 
 
