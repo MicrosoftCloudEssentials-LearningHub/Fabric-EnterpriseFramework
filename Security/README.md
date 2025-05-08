@@ -13,6 +13,7 @@ Last updated: 2025-05-08
 - [Warehouse Permissions](./WarehousePermissions.md): Warehouse, Semantic Model
 - [Semantic Models Permissions](./SemanticModelsPermissions.md): Semantic Models
 - [Dashboards Permissions](./DashboardPermissions.md): Dashboards
+- [Copy Job Permissions](./CopyJobPermissions.md): Copy Job
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
