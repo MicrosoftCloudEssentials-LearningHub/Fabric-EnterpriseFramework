@@ -15,6 +15,9 @@ Last updated: 2025-05-08
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [What is the Copy job in Data Factory for Microsoft Fabric?](https://learn.microsoft.com/en-us/fabric/data-factory/what-is-copy-job)
+- [Learn how to create a Copy job in Data Factory for Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-factory/create-copy-job)
+
 </details>
 
 > [!NOTE]
