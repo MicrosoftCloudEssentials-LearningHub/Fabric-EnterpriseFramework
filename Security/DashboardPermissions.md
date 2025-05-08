@@ -9,7 +9,6 @@ Last updated: 2025-05-08
 
 ------------------------------------------
 
-
 > `Dashboard` in Microsoft Fabric is a `visual and interactive canvas` that brings together insights from various data sources into a single,
 > unified view. It allows users to pin visuals from reports, monitor key metrics in real time, and interact with data through filters and slicers.
 > Dashboards are ideal for `executive overviews, operational monitoring, and decision-making`, offering a high-level summary with the ability to drill down into detailed reports when needed.
@@ -35,6 +34,7 @@ Last updated: 2025-05-08
 ## Allow recipients to share this dashboard 
 
 > Permission: <br/>
+>
 > - Read <br/>
 > - Reshare 
 
@@ -45,6 +45,7 @@ Last updated: 2025-05-08
 ## Allow recipients to build content with the data associated with this dashboard 
 
 > Permission: <br/>
+>
 > - Read 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/aee8ab34-4eab-47e2-8509-5773c2173b3a" />
