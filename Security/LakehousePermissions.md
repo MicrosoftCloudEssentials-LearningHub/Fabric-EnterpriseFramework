@@ -21,6 +21,7 @@ Last updated: 2025-05-08
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
 - [Read all SQL endpoint data](#read-all-sql-endpoint-data)
+- [Read all Apache Spark and subscribe to events](#read-all-apache-spark-and-subscribe-to-events)
 - [Lakehouse Semantic Model](#lakehouse-semantic-model)
 - [SQL Analytics Endpoint](#sql-analytics-endpoint)
 
@@ -60,6 +61,20 @@ Last updated: 2025-05-08
 > `Read` access is granted, you add more permissions.
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/2035ae73-f247-493d-905c-d9a3d76ec5f2" />
+
+## Read all Apache Spark and subscribe to events
+
+> Permissions:
+>
+> - Read <br/>
+> - Read All <br/>
+> - Subscribe OneLake Events 
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/88691b89-1356-49a1-9945-8ec82c21ae3a">
+
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/124e1a5f-728f-4360-bdeb-3e4b86fe33bd">
+
 
 ## Lakehouse Semantic Model
 
