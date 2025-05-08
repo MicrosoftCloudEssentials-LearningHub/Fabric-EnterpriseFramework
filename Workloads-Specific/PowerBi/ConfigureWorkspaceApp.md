@@ -102,9 +102,9 @@ Last updated: 2025-04-21
 
         <img width="550" alt="image" src="https://github.com/user-attachments/assets/b87137f1-b464-43df-a04d-593a41b3131a">
 
-      2. Make sure the person already have access to the semantic model:
+  2. Make sure the person already have access to the semantic model:
 
-         <img width="550" alt="image" src="https://github.com/user-attachments/assets/f5344f85-53f3-48dc-b0b1-6b3c5995bbd6">
+     <img width="550" alt="image" src="https://github.com/user-attachments/assets/f5344f85-53f3-48dc-b0b1-6b3c5995bbd6">
 
 > - Granting `Read, ReadData` access to the `semantic model, sql analytics endpoint` <br/>
 > - Grating `App audience` will enable the assigned identity to view it.
