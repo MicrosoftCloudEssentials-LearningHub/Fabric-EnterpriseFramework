@@ -9,17 +9,27 @@ Last updated: 2025-05-08
 
 ------------------------------------------
 
-> 
+> `Event Stream` in Microsoft Fabric is a `real-time data ingestion and processing service` that enables users to capture, transform, and route streaming data from various sources. It supports inputs like `Event Hubs`, `IoT devices`, and `custom applications`, and allows routing data to destinations such as `OneLake`, `Data Warehouses`, or `Lakehouses`. Event Streams are ideal for `real-time analytics, monitoring, and alerting scenarios`, providing a scalable and low-latency pipeline for continuously processing and reacting to incoming data events.
 
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [Fabric Eventstream - overview](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/overview?tabs=enhancedcapabilities)
+- [Manage an eventstream in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/manage-eventstream)
+
 </details>
 
 > [!NOTE]
+> `Workspace roles in Microsoft Fabric (Admin, Member, Contributor, Viewer) grant access to all items within the workspace, not just Event Streams.`  
+> This includes Dashboards, Semantic Models, Data Warehouses, Notebooks, Pipelines, Copy Jobs, and more.  
+> There is currently no way to assign permissions to Event Streams individually, access is inherited from the user's role in the workspace.
 
 <div align="center">
-  <img width="700" alt="image" src="" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img width="700" alt="image" src="https://github.com/user-attachments/assets/66b7a6ec-12fb-4f22-af45-fd481caa3f30" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
+<div align="center">
+  <img width="700" alt="image" src="https://github.com/user-attachments/assets/1f88430b-8caa-438a-88d8-9675ae461af7" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
 > [!IMPORTANT]
