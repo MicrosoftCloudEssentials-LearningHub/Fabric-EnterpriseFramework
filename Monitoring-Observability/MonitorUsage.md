@@ -14,7 +14,7 @@ Last updated: 2025-04-21
 > Ensure you have admin rights for the capacity you want to monitor.
 
 <details>
-<summary><b>Lis of References</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Install the Microsoft Fabric capacity metrics app](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-install?tabs=1st)
 - [What is the Microsoft Fabric Capacity Metrics app?](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app)
