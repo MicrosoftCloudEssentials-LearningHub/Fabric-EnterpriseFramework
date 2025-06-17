@@ -14,9 +14,24 @@ Last updated: 2025-03-21
 <summary><b>List of References </b> (Click to expand)</summary>
 
 -  [Fabric operations](https://learn.microsoft.com/en-us/fabric/enterprise/fabric-operations)
+-  [Microsoft Fabric pricing](https://azure.microsoft.com/en-us/pricing/details/microsoft-fabric/?cdn=disable)
+-  [Microsoft Fabric Monitoring Usage - Overview](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability/MonitorUsage.md)
+-  [Steps to Configure Capacity Alerts - Overview](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability/StepsCapacityAlert.md)
 
 </details>
 
+<details>
+<summary><b>Table of Content </b> (Click to expand)</summary>
+
+- [Overview](#overview)
+- [Reservations & Capacity](#reservations--capacity)
+    - [Scope Assignment in Reservations](#scope-assignment-in-reservations)
+- [Additional Costs](#additional-costs)
+- [E.g F64](#eg-f64)
+    - [Included in F64 Reserved Capacity](#included-in-f64-reserved-capacity)
+    - [What’s NOT Included in the Flat Rate](#whats-not-included-in-the-flat-rate)
+
+</details>
 
 > Each license level provides different amounts of computational power and features, allowing organizations to choose the one that best fits their needs <br/> <br/>
 > `Pay-as-you-go` capacities related with specific Azure `resource groups`. This allows you to manage and allocate resources within your organizational structure more effectively. <br/> 
@@ -144,7 +159,7 @@ This flexibility allows you to optimize your Microsoft Fabric costs based on you
 | **Copilot and AI** | Includes natural language interactions, code generation, and AI-assisted data exploration. These features use compute from your reserved capacity and are included unless usage spikes significantly. |
 | **Monitoring & Admin Tools** | Covers usage of Fabric’s built-in monitoring dashboards, capacity metrics app, and admin tools. These are lightweight operations and fully included in the reserved capacity. |
 
-## What’s NOT Included in the Flat Rate
+### What’s NOT Included in the Flat Rate
 
 > These are **billed separately** if they exceed the reserved CU pool or use **specialized compute**. These charges apply **only when usage exceeds the base F64 capacity or involves specialized compute paths**. 
 
