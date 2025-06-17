@@ -31,7 +31,6 @@ Last updated: 2025-03-21
 
 ## Overview 
 
-
 > [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/?msockid=38ec3806873362243e122ce086486339) will calculate storage costs if you exceed the included limit for your selected SKU. If your usage stays within the included storage capacity, you shouldn’t see additional charges for storage. <br/> <br/> 
 > The included storage in Microsoft Fabric primarily applies to **mirroring** across all F SKUs. This means that the free storage provided (e.g., 64 TB for F64) is specifically allocated for creating mirrored copies of your data to ensure redundancy and high availability. <br/> <br/>
 > For other types of storage, such as general data storage or storage used by Data Factory and AI capabilities, you will be billed if you exceed the included storage or if compute capacity is paused.This applies to all F SKUs, from F2 to F2048.
@@ -120,8 +119,7 @@ This flexibility allows you to optimize your Microsoft Fabric costs based on you
 | **OneLake Read via Proxy** | Reading data from OneLake through a proxy. | Similar to direct reads but with added proxy overhead. |
 | **Real-Time Intelligence - Event Listener & Alert** | Listening to events and triggering alerts in real time. | Continuous monitoring and alerting consume compute resources. |
 
-`These operations are tracked in the` [Microsoft Fabric Capacity Metrics App](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-install?tabs=1st)`,
-> where you can see how each contributes to your overall CU consumption`
+> `These operations are tracked in the` [Microsoft Fabric Capacity Metrics App](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-install?tabs=1st), `where you can see how each contributes to your overall CU consumption`
 
 ## E.g F64 
 
