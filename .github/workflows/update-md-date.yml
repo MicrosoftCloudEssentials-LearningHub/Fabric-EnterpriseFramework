@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   update-date:
@@ -35,7 +36,12 @@ jobs:
         run: python .github/workflows/update_date.py
 
       - name: Commit changes
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          git fetch origin ${{ github.event.pull_request.head.ref }}
+          git pull --rebase origin ${{ github.event.pull_request.head.ref }} || echo "No rebase needed"
           git add -A
           git commit -m "Update last modified date in Markdown files" || echo "No changes to commit"
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
           git push origin HEAD:${{ github.event.pull_request.head.ref }}
