@@ -1,0 +1,37 @@
+[
+  {
+    "date": "2025-07-07",
+    "count": 330,
+    "uniques": 20
+  },
+  {
+    "date": "2025-07-08",
+    "count": 159,
+    "uniques": 6
+  },
+  {
+    "date": "2025-07-10",
+    "count": 482,
+    "uniques": 1
+  },
+  {
+    "date": "2025-07-11",
+    "count": 170,
+    "uniques": 4
+  },
+  {
+    "date": "2025-07-12",
+    "count": 7,
+    "uniques": 1
+  },
+  {
+    "date": "2025-07-14",
+    "count": 130,
+    "uniques": 2
+  },
+  {
+    "date": "2025-07-15",
+    "count": 2,
+    "uniques": 1
+  }
+]
