@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   validate-and-fix-markdown:
@@ -27,18 +28,18 @@ jobs:
         run: npm install -g markdownlint-cli
 
       - name: Lint and Fix Markdown files
-        run: markdownlint '**/*.md' --fix --config .github/.markdownlint.json
+        run: markdownlint '**/*.md' --fix --config .github/.markdownlint.json 
 
       - name: Configure Git
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
-      - name: Commit changes
+      - name: Commit and rebase changes
+        env:
+          PR_BRANCH: ${{ github.head_ref || github.ref_name }}
         run: |
-          git fetch origin
-          git checkout -b ${{ github.event.pull_request.head.ref }} origin/${{ github.event.pull_request.head.ref }}
           git add -A
           git commit -m "Fix Markdown syntax issues" || echo "No changes to commit"
-          git pull --rebase origin ${{ github.event.pull_request.head.ref }} || echo "No rebase needed"
-          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+          git pull --rebase origin "$PR_BRANCH" || echo "No rebase needed"
+          git push origin HEAD:"$PR_BRANCH"
