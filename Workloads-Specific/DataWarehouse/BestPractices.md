@@ -83,7 +83,9 @@ Create notebooks that are segmented into distinct sections:
 | **Mirrored Azure SQL Managed Instance**          | Configure an Azure SQL Managed Instance in a mirrored setup using strategies like log shipping or transactional replication. Monitor key performance metrics to ensure that replication latency is minimal, and the mirror is capable of supporting a swift transition during outages or maintenance windows. |
 | **Mirrored Database**                  | Set up a mirrored database configuration that synchronizes periodically with a primary instance. Schedule automated tests and synchronization checks, and simulate failover events to validate that the data remains consistent, with built-in alerts and monitoring demonstrating the mirror’s readiness for production use. |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-18-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

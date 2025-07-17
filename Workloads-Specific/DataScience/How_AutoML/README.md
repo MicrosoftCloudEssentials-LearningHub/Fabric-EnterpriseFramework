@@ -20,7 +20,9 @@ Click to see notebook generated [Train a ML model with AutoML](./Train_MLmodel_A
 
 <https://github.com/user-attachments/assets/6dfedbac-beb7-4025-9a42-f98dade7f431>
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-18-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->
