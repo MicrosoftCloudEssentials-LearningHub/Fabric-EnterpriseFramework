@@ -13,10 +13,10 @@ Last updated: 2025-03-21
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
 
--  [Fabric operations](https://learn.microsoft.com/en-us/fabric/enterprise/fabric-operations)
--  [Microsoft Fabric pricing](https://azure.microsoft.com/en-us/pricing/details/microsoft-fabric/?cdn=disable)
--  [Microsoft Fabric Monitoring Usage - Overview](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability/MonitorUsage.md)
--  [Steps to Configure Capacity Alerts - Overview](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability/StepsCapacityAlert.md)
+- [Fabric operations](https://learn.microsoft.com/en-us/fabric/enterprise/fabric-operations)
+- [Microsoft Fabric pricing](https://azure.microsoft.com/en-us/pricing/details/microsoft-fabric/?cdn=disable)
+- [Microsoft Fabric Monitoring Usage - Overview](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability/MonitorUsage.md)
+- [Steps to Configure Capacity Alerts - Overview](https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework/blob/main/Monitoring-Observability/StepsCapacityAlert.md)
 
 </details>
 
@@ -25,11 +25,11 @@ Last updated: 2025-03-21
 
 - [Overview](#overview)
 - [Reservations & Capacity](#reservations--capacity)
-    - [Scope Assignment in Reservations](#scope-assignment-in-reservations)
+  - [Scope Assignment in Reservations](#scope-assignment-in-reservations)
 - [Additional Costs](#additional-costs)
 - [E.g F64](#eg-f64)
-    - [Included in F64 Reserved Capacity](#included-in-f64-reserved-capacity)
-    - [What’s NOT Included in the Flat Rate](#whats-not-included-in-the-flat-rate)
+  - [Included in F64 Reserved Capacity](#included-in-f64-reserved-capacity)
+  - [What’s NOT Included in the Flat Rate](#whats-not-included-in-the-flat-rate)
 
 </details>
 
@@ -50,9 +50,10 @@ Last updated: 2025-03-21
 > The included storage in Microsoft Fabric primarily applies to **mirroring** across all F SKUs. This means that the free storage provided (e.g., 64 TB for F64) is specifically allocated for creating mirrored copies of your data to ensure redundancy and high availability. <br/> <br/>
 > For other types of storage, such as general data storage or storage used by Data Factory and AI capabilities, you will be billed if you exceed the included storage or if compute capacity is paused.This applies to all F SKUs, from F2 to F2048.
 
-https://github.com/user-attachments/assets/83447901-2227-4cf3-a89c-c8ee57d50009
+<https://github.com/user-attachments/assets/83447901-2227-4cf3-a89c-c8ee57d50009>
 
 > Considerations: 
+
 - **Region and SKU Size**: The price of Microsoft Fabric services varies based on the region and the SKU size. For instance, the cost in North America is different from that in Europe. Additionally, different SKUs have specific rates. For example, an F256 SKU has a different rate compared to an F128 SKU.
 - **What is an SKU?**: SKU stands for **Stock Keeping Unit**. It's a unique identifier for each distinct product and service that can be purchased. In the context of Microsoft Fabric, SKUs represent different capacities or configurations of the service. For example, an F256 SKU indicates a specific capacity of 256 Compute Units (CU).
 - **What is a CU?**: CU stands for **Compute Unit**. It's a measure of the computing resources allocated to your service. Higher CU values indicate more computing power and capacity. For instance, an F256 SKU provides 256 CUs, which can handle more intensive workloads compared to an F128 SKU with 128 CUs.
@@ -62,6 +63,7 @@ https://github.com/user-attachments/assets/83447901-2227-4cf3-a89c-c8ee57d50009
 This flexibility allows you to optimize your Microsoft Fabric costs based on your specific requirements and usage patterns. Being clear about the sizes and regions helps ensure you get the best value for your reservation.
 
 > [!NOTE]
+>
 > - `Capacity Units (CU)`: Measure of compute power within a SKU. Higher CUs provide more computational capacity. <br/>
 > - `Power BI SKU`: Different SKUs (A, EM, P, F) cater to various needs from individual users to large enterprises. <br/>
 > - `Power BI v-cores`: Virtual cores dedicated to Power BI operations, ensuring consistent performance. <br/>
@@ -94,6 +96,7 @@ This flexibility allows you to optimize your Microsoft Fabric costs based on you
 
 > Microsoft Fabric `Reservations are agreements` for a specific time period and compute capacity. Whether using the Pay-as-you-go model or reservations, you need to create the Microsoft Fabric Capacity within a resource group. <br/> <br/>
 > Reservations in Azure, including Microsoft Fabric `reservations`, are `managed at the subscription level`. This means that the reserved capacity units (CUs) apply to the entire subscription, not to individual resource groups. <br/>
+>
 > - `Reservations`: Provide a `subscription-wide discount` for committing to a certain amount of capacity over a period of time. <br/>
 > - `Capacity Creation`: You create and manage Fabric `capacities within specific resource groups`, but the `cost benefits from the reservation apply at the subscription level`. 
 
@@ -144,7 +147,7 @@ This flexibility allows you to optimize your Microsoft Fabric costs based on you
 - If your workloads **exceed 64 CUs**, you’ll be billed **pay-as-you-go** for the overage.
 - **Storage and networking** costs (e.g., OneLake storage, data egress) are **not included** in the reservation
   
-###  Included in F64 Reserved Capacity
+### Included in F64 Reserved Capacity
 
 > These services are covered **as long as they stay within the 64 CU limit**:
 
@@ -163,7 +166,6 @@ This flexibility allows you to optimize your Microsoft Fabric costs based on you
 
 > These are **billed separately** if they exceed the reserved CU pool or use **specialized compute**. These charges apply **only when usage exceeds the base F64 capacity or involves specialized compute paths**. 
 
-
 | **Service/Workload** | **Why It’s Extra** |
 |----------------------|--------------------|
 | **Data Movement (e.g., Copy activity)** | Uses additional compute beyond base CU allocation. |
@@ -172,7 +174,6 @@ This flexibility allows you to optimize your Microsoft Fabric costs based on you
 | **High Scale Dataflow Compute** | Uses specialized compute resources for large-scale dataflows. |
 | **Iterative Read/Write via Proxy** | Repeated access patterns through proxy connections are compute-intensive and billed separately. |
 | **Networking & Storage** | Not included in Fabric capacity; billed separately under Azure storage and data transfer pricing. |
-
 
 <!-- START BADGE -->
 <div align="center">
