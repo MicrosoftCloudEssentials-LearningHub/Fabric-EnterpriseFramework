@@ -115,7 +115,9 @@ graph TD
 | **Elastic Data Map Utilization** | Efficiently manage capacity units to optimize costs. | - **Monitor Usage**: Regularly monitor capacity unit usage to ensure efficient allocation and avoid over-provisioning.<br> - **Scale Appropriately**: Scale capacity units based on actual usage patterns to optimize costs. |
 | **API Call Management** | Minimize unnecessary API calls to reduce costs. | - **Optimize API Usage**: Minimize unnecessary API calls by caching results and reusing data where possible.<br> - **Batch API Requests**: Group API requests to reduce the number of individual calls, optimizing cost per API call. |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-63-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

@@ -39,7 +39,9 @@ Last updated: 2025-05-08
 | Allow recipients to build content with the data associated with this semantic model | Enables users to create reports, dashboards, and other content using the semantic model.            | - `Power BI Reports`: Building visuals and dashboards.<br/>- `Embedded Analytics`: Using the model in apps or portals.<br/>- `Ad hoc Analysis`: Exploring data. |
 | Send an email notification                                           | Sends an email to notify the recipient about the access granted.                                    | - `Communication`: Ensuring users are informed of their new access.<br/>- `Onboarding`: Helping users get started with the semantic model.            |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-63-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

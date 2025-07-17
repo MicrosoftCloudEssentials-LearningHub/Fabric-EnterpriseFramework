@@ -165,7 +165,9 @@ From [Understand star schema and the importance for Power BI](https://learn.micr
 | **Deployment Pipelines via APIs**      | Use the Power BI deployment pipelines APIs to automate report deployment steps and ensure quality across environments.               | Implement automated deployments as described in [Automate deployment pipelines with APIs for Power BI items](https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/pipeline-automation).  |
 | **Continuous Integration**            | Incorporate quality gates and automated testing within your CI/CD process to catch issues early in the development cycle.             | Utilize Git-based integration and automated tests as shown in [Power BI Desktop projects Azure DevOps integration](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-azdo) for best practices.      |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-63-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->
