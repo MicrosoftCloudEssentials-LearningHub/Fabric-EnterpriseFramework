@@ -136,7 +136,7 @@ Tools in practice:
 ### Configure Azure OpenAI Service
 
 > [!NOTE]
-> Click [here](./src/fabric-llms-overview_sample.ipynb) to see all notebook
+> Click [here to see all notebook](./src/fabric-llms-overview_sample.ipynb)
 
 1. **Set Up API Keys**: Ensure you have the API key and endpoint URL for your deployed model. Set these as environment variables
 
