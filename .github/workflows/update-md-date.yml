@@ -18,6 +18,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -35,13 +36,23 @@ jobs:
       - name: Update last modified date in Markdown files
         run: python .github/workflows/update_date.py
 
-      - name: Commit changes
+      - name: Commit and merge changes
         env:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_BRANCH: ${{ github.head_ref || github.ref_name }}
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: github-actions[bot]@users.noreply.github.com
         run: |
-          git fetch origin ${{ github.event.pull_request.head.ref }}
-          git pull --rebase origin ${{ github.event.pull_request.head.ref }} || echo "No rebase needed"
+          # Ensure we're on the correct branch
+          git switch -c "$PR_BRANCH" || git switch "$PR_BRANCH"
+          
+          # Stage and commit all changes (new, modified, deleted)
           git add -A
-          git commit -m "Update last modified date in Markdown files" || echo "No changes to commit"
-          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
-          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+          git diff --staged --quiet || git commit -m "Update last modified date in Markdown files"
+          
+          # Pull and merge existing changes from remote
+          git pull origin "$PR_BRANCH" --no-rebase
+          
+          # Push all changes to the PR branch
+          git push origin "$PR_BRANCH"
