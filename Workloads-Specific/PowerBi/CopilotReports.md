@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-21
+Last updated: 2025-07-22
 
 ----------
 
@@ -20,6 +20,7 @@ Last updated: 2025-04-21
 - [Enable Copilot in Fabric - Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/get-started/copilot-enable-fabric)
 - [Enable Fabric Copilot for Power BI - Power BI](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-enable-power-bi)
 - [How to enable Copilot in Fabric for Everyone](https://blog.fabric.microsoft.com/en-us/blog/how-to-enable-copilot-in-fabric-for-everyone-2/)
+- [Copilots in Fabric](https://learn.microsoft.com/en-us/fabric/fundamentals/copilot-fabric-overview#copilot-experiences)
 
 </details>
 
