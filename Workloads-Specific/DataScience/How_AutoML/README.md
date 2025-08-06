@@ -22,7 +22,7 @@ Click to see notebook generated [Train a ML model with AutoML](./Train_MLmodel_A
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-659-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-07-22</p>
+  <img src="https://img.shields.io/badge/Total%20views-1349-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-08-06</p>
 </div>
 <!-- END BADGE -->
