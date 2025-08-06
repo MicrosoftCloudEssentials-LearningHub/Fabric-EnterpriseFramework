@@ -25,6 +25,7 @@ Last updated: 2025-08-06
 - [Implement medallion architecture in Real-Time Intelligence](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/architecture-medallion)
 - [Open mirroring partner ecosystem](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/open-mirroring-partners-ecosystem#oracle-goldengate-23ai)
 - [Oracle GoldenGate for Distributed Applications and Analytics](https://docs.oracle.com/en/middleware/goldengate/big-data/23/gadbd/microsoft-fabric-onelake-event-handler.html#GUID-B3816970-D59F-4CAE-B9E1-A7264E0068B7)
+- [Monitor usage metrics in the workspaces (preview)](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-modern-usage-metrics)
 
 </details>
 
