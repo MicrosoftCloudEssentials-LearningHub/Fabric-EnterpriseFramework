@@ -233,7 +233,9 @@ Steps to Restrict Access for On-Premises Data Gateways:
 | **Security and Connectivity:** | - **Private Endpoints:** Use private endpoints to connect securely to your data sources within Azure. This ensures that all traffic remains on the Azure backbone and is not exposed to the public internet.<br/>- **Conditional Access Policies:** VNet data gateways support conditional access policies, allowing you to enforce security measures based on user identity and location.<br/>- **Microsoft Entra ID SSO:** Enable single sign-on (SSO) for DirectQuery to ensure that queries execute under the user's Microsoft Entra ID identity. |
 | **Restrictions and Limitations:** | - **Cross-Tenant Scenarios:** VNet data gateways must be created in the same tenant as the Power BI tenant.<br/>- **Region Constraints:** The virtual network data gateway is physically located in the same region as your Azure virtual network. |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-1280-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-09-05</p>
 </div>
+<!-- END BADGE -->
