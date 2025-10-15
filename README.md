@@ -48,6 +48,32 @@ Last updated: 2025-08-06
 
 </details>
 
+<details> 
+<summary><b> Before Fabric</b> (Click to expand)</summary>
+
+<p float="left">
+  <img src="https://github.com/brown9804/MSCloudEssentials_LPath/assets/24630902/c47ad7c0-375e-4257-b56e-7b3b89619e2f" width="450" height="200" />
+  <img src="https://github.com/brown9804/MSCloudEssentials_LPath/assets/24630902/64812721-7c24-4771-90f4-27f7a21fa9e0" width="350" height="200" />
+</p>
+
+> E.g of a solution prior Microsoft Fabric:
+
+<div align="left">
+  <img src="https://github.com/user-attachments/assets/af2aa6cb-0349-481b-abe4-d8c470551899" 
+       alt="Centered Image" 
+       style="width: 70%; border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
+> Now from one place:
+
+<div align="left">
+  <img src="https://github.com/user-attachments/assets/aaf00cd7-531a-4dc8-bf2f-c7606c607b87" 
+       alt="Centered Image" 
+       style="width: 70%; border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
+</details>
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/8fdb3198-8fda-4dd0-869e-b0dccb268a30" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
