@@ -60,7 +60,6 @@ Last updated: 2025-10-15
 
 <div align="left">
   <img src="https://github.com/user-attachments/assets/af2aa6cb-0349-481b-abe4-d8c470551899" 
-       alt="Centered Image" 
        style="width: 70%; border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
@@ -68,7 +67,6 @@ Last updated: 2025-10-15
 
 <div align="left">
   <img src="https://github.com/user-attachments/assets/aaf00cd7-531a-4dc8-bf2f-c7606c607b87" 
-       alt="Centered Image" 
        style="width: 70%; border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
