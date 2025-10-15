@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-08-06
+Last updated: 2025-10-15
 
 ------------------------------------------
 
@@ -45,6 +45,30 @@ Last updated: 2025-08-06
 - [Monitoring and Observability](#monitoring-and-observability)
 - [Cost Management](#cost-management)
 - [Best Practices](#best-practices)
+
+</details>
+
+<details> 
+<summary><b> Before Fabric</b> (Click to expand)</summary>
+
+<p float="left">
+  <img src="https://github.com/brown9804/MSCloudEssentials_LPath/assets/24630902/c47ad7c0-375e-4257-b56e-7b3b89619e2f" width="450" height="200" alt="why0" />
+  <img src="https://github.com/user-attachments/assets/1cbb0198-774c-498d-ab60-2f4c8e2a4218" width="350" height="190" alt="why2" />
+</p>
+
+> E.g of a solution prior Microsoft Fabric:
+
+<div align="left">
+  <img src="https://github.com/user-attachments/assets/af2aa6cb-0349-481b-abe4-d8c470551899" alt="why3"
+       style="width: 70%; border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
+> Now from one place:
+
+<div align="left">
+  <img src="https://github.com/user-attachments/assets/aaf00cd7-531a-4dc8-bf2f-c7606c607b87" alt="why4"
+       style="width: 70%; border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
 
 </details>
 
@@ -244,7 +268,7 @@ Click to read more about [Microsoft Purview for Fabric - Overview](./Workloads-S
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1349-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-08-06</p>
+  <img src="https://img.shields.io/badge/Total%20views-1459-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-10-15</p>
 </div>
 <!-- END BADGE -->
