@@ -15,6 +15,9 @@ Last updated: 2025-07-17
 - [Fabric Draw.io icons](https://github.com/marclelijveld/Fabric-Icons/tree/main)
 - [TechExcel: Microsoft Fabric with Azure Databricks for Data Analytics (lvl 300 / CSU) lab](https://github.com/microsoft/TechExcel-Fabric-with-Databricks-for-Data-Analytics/blob/main/index.md) - repo
 - [TechExcel: Microsoft Fabric with Azure Databricks for Data Analytics (lvl 300 / CSU) lab](https://microsoft.github.io/TechExcel-Fabric-with-Databricks-for-Data-Analytics/) - guide 
+- [Implement medallion architecture in Real-Time Intelligence](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/architecture-medallion#implement-the-medallion-architecture)
+
+  <img width="2040" height="754" alt="image" src="https://github.com/user-attachments/assets/53acd90e-1b3f-4ffd-ac77-428d6650bcab" />
 
 </details>
 
