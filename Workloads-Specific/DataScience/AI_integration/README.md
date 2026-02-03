@@ -14,6 +14,9 @@ Last updated: 2025-07-17
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
 
+- [Fabric data agent example with the AdventureWorks dataset (preview)](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-end-to-end-tutorial)
+- [Fabric Data Agent Client Implementation](https://github.com/microsoft/fabric-samples/blob/main/docs-samples/data-science/data-agent-sdk/Fabric-DataAgent-OpenAI-Client-sample.ipynb)
+- [MSFT Foundry - All AI models](https://ai.azure.com/catalog/models)
 - [Unleashing the Power of Microsoft Fabric and SynapseML](https://blog.fabric.microsoft.com/en-us/blog/unleashing-the-power-of-synapseml-and-microsoft-fabric-a-guide-to-qa-on-pdf-documents-2)
 - [Building a RAG application with Microsoft Fabric](https://techcommunity.microsoft.com/t5/startups-at-microsoft/building-high-scale-rag-applications-with-microsoft-fabric/ba-p/4217816)
 - [Building Custom AI Applications with Microsoft Fabric: Implementing Retrieval-Augmented Generation](https://support.fabric.microsoft.com/en-us/blog/building-custom-ai-applications-with-microsoft-fabric-implementing-retrieval-augmented-generation-for-enhanced-language-models?ft=Alicia%20Li%20%28ASA%29:author)
